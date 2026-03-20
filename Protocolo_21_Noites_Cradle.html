@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Protocolo das 21 Noites — Cradle®</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --blue: #4A6CF7;
+  --blue-dark: #2A3F8F;
+  --blue-light: #E8EDFF;
+  --blue-glow: #6B8AFF;
+  --navy: #0F1629;
+  --navy-mid: #1A2340;
+  --text: #C8CDE0;
+  --text-bright: #FFFFFF;
+  --text-dim: #7B83A4;
+  --accent: #F7B94A;
+  --success: #4ADE80;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--navy);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.hero {
+  position: relative;
+  padding: 60px 24px 48px;
+  text-align: center;
+  background: linear-gradient(180deg, #0A0F1F 0%, var(--navy) 100%);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(74,108,247,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding: 6px 16px;
+  border: 1px solid rgba(247,185,74,0.3);
+  border-radius: 20px;
+  margin-bottom: 28px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-bright);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--blue-glow);
+}
+
+.hero-sub {
+  font-size: 16px;
+  color: var(--text-dim);
+  max-width: 340px;
+  margin: 0 auto 32px;
+  line-height: 1.6;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 8px;
+}
+
+.hero-stat {
+  text-align: center;
+}
+
+.hero-stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-bright);
+}
+
+.hero-stat-label {
+  font-size: 11px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.divider {
+  width: 40px;
+  height: 2px;
+  background: var(--blue);
+  margin: 40px auto;
+  border-radius: 1px;
+}
+
+section {
+  padding: 0 24px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--blue-glow);
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-bright);
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-bright);
+  margin-bottom: 12px;
+}
+
+p {
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.intro-block {
+  padding: 40px 0;
+}
+
+.phase {
+  margin: 48px 0;
+  position: relative;
+}
+
+.phase-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.phase-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.phase-1 .phase-icon { background: rgba(74,108,247,0.15); border: 1px solid rgba(74,108,247,0.3); }
+.phase-2 .phase-icon { background: rgba(247,185,74,0.12); border: 1px solid rgba(247,185,74,0.25); }
+.phase-3 .phase-icon { background: rgba(74,222,128,0.12); border: 1px solid rgba(74,222,128,0.25); }
+
+.phase-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-bright);
+  line-height: 1.2;
+}
+
+.phase-subtitle {
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.day-card {
+  background: var(--navy-mid);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.day-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.day-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--blue-glow);
+}
+
+.day-tag {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tag-adapt { background: rgba(74,108,247,0.15); color: var(--blue-glow); }
+.tag-progress { background: rgba(247,185,74,0.12); color: var(--accent); }
+.tag-result { background: rgba(74,222,128,0.12); color: var(--success); }
+
+.day-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-bright);
+  margin-bottom: 10px;
+}
+
+.day-card p {
+  font-size: 14px;
+  color: var(--text);
+  margin-bottom: 12px;
+  line-height: 1.65;
+}
+
+.tip-box {
+  background: rgba(74,108,247,0.08);
+  border-left: 3px solid var(--blue);
+  border-radius: 0 10px 10px 0;
+  padding: 14px 16px;
+  margin-top: 12px;
+}
+
+.tip-box p {
+  font-size: 13px;
+  color: var(--text);
+  margin: 0;
+}
+
+.tip-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--blue-glow);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.stretch-card {
+  background: var(--navy-mid);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.stretch-card h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-bright);
+  margin-bottom: 8px;
+}
+
+.stretch-steps {
+  list-style: none;
+  padding: 0;
+}
+
+.stretch-steps li {
+  font-size: 14px;
+  color: var(--text);
+  padding: 6px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.stretch-steps li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--blue);
+  opacity: 0.5;
+}
+
+.position-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.position-card {
+  background: var(--navy-mid);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px;
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.position-card .emoji {
+  font-size: 28px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.position-card h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-bright);
+  margin-bottom: 6px;
+}
+
+.position-card p {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.checklist li:last-child { border: none; }
+
+.check {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: rgba(74,222,128,0.12);
+  border: 1px solid rgba(74,222,128,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.quote-block {
+  border-left: 3px solid var(--accent);
+  padding: 20px 20px;
+  margin: 32px 0;
+  background: rgba(247,185,74,0.04);
+  border-radius: 0 12px 12px 0;
+}
+
+.quote-block p {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-style: italic;
+  color: var(--text-bright);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.quote-attr {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  color: var(--text-dim);
+  margin-top: 10px;
+  display: block;
+}
+
+.footer {
+  text-align: center;
+  padding: 48px 24px 60px;
+  margin-top: 32px;
+}
+
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 8px;
+}
+
+.footer p {
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.footer-line {
+  width: 60px;
+  height: 1px;
+  background: rgba(255,255,255,0.08);
+  margin: 24px auto;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-badge, .hero h1, .hero-sub, .hero-stats {
+  animation: fadeUp 0.6s ease-out both;
+}
+.hero h1 { animation-delay: 0.1s; }
+.hero-sub { animation-delay: 0.2s; }
+.hero-stats { animation-delay: 0.3s; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">Guia exclusivo Cradle®</div>
+  <h1>O Protocolo das<br><em>21 Noites</em></h1>
+  <p class="hero-sub">Como eliminar dor cervical, dormir profundamente e acordar com energia em 3 semanas.</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-num">21</div>
+      <div class="hero-stat-label">Noites</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">3</div>
+      <div class="hero-stat-label">Fases</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">84%</div>
+      <div class="hero-stat-label">Alívio</div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="intro-block">
+    <p class="section-label">Antes de começar</p>
+    <h2>Como usar este protocolo</h2>
+    <p>Este guia foi desenhado para acompanhar as tuas primeiras 21 noites com a Cradle® Cervical Ortopédico. Está dividido em 3 fases de 7 noites, cada uma com objectivos específicos.</p>
+    <p>O teu corpo precisa de tempo para se adaptar ao novo alinhamento cervical. É normal sentir diferença logo na primeira noite, mas os resultados mais profundos surgem com a consistência.</p>
+    <p style="color: var(--accent); font-weight: 500;">Segue o protocolo todas as noites. Os alongamentos levam menos de 2 minutos.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <p class="section-label">Posição correta</p>
+  <h2>Como posicionar a Cradle</h2>
+  
+  <div class="position-grid">
+    <div class="position-card">
+      <span class="emoji">🫱</span>
+      <h4>De lado</h4>
+      <p>Encaixa o ombro na zona lateral elevada. O pescoço deve preencher o espaço entre a cabeça e o ombro.</p>
+    </div>
+    <div class="position-card">
+      <span class="emoji">🫳</span>
+      <h4>De costas</h4>
+      <p>A cabeça repousa no canal central. O pescoço apoia na curvatura sem forçar para cima nem para baixo.</p>
+    </div>
+  </div>
+
+  <div class="tip-box">
+    <p class="tip-label">Regra de ouro</p>
+    <p>Se sentes o queixo a apontar para o peito, a almofada está demasiado alta. Se sentes a cabeça a cair para trás, está demasiado baixa. A posição neutra é quando o nariz aponta para o tecto (de costas) ou para a parede (de lado).</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- FASE 1 -->
+  <div class="phase phase-1">
+    <div class="phase-header">
+      <div class="phase-icon">🌙</div>
+      <div>
+        <div class="phase-title">Fase 1: Adaptação</div>
+        <div class="phase-subtitle">Noites 1 a 7</div>
+      </div>
+    </div>
+
+    <p>O teu corpo dormiu durante anos numa posição errada. Nos primeiros dias, a posição neutra pode parecer estranha — é normal. Os músculos estão a reaprender onde deviam estar.</p>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <span class="day-num">Noites 1-2</span>
+        <span class="day-tag tag-adapt">Adaptação</span>
+      </div>
+      <h4>Estranheza inicial</h4>
+      <p>Pode parecer diferente do que estás habituado. Não ajustes a almofada nem voltes à antiga. Deixa a cabeça assentar naturalmente na espuma e permite que ela molde à tua forma.</p>
+      <div class="tip-box">
+        <p class="tip-label">Dica</p>
+        <p>Deita-te de costas durante os primeiros 5 minutos antes de rodar para o lado. Isto permite que o pescoço encontre a posição neutra primeiro.</p>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <span class="day-num">Noites 3-4</span>
+        <span class="day-tag tag-adapt">Adaptação</span>
+      </div>
+      <h4>O corpo começa a responder</h4>
+      <p>A rigidez matinal tende a diminuir. Rodar a cabeça torna-se mais fácil. O ângulo de 24° começa a fazer efeito — a cervical está a descomprimir.</p>
+      <p>Se sentires alguma tensão muscular ligeira, é positivo: os músculos estão a soltar posições que mantinham há anos.</p>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <span class="day-num">Noites 5-7</span>
+        <span class="day-tag tag-progress">Progresso</span>
+      </div>
+      <h4>Primeiros sinais reais</h4>
+      <p>Muitos utilizadores reportam nesta fase: menos microdespertares, pescoço mais solto ao acordar, e a sensação de que "finalmente encontrei a posição certa".</p>
+      <p>Se dormias com o braço debaixo da almofada, repara que já não precisas — as zonas laterais elevadas preenchem esse espaço.</p>
+    </div>
+  </div>
+
+  <p class="section-label">Alongamento — Fase 1</p>
+  <h3>Rotina antes de dormir (90 segundos)</h3>
+
+  <div class="stretch-card">
+    <h4>1. Rotação cervical lenta</h4>
+    <ul class="stretch-steps">
+      <li>Sentado na cama, costas direitas</li>
+      <li>Roda a cabeça lentamente para a direita até sentires um alongamento suave</li>
+      <li>Mantém 10 segundos. Volta ao centro.</li>
+      <li>Repete para a esquerda. 3 vezes cada lado.</li>
+    </ul>
+  </div>
+
+  <div class="stretch-card">
+    <h4>2. Inclinação lateral</h4>
+    <ul class="stretch-steps">
+      <li>Inclina a orelha em direção ao ombro (sem levantar o ombro)</li>
+      <li>Mantém 10 segundos de cada lado</li>
+      <li>Repete 2 vezes</li>
+    </ul>
+  </div>
+
+  <div class="quote-block">
+    <p>"Na quarta noite, acordei e percebi que não tinha tocado no pescoço. Esse 'nada' era tudo."</p>
+    <span class="quote-attr">— Utilizadora Cradle, 42 anos, Lisboa</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- FASE 2 -->
+  <div class="phase phase-2">
+    <div class="phase-header">
+      <div class="phase-icon">🌗</div>
+      <div>
+        <div class="phase-title">Fase 2: Consolidação</div>
+        <div class="phase-subtitle">Noites 8 a 14</div>
+      </div>
+    </div>
+
+    <p>O corpo já se adaptou ao ângulo de 24°. Agora começa a consolidar os benefícios. O sono torna-se mais profundo e os sinais de alívio estendem-se ao resto do dia.</p>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <span class="day-num">Noites 8-10</span>
+        <span class="day-tag tag-progress">Progresso</span>
+      </div>
+      <h4>Sono mais contínuo</h4>
+      <p>Menos despertares a meio da noite. Se antes acordavas 2-3 vezes para ajustar a almofada, agora o corpo encontra a posição e mantém-na.</p>
+      <p>Quem trabalha ao computador tende a notar menos tensão acumulada ao final do dia — a cervical está a recuperar durante a noite o que o ecrã destrói durante o dia.</p>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <span class="day-num">Noites 11-14</span>
+        <span class="day-tag tag-progress">Progresso</span>
+      </div>
+      <h4>O efeito cascata</h4>
+      <p>O alinhamento cervical constante começa a afetar positivamente outras áreas: menos dores de cabeça matinais, ombros mais relaxados, e para muitos, redução do formigueiro nos braços.</p>
+      <p>Se tens parceiro que ressona, é nesta fase que a diferença se torna mais evidente — as vias aéreas mantêm-se mais abertas com a cabeça na posição correta.</p>
+    </div>
+  </div>
+
+  <p class="section-label">Alongamento — Fase 2</p>
+  <h3>Rotina antes de dormir (2 minutos)</h3>
+
+  <div class="stretch-card">
+    <h4>1. Retração cervical</h4>
+    <ul class="stretch-steps">
+      <li>Sentado, olha em frente</li>
+      <li>Puxa o queixo para trás como se fizesses "papada"</li>
+      <li>Mantém 5 segundos. Repete 8 vezes.</li>
+      <li>Este exercício reforça a posição neutra que a Cradle mantém à noite</li>
+    </ul>
+  </div>
+
+  <div class="stretch-card">
+    <h4>2. Libertação de ombros</h4>
+    <ul class="stretch-steps">
+      <li>Sobe os ombros até às orelhas</li>
+      <li>Mantém 5 segundos com tensão máxima</li>
+      <li>Deixa cair de uma vez. Repete 5 vezes.</li>
+      <li>Liberta a tensão acumulada do dia antes de dormir</li>
+    </ul>
+  </div>
+
+  <div class="quote-block">
+    <p>"Ao 12º dia cancelei a fisioterapia. Poupou-me centenas de euros em massagens que nunca resolveram nada."</p>
+    <span class="quote-attr">— Utilizadora Cradle, 47 anos, Porto</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- FASE 3 -->
+  <div class="phase phase-3">
+    <div class="phase-header">
+      <div class="phase-icon">☀️</div>
+      <div>
+        <div class="phase-title">Fase 3: Resultados</div>
+        <div class="phase-subtitle">Noites 15 a 21</div>
+      </div>
+    </div>
+
+    <p>O corpo começa a "memorizar" o alinhamento saudável. Esta é a fase em que a maioria dos utilizadores diz: "Não consigo voltar à minha almofada antiga."</p>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <span class="day-num">Noites 15-18</span>
+        <span class="day-tag tag-result">Resultado</span>
+      </div>
+      <h4>O novo normal</h4>
+      <p>Acordar sem dor torna-se o padrão, não a exceção. A qualidade do sono reflete-se no humor, na energia e na produtividade do dia. Muitos relatam que dormem menos horas mas acordam mais descansados — porque o sono é mais profundo.</p>
+    </div>
+
+    <div class="day-card">
+      <div class="day-card-header">
+        <span class="day-num">Noites 19-21</span>
+        <span class="day-tag tag-result">Resultado</span>
+      </div>
+      <h4>Protocolo completo</h4>
+      <p>Ao 21º dia, o teu corpo internalizou a posição neutra. Os músculos cervicais estão mais relaxados, as articulações menos sobrecarregadas, e o padrão de sono mais estável.</p>
+      <p>A partir daqui, a Cradle trabalha sozinha. Os alongamentos antes de dormir podem continuar como manutenção — 90 segundos que fazem toda a diferença.</p>
+    </div>
+  </div>
+
+  <p class="section-label">Checklist final</p>
+  <h3>Ao fim de 21 noites deves notar:</h3>
+
+  <ul class="checklist">
+    <li><span class="check">✓</span> Menos rigidez matinal no pescoço e ombros</li>
+    <li><span class="check">✓</span> Sono mais contínuo, com menos despertares</li>
+    <li><span class="check">✓</span> Redução ou desaparecimento do formigueiro nos braços</li>
+    <li><span class="check">✓</span> Menos dores de cabeça ao acordar</li>
+    <li><span class="check">✓</span> Mais energia e melhor humor de manhã</li>
+    <li><span class="check">✓</span> Menor necessidade de analgésicos</li>
+    <li><span class="check">✓</span> Postura diurna mais natural</li>
+    <li><span class="check">✓</span> Parceiro a dormir com menos ronco</li>
+  </ul>
+
+  <div class="quote-block">
+    <p>"É a diferença entre dormir e descansar."</p>
+    <span class="quote-attr">— Utilizador Cradle, 38 anos, Braga</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="intro-block">
+    <p class="section-label">Lembrete importante</p>
+    <h2>A consistência é tudo</h2>
+    <p>A Cradle funciona melhor quando usada todas as noites. Alternar com a almofada antiga reinicia a adaptação. Compromete-te com 21 noites seguidas.</p>
+    <p>Se após 60 noites não notares melhoria, a nossa garantia cobre a devolução total. Sem perguntas.</p>
+    <p style="color: var(--text-dim); font-size: 13px; margin-top: 24px;">O Cradle Cervical Ortopédico não é um dispositivo médico. Os resultados variam consoante os hábitos de sono e a postura. Para dores persistentes, consulta um profissional de saúde.</p>
+  </div>
+</section>
+
+<div class="footer">
+  <div class="footer-logo">Cradle®</div>
+  <p>Dorme melhor. Vive melhor.</p>
+  <div class="footer-line"></div>
+  <p style="font-size: 11px; color: var(--text-dim);">Conteúdo exclusivo para clientes Cradle.<br>© 2026 Cradle Cervical Pro</p>
+</div>
+
+</body>
+</html>
