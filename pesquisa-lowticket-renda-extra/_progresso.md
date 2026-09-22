@@ -16,3 +16,4 @@ Data de início: 2026-09-22 (UTC)
 
 ## Log
 - 2026-09-22 16:55 UTC — Fase 1 lançada (workflow wf_cc6e8dd8-e30): 7 agentes de fonte + políticas + demanda/objeções → consolidação → lacunas. Anotações brutas em _raw/fase1_*.md.
+- 2026-09-22 17:05 UTC — Baseline real do Mimo Gift puxado do UTMify → _privado/mimo_baseline.md (dado sensível, fora do git via .gitignore: NÃO subir pro repositório público sem o usuário autorizar; o repo gustavobrong-hub/Cradle é PÚBLICO).
