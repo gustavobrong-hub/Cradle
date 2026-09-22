@@ -17,3 +17,5 @@ Data de início: 2026-09-22 (UTC)
 ## Log
 - 2026-09-22 16:55 UTC — Fase 1 lançada (workflow wf_cc6e8dd8-e30): 7 agentes de fonte + políticas + demanda/objeções → consolidação → lacunas. Anotações brutas em _raw/fase1_*.md.
 - 2026-09-22 17:05 UTC — Baseline real do Mimo Gift puxado do UTMify → _privado/mimo_baseline.md (dado sensível, fora do git via .gitignore: NÃO subir pro repositório público sem o usuário autorizar; o repo gustavobrong-hub/Cradle é PÚBLICO).
+- 2026-09-22 18:31 UTC — Fase 1 concluída: 60 ideias (L01–L65, com lacunas de ID por fusões). Resultado bruto em _raw/fase1_result.json; digests em _raw/digest_politicas.txt e _raw/digest_demanda.txt; 01_longlist.csv gerado (coluna eliminada pendente). Achados: WebSearch dos subagentes esgotou a cota em parte da Fase 1 (hotmart_es, global e hipóteses ficaram com poucas buscas web); taxa Hotmart mudou em 21/09/2026 (Player US$1,49 extinto → taxa fixa US$1,00), não verificado na página oficial.
+- Fase 2 lançada (eliminatórias E0 escopo + E1–E5, juiz + cético por lote de 12).
