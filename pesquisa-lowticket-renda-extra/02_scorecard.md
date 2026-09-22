@@ -403,3 +403,14 @@ Não há comprador visível: 0 anunciantes de revenda em 28 buscas na Meta (ES e
 **Outros descartes:** o L66 (56,8) também não entraria, porque é a versão vídeo do cluster convite, já coberto pelo L02. O top 3 é robusto: as próximas ideias distintas ficam uns 4 pontos atrás do L29. São o L10 (55,3), commodity com defensibilidade 1,5, e o L69 (55,0), que não foi verificado, tem demanda 3 e tende a cair se for verificado.
 
 **Nota de sobreposição:** L02 e L67 dividem parte do público (festa infantil) e do motor (editor do Mimo). O deep dive deve avaliar se funcionam melhor como um produto só, com convite web e kit impresso juntos.
+
+---
+
+## Adendo pós-deep-dive (Fase 5)
+
+Os 3 juízes da Fase 5 leram os deep dives e **discordaram do scorecard em dois pontos**. Registro aqui porque as notas acima não foram recalculadas:
+
+1. **Teto inflado.** Pela régua "teto 6 = Mimo", o L67 levou 6 e o L02 5,5. Os deep dives estimam **L02 em 30–80% do Mimo em ES (US$ 150–400/dia, base 250)** e **L67 em 20–70% (US$ 100–350/dia, base 200)**, com público em compra de ~1,1% contra 0,2–0,4% do Facebook MX. Portanto, as três finalistas deveriam ter teto < 5, e o L02 acima do L67. **Nenhuma ideia avaliada tem evidência de teto maior que o do Mimo.**
+2. **O L29 não devia ter entrado no top 3.** O build "8 (poucos dias)" virou 11 dias no deep dive. A demanda revisada para 7 contava 22 anúncios longevos de uma página que vende Excel B2B para restaurante; para a confeiteira de casa, a prova é 1 anúncio com produto não identificado. Corrigido, o L29 cairia para perto de L66/L10.
+
+A ordem das duas primeiras (L02 > L67) se mantém, e a decisão final está em `00_decisao.md`.
