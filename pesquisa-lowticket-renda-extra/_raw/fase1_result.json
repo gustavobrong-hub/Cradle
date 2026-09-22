@@ -49,7 +49,8 @@
     "angulo_anuncio": "Misto: demonstração ('Mira como funciona') e promessa ('listas para VENDER', 'Fature até R$250').",
     "contagem_busca": "'invitaciones digitales para vender' ES11 = 86–88; 'emprende invitaciones interactivas' = 9; 'invitación interactiva' = 200; BR 'convite interativo vender' = 8",
     "saturacao_es_vs_pt": "ES: formato ferramenta de revenda pouco explorado; template saturado. BR: validado pela Convitia.",
-    "variacoes_max": "33 (Convitia BR); 16 na ES"
+    "variacoes_max": "33 (Convitia BR); 16 na ES",
+    "nota_fase2": "Na Fase 2, o L03 (editor B2C para o próprio evento) foi fundido aqui como segundo ângulo de anúncio (uso próprio + revenda), e o L01 sugeriu incluir modelos de página-presente (amor, aniversário, dia das mães) como tipo de evento no mesmo editor."
    },
    {
     "id": "L03",
@@ -1460,6 +1461,109 @@
     "contagem_busca": "não refeito ('canción personalizada' = 4.003–4.235, ver L38)",
     "saturacao_es_vs_pt": "ver L38",
     "variacoes_max": "45"
+   },
+   {
+    "id": "L66",
+    "ideia": "Gerador web de video-invitación (MP4 personalizado) com licença para vender convites em vídeo",
+    "categoria": "Ferramenta de revenda (vídeo personalizado)",
+    "descricao": "Editor web: a pessoa escolhe um modelo animado (XV, boda, infantil, baby shower), digita nomes, data, fotos e baixa o MP4 na hora (render Remotion). Usa para o próprio evento ou vende convites em vídeo a clientes.",
+    "paises": "MX, PE, CO; BR como espelho",
+    "links": [
+     "https://www.facebook.com/ads/library/?id=28668551599495122",
+     "https://www.facebook.com/ads/library/?id=1950759622550013",
+     "https://www.facebook.com/ads/library/?id=1412094170985815",
+     "https://www.facebook.com/ads/library/?id=1084722294422694",
+     "https://hotmart.com/es/marketplace/productos/pack-de-190-video-invitaciones-digitales-para-cumpleanos/N84722082H",
+     "https://hotmart.com/es/marketplace/productos/negocio-de-invitaciones-infantiles-de-principiante-a-experto/I86554392L"
+    ],
+    "preco_observado": "Someri MXN 99–119,20; vídeo ao consumidor $350 MXN (~US$19); packs Hotmart não verificados",
+    "n_anunciantes": "5",
+    "dias_anuncio_ativo_mais_antigo": "38,3 (BR, 'CONVITES CINEMATOGRÁFICOS'); ES 21,4 (Web Online)",
+    "sinais": "Há 2 packs na Hotmart. Anunciantes B2C: Den y Lastra, InviVideo CUU, Angie, Video invitaciones Reina. No BR, a Convitia vende 'convites cinematográficos'.",
+    "eliminatoria_suspeita": "E3 leve: custo de render ~US$0,01–0,05/vídeo (estimativa do juiz), exige cota por licença.",
+    "fontes": "reformulação de L05",
+    "angulo_anuncio": "Demo do vídeo sendo gerado; ângulo duplo (própria festa / vender).",
+    "nota_fase2": "Reformulação criada na Fase 2 (sugestão do juiz das eliminatórias): versão FERRAMENTA de ideia(s) observada(s) no mercado. Herda a evidência do(s) pai(s); a demanda da versão ferramenta em si NÃO foi medida.",
+    "contagem_busca": "",
+    "saturacao_es_vs_pt": "",
+    "variacoes_max": ""
+   },
+   {
+    "id": "L67",
+    "ideia": "Gerador de kit de festa personalizado (nome, idade e tema aplicados em convite, topo de bolo, etiquetas → PDF)",
+    "categoria": "Ferramenta (papelaria de festa personalizada)",
+    "descricao": "Editor web: escolhe o tema, digita nome e idade da criança e recebe o kit inteiro (convite, topo, etiquetas, bandeirinhas) em PDF pronto para imprimir. Ângulo duplo: a mãe faz a própria festa ou monta kits para vender.",
+    "paises": "MX, CO, AR, CL, PE, EC, US; muitos operadores BRL",
+    "links": [
+     "https://www.facebook.com/ads/library/?id=1322083110140484",
+     "https://www.facebook.com/ads/library/?id=2072230433424563",
+     "https://www.facebook.com/ads/library/?id=1043999145023859",
+     "https://www.facebook.com/ads/library/?id=1579502953724620",
+     "https://www.facebook.com/ads/library/?id=2155772475373199"
+    ],
+    "preco_observado": "US$3,7–17 (CLP 3.500; Hotmart US$5–10; 'Kits para fiestas editables' US$17; MXN 89) | topos: BR R$1,49 (20 mil topos, front-end); R$3,99 (Kit Festa na Mesa)",
+    "n_anunciantes": "12 (kit festa) + 4 (topos)",
+    "dias_anuncio_ativo_mais_antigo": "81,2 (DecoKit Shop; 90,2 em outra medição); cienacres.imprimibles tem 468 (ver L10)",
+    "sinais": "DecoKit Shop tem 160 anúncios ativos e ~12 ângulos ('Crea toda la fiesta en Canva'). No BR, Festa 550 tem 17 há 35,7 d. Fiesta en Casa (BRL) usa 'Crea tu fiesta sin ser decoradora'. | Na ES, o digital se resume a Emilia Creativa (2 anúncios há 11,5 d) e Activa Academy. A maior parte dos anúncios de topper é de confeitaria física.",
+    "eliminatoria_suspeita": "PI: temas não podem usar personagens licenciados.",
+    "fontes": "reformulação de L09 + L12",
+    "angulo_anuncio": "Demo: nome digitado aparece em todas as peças; \"festa pronta em 5 minutos\".",
+    "nota_fase2": "Reformulação criada na Fase 2 (sugestão do juiz das eliminatórias): versão FERRAMENTA de ideia(s) observada(s) no mercado. Herda a evidência do(s) pai(s); a demanda da versão ferramenta em si NÃO foi medida.",
+    "contagem_busca": "",
+    "saturacao_es_vs_pt": "",
+    "variacoes_max": ""
+   },
+   {
+    "id": "L68",
+    "ideia": "Editor de artes para presentes personalizados (quadro/ímã/caneca de casal, mapa estelar, datas) + calculadora de preço",
+    "categoria": "Ferramenta para quem vende personalizados físicos",
+    "descricao": "Editor web no DNA do Mimo: nomes, data, foto, mapa das estrelas → arte em alta resolução pronta para imprimir/sublimar, com licença comercial e calculadora de custo e preço para vender localmente.",
+    "paises": "não verificado",
+    "links": [
+     "https://pay.hotmart.com/M104164269T",
+     "https://pay.hotmart.com/N103896032H",
+     "https://pay.hotmart.com/B101865987D",
+     "https://www.facebook.com/ads/library/?id=1091840433262853",
+     "https://www.facebook.com/ads/library/?id=1049814401232568"
+    ],
+    "preco_observado": "US$3,90 (Pack 30 Plantillas Cuadros en Pareja)",
+    "n_anunciantes": "não verificado (templates) / 2 (mapa estelar, físico)",
+    "dias_anuncio_ativo_mais_antigo": "6,8",
+    "sinais": "Há só 2 ou 3 produtos na Hotmart. O DNA é parecido com o do Mimo, no lado físico. | Star Registration e Astrography somam ~231 anúncios, ambos com produto físico.",
+    "eliminatoria_suspeita": "Nenhuma forte; demanda ES não verificada.",
+    "fontes": "reformulação de L56 + L52",
+    "angulo_anuncio": "Demo da arte sendo gerada e do produto físico final.",
+    "nota_fase2": "Reformulação criada na Fase 2 (sugestão do juiz das eliminatórias): versão FERRAMENTA de ideia(s) observada(s) no mercado. Herda a evidência do(s) pai(s); a demanda da versão ferramenta em si NÃO foi medida.",
+    "contagem_busca": "",
+    "saturacao_es_vs_pt": "",
+    "variacoes_max": ""
+   },
+   {
+    "id": "L69",
+    "ideia": "Editor de cardápio digital com QR e pedido por WhatsApp para quem vende comida em casa",
+    "categoria": "Ferramenta para micronegócio de comida caseira",
+    "descricao": "A pessoa que vende comida/sobremesa em casa monta o próprio cardápio digital (fotos, preços, combos), recebe link + QR e pedidos formatados no WhatsApp. Bumps: artes de promoção, calculadora de custo.",
+    "paises": "MX, AR, CO, PE",
+    "links": [
+     "https://www.facebook.com/ads/library/?id=2161817697787903",
+     "https://www.facebook.com/ads/library/?id=1834916980858375",
+     "https://www.facebook.com/ads/library/?id=1467921485204409",
+     "https://hotmart.com/es/marketplace/productos/menu-app-qr-para-restaurantes/D64832885T",
+     "https://hotmart.com/es/marketplace/productos/carta-virtual/V68221977S",
+     "https://www.facebook.com/ads/library/?id=1418570293571960",
+     "https://www.facebook.com/ads/library/?id=2132493034287794"
+    ],
+    "preco_observado": "US$6,99 (LX Diseño Web); MXN 1.500 pagamento único",
+    "n_anunciantes": "12 (majoritariamente SaaS ou agências) (menu QR, maioria SaaS) ; persona: 20 (sobremesas); sazonal: não verificado (3 páginas citadas) anunciantes de receitas para vender",
+    "dias_anuncio_ativo_mais_antigo": "não verificado",
+    "sinais": "Os anunciantes são quase todos SaaS B2B. A Hotmart tem pelo menos 3 kits. | persona (L27): Chef Eli tem 32 anúncios, em teste de criativos. É a concorrência mais densa desta fase. O modelo 'Primero recibes y luego pagas' é dominante. No sazonal, o sinal é fraco: 'El Sabor de la Nochebuena' teve 4 anúncios em dez/2025; Academia Dulce Emprende e Chef Camila (conservas) anunciam hoje. Fundid",
+    "eliminatoria_suspeita": "Concorre com SaaS grátis/baratos; demanda da versão low ticket não verificada.",
+    "fontes": "reformulação de L36 (+ persona L27)",
+    "angulo_anuncio": "Demo do cardápio no celular e do pedido chegando no WhatsApp.",
+    "nota_fase2": "Reformulação criada na Fase 2 (sugestão do juiz das eliminatórias): versão FERRAMENTA de ideia(s) observada(s) no mercado. Herda a evidência do(s) pai(s); a demanda da versão ferramenta em si NÃO foi medida.",
+    "contagem_busca": "",
+    "saturacao_es_vs_pt": "",
+    "variacoes_max": ""
    }
   ],
   "lacunas": [

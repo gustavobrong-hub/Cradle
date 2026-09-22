@@ -1,0 +1,484 @@
+{
+ "final": [
+  {
+   "id": "L01",
+   "eliminada": true,
+   "eliminatoria": "E2",
+   "motivo": "Ninguém vende revenda de página de amor em ES nem no BR, e o cliente final já compra a página sozinho por US$5 (iloveyou.gift) ou US$8–9 (Mimo). A demo do produto vende o presente, não a licença, e o único gancho que sobra para o revendedor é 'gana vendiendo páginas'. E3 e E5 não pesam: o custo é de centavos por hospedagem e o painel multi-cliente sai em 14 dias.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Colocar modelos de página-presente (amor, aniversário, dia das mães) como mais um tipo de evento dentro do editor de revenda do L02. Assim o revendedor vende convite e presente no mesmo painel, sem anúncio próprio de 'revenda de página de amor'."
+  },
+  {
+   "id": "L02",
+   "eliminada": false,
+   "eliminatoria": "",
+   "motivo": "Passa. Tem ângulo de demo honesto já observado ('Mira como funciona', 49,5 d), vender convite é negócio conhecido e há ângulo duplo (serve para o próprio evento). O custo marginal é só storage e tráfego, cerca de US$0,01–0,05 por convite. Sai em 14 dias sobre o código do Mimo (modelos por evento, contagem, mapa, RSVP no Supabase e painel com vários convites). Cuidados: limitar convites por licença ou expirar após o evento, e não vender direito de revenda dos modelos.",
+   "por": "sobreviveu",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L03",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "Como está descrito e anunciado ('Tu invitación web por solo $99'), é para o anfitrião usar no próprio evento, sem ângulo de renda. Em E1–E5 passaria: ferramenta demonstrável, custo de centavos e montável em 14 dias. A versão com ângulo duplo é o L02.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Juntar com o L02: o mesmo motor com dois ângulos de anúncio. O anfitrião usa para o próprio evento (uso próprio) e o revendedor vende convites a terceiros (renda extra). Isso tira a ideia do E0."
+  },
+  {
+   "id": "L04",
+   "eliminada": false,
+   "eliminatoria": "",
+   "motivo": "Passa. Dá para anunciar só com a demo do convite de XV (padrinos, música, RSVP), sem citar valor, e há ângulo duplo (a mãe usa na festa da filha ou vende). O custo marginal é de centavos por hospedagem e o motor é o mesmo do L02, então sai em 14 dias. É um recorte de nicho do L02 e cabe melhor como pacote de modelos ou ângulo de anúncio do que como produto separado. Evitar o gancho BR 'Ganhe até R$200 por convite'.",
+   "por": "sobreviveu",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L05",
+   "eliminada": false,
+   "eliminatoria": "",
+   "motivo": "Passa, no limite. A demo do vídeo animado já vende sem citar valor ('edita en Canva desde tu celular') e há ângulo duplo (a festa do próprio filho). É template, então o custo marginal é zero, e uns 50 vídeos editáveis em Canva ou CapCut saem em 14 dias. Riscos: PI dos packs do mercado (Disney/Pixar), o ângulo observado é 'listas para VENDER', e é template, não ferramenta.",
+   "por": "sobreviveu",
+   "reformulacao_sugerida": "Gerador web de video-invitación (Lovable + Remotion): o revendedor digita nomes, data e fotos e baixa o MP4. O render custa cerca de US$0,01–0,05 por vídeo no Remotion Lambda, o que cabe no ticket com cota por licença."
+  },
+  {
+   "id": "L06",
+   "eliminada": false,
+   "eliminatoria": "",
+   "motivo": "Passa com ressalvas. Parte dos anúncios já só demonstra o pack (Kit Digital, 118,8 d), 'emprende' sem valor é permitido e há ângulo duplo (evento próprio). O custo marginal é zero e umas 150–300 peças originais em Canva saem em 14 dias. Não cai em E4 porque o valor está em vender convites, não em revender o pack. Mesmo assim, o mercado tem cara de PLR (rede 6U$D, mais de 12 produtos iguais na Hotmart): é obrigatório conteúdo original e licença só de uso comercial.",
+   "por": "sobreviveu",
+   "reformulacao_sugerida": "Trocar o pack de templates pelo editor web do L02: ferramenta em vez de arquivo, fora da guerra de preço entre US$3 e 6."
+  },
+  {
+   "id": "L07",
+   "eliminada": true,
+   "eliminatoria": "E1",
+   "motivo": "O núcleo é um curso em módulos ('CURSO PASO A PASO'), que depende de gente real gravando aulas, e o ângulo observado é promessa de ganho (também E2).",
+   "por": "juiz",
+   "reformulacao_sugerida": "Editor ou kit de convites (L02) com um tutorial curto em vídeo de IA como order bump, no lugar do curso."
+  },
+  {
+   "id": "L08",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "É presente emocional de uso próprio (o comprador dá a página à parceira ou à mãe), não produto de renda extra. É o case e controle do próprio Mimo e não cai em E1–E5, mas está fora do escopo da missão.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Tratar fora desta missão, como expansão do Mimo Gift para o espanhol."
+  },
+  {
+   "id": "L09",
+   "eliminada": false,
+   "eliminatoria": "",
+   "motivo": "Não cai em E0 porque o ângulo duplo aparece nos anúncios: a DecoKit usa 'festa WOW sem decoradora' como gancho principal e '¿Y si empiezas a venderlos?' como secundário. O gancho principal não promete ganho, o custo marginal é zero e umas 20–30 temáticas originais em Canva saem em 14 dias. Riscos: PI de personagens licenciados e sobreposição com o L10.",
+   "por": "sobreviveu",
+   "reformulacao_sugerida": "Gerador de kit de festa por tema que aplica o nome e a idade da criança em todas as peças (convite, topo, etiquetas) e exporta em PDF: ferramenta em vez de pack."
+  },
+  {
+   "id": "L10",
+   "eliminada": false,
+   "eliminatoria": "",
+   "motivo": "Passa com ressalvas. O ângulo é o kit ('+10,000 recursos', 'Tu negocio puede empezar con esto'), sem valor em dinheiro. Quem imprime é a compradora, então o produtor não tem custo marginal, e um MVP original de cerca de 500–1.000 peças sai em 14 dias. Alerta: a oferta de mercado é a 'Papelaria Criativa' BR revendida por 25 páginas (cara de PLR). Copiar esse volume exigiria PLR, que cai em E4 e na regra de produto repetido da Hotmart. Tem de ser original e sem personagens.",
+   "por": "sobreviveu",
+   "reformulacao_sugerida": "Pack original enxuto de papelaria criativa com calculadora de preço e custo de lembrancinhas (ferramenta) como order bump."
+  },
+  {
+   "id": "L11",
+   "eliminada": false,
+   "eliminatoria": "",
+   "motivo": "Passa. O ângulo é o resultado de uso ('Transforma tus cosméticos en Regalos Premium'), sem valor em dinheiro. O custo marginal é zero e umas 40 facas em PDF e Canva saem em 14 dias. O ticket de US$2 é baixo, mas isso não elimina (serve de order bump do L10). Evitar moldes compilados de terceiros.",
+   "por": "sobreviveu",
+   "reformulacao_sugerida": "Gerador web de moldes de caixa sob medida: a pessoa digita largura, altura e profundidade e baixa a faca em PDF para imprimir. É ferramenta sem custo marginal, feita no Lovable, e pode ser bump do L10 ou do L09."
+  },
+  {
+   "id": "L12",
+   "eliminada": false,
+   "eliminatoria": "",
+   "motivo": "Passa com ressalvas. Há ângulo duplo observado (festa pronta ou vender topos, também como insumo de confeiteira), a demo não precisa de promessa, o custo marginal é zero e um pack original feito com IA sai em 14 dias. Alerta: a oferta observada (20 mil topos por R$1,49) é compilação PLR de personagens licenciados. Sem conteúdo original cai em E4 e em PI.",
+   "por": "sobreviveu",
+   "reformulacao_sugerida": "Gerador web de topo de bolo personalizado (nome, idade, tema e profissão) com exportação em PNG/PDF pronta para imprimir: ferramenta em vez de pack PLR."
+  },
+  {
+   "id": "L13",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "Fora do escopo: como observado ('Canva Para Noivas', ângulo 'barato mas com cara de caro'), a noiva compra para usar no próprio casamento. Não há ângulo de revenda nos anúncios. E1 a E5 estariam ok.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Editor de convite e papelaria de boda interativo (DNA Mimo) com ângulo duplo: a noiva usa no próprio casamento, e a papelaria ou cerimonialista monta para clientes com licença comercial, sem revenda dos templates."
+  },
+  {
+   "id": "L14",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "Fora do escopo: quem compra é a anfitriã da própria festa (ângulo 'festa pronta sem esforço'). Na ES não apareceu ângulo de revenda; o Elo7 só mostra o vendedor final.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Editor de jogos de festa personalizados (perguntas sobre o casal ou a homenageada, gerando PDF para imprimir e versão interativa por QR), vendido também para quem monta kits de festa para clientes."
+  },
+  {
+   "id": "L15",
+   "eliminada": false,
+   "eliminatoria": "",
+   "motivo": "Sobrevive com ângulo duplo real: a mãe usa, e a empreendedora vende etiquetas personalizadas. O E3 da Fase 1 vem da personalização manual por WhatsApp dos anunciantes; um kit ou editor onde a compradora digita o nome tem custo marginal zero. É sazonal e o calendário escolar muda por país.",
+   "por": "sobreviveu",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L16",
+   "eliminada": false,
+   "eliminatoria": "",
+   "motivo": "Sobrevive: 'Elegí, imprimí, vendé' mostra o produto (capas personalizáveis, datas 2027) sem citar valor. A licença é para imprimir e vender a agenda física, não os arquivos, então não é E4. Custo marginal zero e dá para montar em 14 dias. É sazonal (set–jan) e a janela está aberta agora.",
+   "por": "sobreviveu",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L17",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "Fora do escopo: planner digital e Notion servem à organização pessoal de quem compra. Os bumps por público (professora, empreendedora, finanças) também são de uso próprio. Não há ângulo de revenda observado.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Só entraria como gerador de agenda ou planner personalizado para a compradora vender a clientes (cai na L16). Licença de revenda do próprio planner digital cairia em E4."
+  },
+  {
+   "id": "L18",
+   "eliminada": false,
+   "eliminatoria": "",
+   "motivo": "Sobrevive: o núcleo é ferramenta (montador de folha e calculadora de preço), e os anúncios observados já usam ângulo de ferramenta ('Mirá cómo funciona la app', 'No cobres tus stickers a ojo'). A biblioteca pode ser gerada por IA uma única vez (~US$0,01–0,04 por imagem, custo fixo, marginal zero), mas precisa evitar personagens licenciados. A variante cristã é o mesmo produto.",
+   "por": "sobreviveu",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L19",
+   "eliminada": true,
+   "eliminatoria": "E4",
+   "motivo": "Como observado, é pack PLR compilado com arte de terceiros ('+500.000 diseños', o mesmo pack em 12 páginas e 10 produtos na Hotmart). A Hotmart reprova produto repetido e PLR compilado, e o risco de PI é alto. A âncora de quantidade só se atinge revendendo PLR.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Ferramenta web de meio-tom e mockup para sublimação e DTF (ângulo 'Semitono en segundos', 19 anúncios da Mundo Diseño), com uma coleção pequena de designs originais gerados por IA como bônus."
+  },
+  {
+   "id": "L20",
+   "eliminada": true,
+   "eliminatoria": "E5",
+   "motivo": "Uma biblioteca original de +2.100 arquivos de corte não sai em 14 dias: o DXF de laser precisa de encaixe por espessura e teste em máquina, e a IA não resolve isso. O que se vê no mercado são compilações PLR com risco de PI (E4). O E1 da Angelyc vale só para um anunciante.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Gerador de arquivo de corte personalizado: nome, frase ou topo de bolo em SVG para Cricut/Silhouette, e caixa ou luminária paramétrica em DXF para laser (a pessoa informa medidas e espessura e recebe o arquivo)."
+  },
+  {
+   "id": "L22",
+   "eliminada": false,
+   "eliminatoria": "",
+   "motivo": "Sobrevive: um kit de moldes e designs por data (cajitas, tags, toppers) com licença para produzir é demonstrável na tela. O ângulo 'Quien se adelanta, vende con más tiempo' não cita valor. O E1 parcial vale só para a Navidad Creativa, que vende curso. É sazonal (a janela de Navidad abre agora) e se sobrepõe a L16 e L19.",
+   "por": "sobreviveu",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L23",
+   "eliminada": true,
+   "eliminatoria": "E5",
+   "motivo": "Não dá para produzir sozinho, em 14 dias, 800 a 2.500 moldes originais de feltro e EVA com peças separadas; a IA não faz isso de forma confiável. A mesma oferta '+2000 moldes' roda em 5 páginas, o que indica PLR revendido com risco de PI (E4). Parte do público é a professora, que usa em sala.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Gerador de moldes de letras, números e nomes em EVA ou feltro em qualquer tamanho (PDF tileado em A4), com calculadora de custo de lembrancinha."
+  },
+  {
+   "id": "L25",
+   "eliminada": true,
+   "eliminatoria": "E5",
+   "motivo": "Moldes de costura graduados em tamanho real exigem modelagem técnica. Uma biblioteca original de 200 a 1.500 moldes não sai em 14 dias, e os packs observados são compilações com risco de PI e PLR repetido (E4).",
+   "por": "juiz",
+   "reformulacao_sugerida": "Gerador de molde por medidas (roupa pet, bolsas, peças básicas) em PDF de tamanho real tileado em A4."
+  },
+  {
+   "id": "L26",
+   "eliminada": true,
+   "eliminatoria": "E5",
+   "motivo": "Cada padrão de amigurumi precisa ser desenhado e testado à mão. A IA gera padrões quebrados, então +1.000 padrões originais em 14 dias é inviável. Os packs observados traduzem ou compilam autores terceiros (PI/E4), e boa parte do público é hobby, de uso próprio.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Gerador de gráfico de crochê C2C/tapestry ou de ponto cruz a partir de foto ou nome, para produzir peças personalizadas sob encomenda."
+  },
+  {
+   "id": "L27",
+   "eliminada": false,
+   "eliminatoria": "",
+   "motivo": "Ebook PDF sem custo marginal e sem expert gravando. Dá para anunciar com honestidade mostrando as sobremesas e a ficha de custo e preço por porção, sem 'gana $X'. O risco E2 é moderado porque o nicho abusa de promessa de renda (Meta MÉDIO). O 'paga depois pelo WhatsApp' é modelo de venda opcional, então E3 não se aplica na Hotmart.",
+   "por": "sobreviveu",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L29",
+   "eliminada": false,
+   "eliminatoria": "",
+   "motivo": "Ferramenta que se demonstra por gravação de tela. O anúncio observado usa dor ('deja de cobrar con miedo'), sem promessa de renda. Custo zero por venda, e o Lovable monta em poucos dias. Está no escopo porque serve quem produz e vende em casa; melhor priorizar confeitaria e artesanato, não restaurante estabelecido.",
+   "por": "sobreviveu",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L30",
+   "eliminada": false,
+   "eliminatoria": "",
+   "motivo": "Do jeito descrito (megaebook PDF com fórmulas, calculadora, rótulos e fornecedores), não depende de expert gravando e já é vendido a US$6–15. O E1 só atinge os concorrentes que vendem curso (Aroma Queen). Ângulo honesto: mostrar as velas e aromas e as fórmulas prontas. Cuidados: evitar o gancho 'se vende caro'; sabonete com soda precisa de fórmula testada.",
+   "por": "sobreviveu",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L32",
+   "eliminada": false,
+   "eliminatoria": "",
+   "motivo": "Kit de templates editáveis com custo zero, que se demonstra na tela sem prometer renda. Há dois riscos fora das E1–E5. Primeiro, citar Natura, Ésika ou Yanbal no produto ou no anúncio (personificação de marca na Meta); usar 'para revendedoras de catálogo', sem logos. Segundo, o público vem de venda direta, em parte multinível.",
+   "por": "sobreviveu",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L33",
+   "eliminada": false,
+   "eliminatoria": "",
+   "motivo": "Pack de templates é entregável pronto, com custo zero e anúncio de ferramenta. O E4 observado vem de um só concorrente que vende direito de revenda; basta não vender MRR. Saturação fica para a Fase 3. Ângulo duplo: usar no próprio pequeno negócio e prestar serviço de design a terceiros.",
+   "por": "sobreviveu",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L34",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "Posts para a psicóloga ou nutricionista divulgar o próprio consultório são recurso para a própria clínica, fora do nicho renda extra. Não foi observado ângulo de revenda nem de serviço.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Kit de templates com licença de uso para quem presta serviço de social media a profissionais de saúde: a renda extra é do freelancer, não da clínica."
+  },
+  {
+   "id": "L35",
+   "eliminada": true,
+   "eliminatoria": "E2",
+   "motivo": "Uma lista de fornecedores só vale pela margem de revenda ('compra barato, revende caro'). Não há o que demonstrar na tela para gerar compra por impulso sem prometer ganho. Risco ALTO na Meta e na Hotmart (compilação de informação pública conta como baixo valor), e a lista desatualiza e gera reembolso.",
+   "por": "juiz",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L36",
+   "eliminada": true,
+   "eliminatoria": "E2",
+   "motivo": "O revendedor só compra pela renda de cobrar instalação ou mensalidade de restaurantes; a Fase 1 registrou que 'o SaaS vende a ferramenta; o kit venderia ganho'. O anúncio honesto de ferramenta atrai o dono do restaurante (uso próprio), não o revendedor. Ainda exige suporte contínuo a terceiros.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Editor de cardápio digital com QR e pedido por WhatsApp para quem vende comida em casa montar o próprio cardápio: ferramenta do nicho renda extra, demonstrável sem promessa de ganho."
+  },
+  {
+   "id": "L37",
+   "eliminada": true,
+   "eliminatoria": "E2",
+   "motivo": "Kit de revenda B2B: a compra só se justifica pela renda de cobrar de salões e cafés (anúncio observado: 'ferramenta e ganho'), contra SaaS já estabelecidos. Além disso, um sistema de pontos ativo em cada comércio traz operação e suporte contínuos (E3).",
+   "por": "juiz",
+   "reformulacao_sugerida": "Kit editável de cartões de fidelidade e cupons (imprimível e versão digital estática) para a microempreendedora que vende em casa usar no próprio negócio (confeiteira, manicure)."
+  },
+  {
+   "id": "L38",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "Canção de presente é produto B2C de uso próprio, fora do nicho renda extra; a versão de renda ('vender canciones con IA') é curso (L65, E1). Custo anotado: cerca de US$0,05–0,20 por música via API não oficial do Suno, com risco de licença e atendimento para ajustar a letra (E3 parcial).",
+   "por": "juiz",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L39",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "Conto com a criança como protagonista é material para o próprio filho ou presente, fora do escopo. Custo anotado: 12–15 ilustrações com personagem consistente, cerca de US$0,40–0,80 por pedido, mais TTS de centavos. Cabe no ticket, mas refazer imagens e manter o personagem consistente pesam em E5.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Kit ou editor de livrinho infantil personalizável por templates, com licença comercial para quem quer vender contos personalizados a terceiros (ângulo renda extra, sem API por pedido)."
+  },
+  {
+   "id": "L40",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "Ensaio com IA a partir das próprias selfies é serviço B2C de uso próprio, fora do escopo. Também custa: 20–40 imagens preservando o rosto dão cerca de US$0,8–1,6 por pedido, mais refações e revisão manual (E3 limítrofe num ticket de US$5–10). O Gemini grátis substitui, e a versão renda extra no mercado é PLR (E4).",
+   "por": "juiz",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L41",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "O pack de arte IA é para a pessoa decorar a própria casa. O único anunciante vende quadro para uso próprio, e o 'sob medida desde MXN 99' ainda exige atendimento por pedido (E3 secundária). Não há ângulo de renda extra na forma observada.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Pack de artes IA em alta resolução, por nicho (quarto infantil, cozinha, frases em ES), com licença comercial só para imprimir e vender quadros e pôsteres, sem revenda dos arquivos. Na Hotmart, cuidado com produto repetido ou de baixo valor."
+  },
+  {
+   "id": "L42",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "É presente B2C: a pessoa compra a caricatura de si ou do casal para dar. A demanda comprovada é física (caneca, impressão), o que traz E3. A versão digital custa centavos de API (~US$0,02–0,05 por imagem), mas continua sendo de uso próprio.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Gerador de caricatura e cartoon IA, com créditos limitados por compra, para quem vende canecas, quadros e topos de bolo personalizados. O custo de API fica em ~US$0,03 por geração, e os créditos precisam de teto para não comer a margem."
+  },
+  {
+   "id": "L43",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "É presente ou memorial do próprio pet, um produto B2C de uso próprio. O custo de IA (~US$0,02–0,05 por estilo) não elimina, mas a ideia está fora do escopo de renda extra.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Ferramenta de retrato de pet IA com estilos prontos e licença comercial, para quem vende produtos pet personalizados (quadro, caneca, bandana). É a mesma ressalva de créditos de API da L42, e pode ser fundida com ela."
+  },
+  {
+   "id": "L44",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "O CV é para a própria busca de emprego, não para produzir ou revender. A oferta observada é serviço manual (ARS 10.000), o que também cairia em E3.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Kit 'ofrece servicio de CV': plantillas editáveis por profissão, gerador de textos IA (centavos por uso) e ficha de preços, para quem quer prestar redação de CV. O anúncio precisa mostrar o editor, não o ganho."
+  },
+  {
+   "id": "L45",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "Os pais compram o vídeo do Noel para o próprio filho, com ângulo de reação da criança. É presente de uso próprio, sem ângulo de renda. O custo (voz TTS e render Remotion, centavos) e o MVP seriam viáveis.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Editor de vídeo do Noel (Remotion + TTS, templates com nome e foto) com licença para gerar e vender vídeos a terceiros, como na escola ou no bairro. O ângulo duplo é real: uso próprio e revenda do serviço. É sazonal (nov–dez) e o anúncio tem de mostrar o editor."
+  },
+  {
+   "id": "L46",
+   "eliminada": false,
+   "eliminatoria": "",
+   "motivo": "Sobrevive. É um pack B2B para operador de cabine, que usa as molduras para prestar o serviço (dentro do escopo). Existe ângulo honesto de produto: 'marcos editables para XV, bodas, bautizos, cambia nombre y fecha en 2 min'. Não tem custo marginal e o MVP é trivial. Evitar o ângulo 'Cabine Lucrativa' (ganho), porque aspirante sem cabine cai em E2. O nicho pequeno fica para a Fase 3.",
+   "por": "sobreviveu",
+   "reformulacao_sugerida": "Editor web de molduras (no DNA do editor do Mimo) com exportação PNG transparente no tamanho de cada cabine, no lugar de um pack de Canva."
+  },
+  {
+   "id": "L47",
+   "eliminada": true,
+   "eliminatoria": "E5",
+   "motivo": "O valor está em 'milhares de planos' técnicos com medidas. O usuário, solo e sem domínio de serralheria ou CAD, não produz isso em 14 dias. Na prática esses packs são PLR ou compilação traduzida de operadores BR (risco de produto repetido ou pirata na Hotmart, perto de E4), com ângulo observado de ganho.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Calculadora ou gerador paramétrico para herrero e carpintero: modelo de portão ou grade, medidas, lista de materiais, custo e orçamento em PDF com a marca dele, para enviar ao cliente. É ferramenta demonstrável, sem PLR."
+  },
+  {
+   "id": "L48",
+   "eliminada": true,
+   "eliminatoria": "E4",
+   "motivo": "É pacote PLR/MRR cujo valor é revender o próprio pacote. O ângulo é ganho e escassez, parte mistura trading, e a Hotmart proíbe produto repetido ou com revenda livre.",
+   "por": "juiz",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L49",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "A planilha de orçamento e dívidas é de uso pessoal (o próprio Fase 1 marcou 'fora do nicho'). O gancho de dívida ainda esbarra na política da Meta de atributos pessoais ('¿estás endeudado?').",
+   "por": "juiz",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L50",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "O organizador 'si me pasa algo' é para a própria família, de uso pessoal e sem ângulo de renda. Há ainda risco jurídico por versões de país, senhas e apólices.",
+   "por": "juiz",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L51",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "O planejador de casamento é para o próprio casal. O único ângulo de renda ('sé wedding planner') é promessa de ganho (E2), então não é um ângulo duplo honesto.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Editor de convite digital com RSVP e mapa de mesas por QR, com ângulo duplo: uso no próprio evento e venda de convites a terceiros. Sobrepõe-se à categoria INVITACIONES DIGITALES; pode ser fundido nela."
+  },
+  {
+   "id": "L52",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "A estrela nomeada ou mapa estelar é presente B2C de uso próprio (mesmo DNA do Mimo, mas fora do escopo de renda extra). O 'registro de estrela' ainda tem risco de engano se não for dito como simbólico.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Gerador de mapa estelar em alta resolução (catálogo de estrelas open source, sem custo de API), com estilos e texto editáveis e licença comercial, para quem vende quadros e pôsteres 'mapa del cielo' personalizados. O ângulo duplo é real: uso próprio e revenda impressa."
+  },
+  {
+   "id": "L53",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "Presente de uso próprio: quem compra quer dar o romance à parceira, não revender nem prestar serviço, então fica fora do nicho renda extra. Anoto que E3 passaria: gerar a novela por LLM custa cerca de US$0,02–0,15 por pedido.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Editor de 'nuestra historia' (flipbook/novela curta personalizada) aproveitando o código do Mimo, com licença de uso comercial para quem vende presentes personalizados produzir para terceiros. Teria ângulo duplo (usar no próprio casal ou vender) e custo de LLM de centavos por livro."
+  },
+  {
+   "id": "L54",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "Devocional/diário de oração é para uso pessoal e espiritual do próprio comprador. Não há ângulo de produzir, revender ou prestar serviço.",
+   "por": "juiz",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L56",
+   "eliminada": false,
+   "eliminatoria": "",
+   "motivo": "Sobrevive. O anúncio pode vender só o entregável, mostrando a edição no Canva e os mockups dos quadros e ímãs prontos, sem citar quanto se ganha (E2 ok). O custo físico é do comprador, não do produtor (E3 ok), e o pack de templates fica pronto em menos de 14 dias (E5 ok). Tem ângulo duplo: fazer o do próprio casal ou vender localmente. Atenção a E4: a licença tem de ser de uso comercial para produzir peças, nunca para revender os arquivos.",
+   "por": "sobreviveu",
+   "reformulacao_sugerida": "Versão ferramenta no DNA Mimo: editor web que gera a arte do quadro ou ímã de casal (nomes, data, mapa das estrelas, foto) pronta para imprimir, mais uma calculadora de custo e preço para quem vende localmente."
+  },
+  {
+   "id": "L57",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "Material de escola dominical e catequese é recurso de uso próprio de professor ou catequista, que muitas vezes é voluntário, sem ângulo de renda. O anúncio vende tempo poupado, não produção para venda.",
+   "por": "juiz",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L58",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "As dinâmicas servem ao próprio líder de ministério ou célula para conduzir o grupo. É uso próprio, sem produção ou revenda para ganhar dinheiro.",
+   "por": "juiz",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L59",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "O kit é comprado por pais para os próprios filhos, e o anúncio observado vende resultado para a criança ('10 minutos por día, sin pantallas'). É uso próprio, fora do nicho renda extra.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Kit de 'cuadernillos de actividades' com licença de uso comercial para imprimir, encadernar e vender (papelarias, mães empreendedoras, volta às aulas), mais ficha de custo e preço por cuadernillo. A licença cobre só produzir cópias físicas, nunca revender o PDF (evita E4)."
+  },
+  {
+   "id": "L60",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "Os casos de mistério são comprados por pais para os próprios filhos como alternativa à tela. É uso próprio, sem ângulo de revenda nos anúncios observados.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Kit imprimível de 'fiesta detective' infantil (caso, pistas, crachás, decoração) com licença comercial para quem vende kits de festa ou animação infantil. É fraco: a versão para festas não mostrou demanda em ES (ver L14)."
+  },
+  {
+   "id": "L61",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "Planejamentos e fichas de aula são ferramenta profissional de uso próprio do docente para poupar tempo. Não servem para produzir e vender (recurso para o próprio trabalho).",
+   "por": "juiz",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L62",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "É recurso clínico para a própria consulta do psicólogo, caso citado explicitamente como fora do escopo. Também traria risco de política de saúde e exigiria revisão profissional (E5).",
+   "por": "juiz",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L63",
+   "eliminada": true,
+   "eliminatoria": "E0",
+   "motivo": "Os formatos e contratos são para uso interno da própria PME, não para ela produzir e vender. Também há suspeita de E4: a variante '+11.000 formatos + cursos' tem cara de PLR.",
+   "por": "juiz",
+   "reformulacao_sugerida": ""
+  },
+  {
+   "id": "L64",
+   "eliminada": true,
+   "eliminatoria": "E1",
+   "motivo": "O que o mercado mostra é curso de uma criadora (Paula Fukuda, 118 anúncios), apoiado na autoridade dela. O ângulo observado vende 'crear y vender', ou seja, o ganho e não a ferramenta, então também cai em E2. Um pack de prompts sozinho ainda tende a ser barrado na Hotmart como produto de baixo valor/PLR.",
+   "por": "juiz",
+   "reformulacao_sugerida": "Kit de livros de colorir prontos por tema (infantil/datas comemorativas) com licença de uso comercial para imprimir e vender cuadernillos físicos, mais calculadora de custo. Ficam proibidos a revenda dos arquivos e o upload em KDP, que seriam direitos de revenda (E4). Se virar gerador por IA, custa cerca de US$0,02–0,04 por página, uns US$0,6–1,2 por livro de 30 páginas, e pode apertar a margem (E3)."
+  },
+  {
+   "id": "L65",
+   "eliminada": true,
+   "eliminatoria": "E1",
+   "motivo": "É curso com expert ('Crea música con IA desde cero'): depende de gente real, e o núcleo é aula, não ferramenta. O anúncio vende promessa de ganho com uma habilidade nova, então também cai em E2. O produto B2C correspondente já está registrado no L38.",
+   "por": "juiz",
+   "reformulacao_sugerida": ""
+  }
+ ]
+}
