@@ -25,10 +25,10 @@
 
 **Nenhuma ideia avaliada tem evidência de teto maior que o do Mimo.**
 - **Teto do L02** [estimativa, confiança baixa]: **US$ 150–400/dia em ES** (base 250, ≈ 50% do Mimo), ou 200–750 com PT/EN/FR.
-- **O limite é estrutural:** só compra quem tem evento nas próximas 2–12 semanas, ~1% do Facebook MX a cada momento. O Mimo fala com qualquer casal, em qualquer dia.
+- **O limite é estrutural:** só compra quem tem evento nas próximas 2–12 semanas, ~1% do Facebook MX a cada momento ([93,5 M de usuários](https://datareportal.com/reports/digital-2026-mexico); a fração é estimativa). O Mimo fala com qualquer casal, em qualquer dia.
 - **O que tem demanda forte no nicho renda extra** são packs clonáveis (kits Canva, "+10.000 diseños"), cursos (E1) ou promessa de ganho (E2). Tudo isso caiu nas suas eliminatórias.
 - **O que sobra é produto de ângulo duplo:** renda extra como segundo ângulo, sem liderar.
-- **Se "teto > Mimo" é inegociável, a resposta honesta é: nenhuma.** Nesse caso, outubro rende mais abrindo idiomas e mercados do próprio Mimo, que rendem mais por venda (notas privadas).
+- **Se "teto > Mimo" é inegociável, a resposta honesta é: nenhuma.** Nesse caso, outubro rende mais abrindo idiomas e mercados do próprio Mimo, cujo motor já está provado em ES, EN e FR.
 
 **O L02 só vale** como teste com teto de aprendizado de **US$ 2.000 de mídia** e ~2 semanas de build.
 
@@ -57,8 +57,8 @@
 
 ## O que mataria a ideia (réguas em conta BRL, front a US$ 9,90)
 
-- **K0 · build:** matar se a música não tocar no iPhone dentro do WhatsApp/Instagram, se a compra ou o reembolso real falhar, ou se o MVP não estiver vendável até **20/10**. Nesse caso, não lançar no Q4 e subir em 26/12.
-- **K2 · formato:** com ≥ US$ 400 e ≥ 20 anúncios com ≥ 1.000 impressões, **CPA de front > US$ 7,85** mata o formato.
+- **K0 · build:** adiar se a música não tocar no iPhone dentro do WhatsApp/Instagram, se a compra ou o reembolso real falhar, ou se o MVP não estiver vendável até **20/10**. Nesse caso, não lançar no Q4 e subir em 26/12.
+- **K2 · formato:** com ≥ US$ 400 e ≥ 20 anúncios com ≥ 1.000 impressões, **CPA de front > US$ 7,85 ou < 25 compras** mata o formato.
 - **K3 · aos 100 compradores:** parar com líquido < US$ 7,60, reembolso > 6% ou chargeback > 0,5%.
 - **K4/K5:** estacionar se, até US$ 1.500 ou 15/11, nenhum conjunto sustentar 7 dias a ≥ US$ 50/dia com CPA ≤ 5,23. Depois disso, só um reteste até 20/01.
 - **Teste de teto:** se até **28/02/2027** o L02 não sustentar **≥ US$ 250/dia por 7 dias com CPA ≤ 5,23**, ele não é segundo motor. Não construir L67 nem PT-BR; deixar no piloto automático (ROI ≥ 1,25) ou desligar.
@@ -68,7 +68,7 @@
 - **Cabe em outubro, com pouca folga:** build de 23/09 a ~03/10, soft launch ~05/10 e veredito do K2 em meados de outubro, antes do CPM de novembro.
 - **Black Friday:** nem escalar nem testar.
 - **Dezembro:** rodar só dentro das réguas.
-- **Janela de escala: 28/12 a 28/02.** O CPM fica 40–60% mais barato e entram os convites das bodas de fev–mai.
+- **Janela de escala: 28/12 a 28/02.** O CPM fica 40–60% mais barato ([dados dos EUA](https://benly.ai/learn/meta-ads/meta-ads-seasonal-campaigns); LATAM não verificado) e entram os convites das bodas de fev–mai.
 - **A ideia continua viva depois das datas:** ~82% dos eventos (XV e infantil) são perenes.
 - **A tese "cuesta de enero / qué vender en Navidad" não vale para o L02.** É ângulo proibido (atributo pessoal, E2); a força de janeiro vem das bodas e do CPM.
 

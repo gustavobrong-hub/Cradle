@@ -1718,7 +1718,7 @@
      "https://help.hotmart.com/es/article/360061973392/-como-solicitar-el-reembolso-de-mi-compra-",
      "https://help.hotmart.com/pt-br/article/208294658/o-que-e-chargeback-e-como-posso-evita-lo-"
     ],
-    "implicacao": "Com ticket de US$ 5 a 12 e entrega instantânea, uma promessa exagerada no anúncio vira reembolso e chargeback. O Mimo tem 0,31% de reembolso. Um produto de renda extra vendido com promessa de ganho tende a ter taxa bem maior (estimativa) e pode ultrapassar o limite de 0,9%.",
+    "implicacao": "Com ticket de US$ 5 a 12 e entrega instantânea, uma promessa exagerada no anúncio vira reembolso e chargeback. O Mimo tem < 1% de reembolso. Um produto de renda extra vendido com promessa de ganho tende a ter taxa bem maior (estimativa) e pode ultrapassar o limite de 0,9%.",
     "confianca": "alta (7 dias); média (0,9% de chargeback)"
    },
    {

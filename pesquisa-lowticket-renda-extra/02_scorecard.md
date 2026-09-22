@@ -4,7 +4,7 @@ Data: 22/09/2026. São 23 ideias em concurso: as 19 sobreviventes da Fase 2 mais
 
 ## 1. Método
 
-Três avaliadores independentes deram nota de 0 a 10 a cada ideia em sete critérios, cada um com uma lente: o media buyer (dá para comprar tráfego e escalar?), o investidor cético (a evidência aguenta?) e o builder + compliance (sai em 14 dias e passa na Meta e na Hotmart?). A nota do painel é a mediana dos três em cada critério. As 8 maiores notas do painel e as hipóteses do usuário (L01 e L02) passaram por uma verificação adversarial. Nela, um verificador refez a coleta na Biblioteca de Anúncios da Meta em 22/09/2026 (anúncios ativos em MX, CO, AR, CL, PE, EC, GT, BO, UY, DO e US). Ele contou anunciantes por page_id, mediu o anúncio ativo mais antigo, buscou preços, substitutos e reclamações e rodou a calculadora de economia (`_raw/calc_economia.py`). Nas ideias verificadas, a nota final de cada critério é a média entre a mediana do painel e a nota do verificador. Nas outras, vale a mediana do painel. Os pesos são demanda 20, teto 20, criativo 15, economia 15, risco 10 (nota alta = risco baixo), build 10 e defensibilidade 10. O total é Σ(nota × peso) ÷ 10, de 0 a 100. Os avaliadores usaram três réguas de referência: teto 6 = igual ao Mimo Gift, build 0 = mais de 14 dias, e economia comparada com o líquido do Mimo no mesmo modelo (US$ 9,66 por comprador).
+Três avaliadores independentes deram nota de 0 a 10 a cada ideia em sete critérios, cada um com uma lente: o media buyer (dá para comprar tráfego e escalar?), o investidor cético (a evidência aguenta?) e o builder + compliance (sai em 14 dias e passa na Meta e na Hotmart?). A nota do painel é a mediana dos três em cada critério. As 8 maiores notas do painel e as hipóteses do usuário (L01 e L02) passaram por uma verificação adversarial. Nela, um verificador refez a coleta na Biblioteca de Anúncios da Meta em 22/09/2026 (anúncios ativos em MX, CO, AR, CL, PE, EC, GT, BO, UY, DO e US). Ele contou anunciantes por page_id, mediu o anúncio ativo mais antigo, buscou preços, substitutos e reclamações e rodou a calculadora de economia (`_raw/calc_economia.py`). Nas ideias verificadas, a nota final de cada critério é a média entre a mediana do painel e a nota do verificador. Nas outras, vale a mediana do painel. Os pesos são demanda 20, teto 20, criativo 15, economia 15, risco 10 (nota alta = risco baixo), build 10 e defensibilidade 10. O total é Σ(nota × peso) ÷ 10, de 0 a 100. Os avaliadores usaram três réguas de referência: teto 6 = igual ao Mimo Gift, build 0 = mais de 14 dias, e economia comparada com o líquido do Mimo no mesmo modelo (~US$ 9,4–9,7 por comprador (modelo)).
 
 ## 2. Ranking
 
@@ -40,7 +40,7 @@ Três avaliadores independentes deram nota de 0 a 10 a cada ideia em sete crité
 - **A verificação derrubou quase todas as notas.** Caíram 7 das 8 ideias verificadas em concurso; na média das 8, o total final ficou 2,6 pontos abaixo do painel. As maiores quedas, do painel ao verificador, foram L02 (72 → 62), L18 (56,5 → 48), L04 (59 → 51) e L66 (60 → 53,5). Só a L29 subiu (58,5 → 60). As 15 não verificadas mantêm só a nota do painel e provavelmente estão otimistas na mesma direção (inferência).
 - **O painel quase não divergiu.** A maior diferença entre avaliadores foi de 2 pontos num critério: L02 demanda, L10 build, L04 build, L01 economia e L01 defensibilidade. A divergência real foi entre painel e verificador: L29 demanda 5 → 7, L02 defensibilidade 8 → 6, L66 defensibilidade 8 → 6 e L01 build 9 → 7.
 - **Há um trade-off central.** As ideias com demanda forte (L09, L10, L06, L27) são commodity, com defensibilidade de 1,5 a 3. As ferramentas, que têm defensibilidade, têm demanda da versão ferramenta não comprovada.
-- **Nenhuma ideia verificada em concurso supera o Mimo em economia.** Os cenários de front a US$ 9,90 com bumps chegam no máximo a US$ 9,56 por comprador (L66, cenário otimista), contra US$ 9,66 do Mimo. Com front no nível dos concorrentes (US$ 4,90–7,90), o líquido fica entre US$ 3,6 e 6,8.
+- **Nenhuma ideia verificada em concurso supera o Mimo em economia.** Os cenários de front a US$ 9,90 com bumps chegam no máximo a US$ 9,56 por comprador (L66, cenário otimista), contra ~US$ 9,4–9,7 do Mimo. Com front no nível dos concorrentes (US$ 4,90–7,90), o líquido fica entre US$ 3,6 e 6,8.
 - **Ressalvas que valem para todas:**
   - O reembolso real por nicho não foi verificado.
   - A calculadora usa taxa fixa Hotmart de US$ 1,49. O log da Fase 1 registra mudança para US$ 1,00 em 21/09/2026 (não verificado na página oficial), o que melhoraria mais os fronts baratos.
@@ -54,7 +54,7 @@ Painel 72 → verificador 62. Verificada. Hipótese do usuário. Absorveu o L03 
 - **Demanda 6,5** — ~10 operadores de kit ES; longevo só o Kit Digital (template, 118,8 d). Editores web ES: 5, todos ≤18 d.
 - **Teto 5,5** — Eventos perenes e ângulo duplo, mas a compra exige evento próximo e o B2C concorre com freemium (Convitia, InvitaWeb).
 - **Criativo 8,5** — Convite abrindo no celular com música, contagem e RSVP vende sozinho; Mega Plantillas roda 10 variações "Mira como funciona".
-- **Economia 6,5** — Concorrentes a US$ 3,7–6. Front 9,90 + bumps: US$ 8,21 líquido, contra 9,66 do Mimo; a US$ 6,90, US$ 5,47.
+- **Economia 6,5** — Concorrentes a US$ 3,7–6. Front 9,90 + bumps: US$ 8,21 líquido, contra ~9,4–9,7 do Mimo; a US$ 6,90, US$ 5,47.
 - **Risco 7** — Uso próprio é risco baixo; o mercado lidera com "listas para VENDER" e "Sistema de Ingresos". Liderar com uso próprio.
 - **Build 6,5** — Reusa o editor e a página do Mimo, mas RSVP, painel multiconvite e modelos por evento levam até 14 dias.
 - **Defensibilidade 7** — Editor hospedado supera PDF, mas já existem 5 editores ES, marca branca (Ariapsa, veamoslasfotos) e kits Hotmart com "RSVP".
@@ -80,7 +80,7 @@ Painel 64 → verificador 63. Verificada.
 - **Demanda 9** — 15+ anunciantes ES e ~7 BRL; DecoKit com 160 ativos, o mais antigo com 191,0 d. Longevidade concentrada num só.
 - **Teto 6,5** — Perene, roda em ES e EN, mas o Canva grátis é substituto direto; sem prova de gasto acima do Mimo.
 - **Criativo 7** — "Crea toda la fiesta en Canva" é demo de tela; temáticas rendem dezenas de ganchos. Festa pronta pede mockup/IA.
-- **Economia 5** — Mercado em US$ 3,6–10; front 6,90 dá US$ 5,5–6,8 líquido, contra 9,66 do Mimo; CPA máximo US$ 3,7–4,5.
+- **Economia 5** — Mercado em US$ 3,6–10; front 6,90 dá US$ 5,5–6,8 líquido, contra ~9,4–9,7 do Mimo; CPA máximo US$ 3,7–4,5.
 - **Risco 6,5** — Os anúncios mais longevos da DecoKit (191 e 169 d) são de uso próprio; o risco é PI de personagens.
 - **Build 5** — 20–30 temáticas originais no Canva ≈ 14 dias, sem reuso do motor do Mimo.
 - **Defensibilidade 3** — Pack clonável; o "+10.000 diseños" em 6 vendedores sugere o mesmo PLR (inferência). A Hotmart reprova produto repetido.
@@ -132,7 +132,7 @@ Painel 59 → verificador 51. Verificada.
 - **Demanda 5,5** — Nenhum kit de revenda exclusivo de XV; 228 anúncios de XV, quase todos serviço B2C (My Invite, 116,3 d).
 - **Teto 3,5** — Um evento só; o revendedor prefere pacote multievento ("+1200 invitaciones", "Boda y XV" a US$ 5).
 - **Criativo 6,5** — A demo do convite de XV (padrinos, música, RSVP) vende, mas os ângulos ficam presos a um evento.
-- **Economia 4,5** — Âncoras de US$ 5 (Hotmart) e MXN 119 (~US$ 6,9): US$ 4,7–6,3 líquido, contra 9,66 do Mimo.
+- **Economia 4,5** — Âncoras de US$ 5 (Hotmart) e MXN 119 (~US$ 6,9): US$ 4,7–6,3 líquido, contra ~9,4–9,7 do Mimo.
 - **Risco 7** — Mesmo perfil baixo do L02; evitar "Ganhe até R$ 200 por convite" e ganchos de "ingresos".
 - **Build 7** — Subconjunto do L02 sobre o motor do Mimo, mas RSVP e gestão de vários clientes são novos (~14 dias).
 - **Defensibilidade 6,5** — Ferramenta hospedada, mas 4+ SaaS de convite com RSVP já anunciam; o recorte XV se copia fácil.
@@ -408,9 +408,21 @@ Não há comprador visível: 0 anunciantes de revenda em 28 buscas na Meta (ES e
 
 ## Adendo pós-deep-dive (Fase 5)
 
-Os 3 juízes da Fase 5 leram os deep dives e **discordaram do scorecard em dois pontos**. Registro aqui porque as notas acima não foram recalculadas:
+Os 3 juízes da Fase 5 leram os deep dives e **discordaram do scorecard em dois pontos**. As notas da tabela principal ficam como o painel e o verificador deram; o recálculo parcial está logo abaixo:
 
 1. **Teto inflado.** Pela régua "teto 6 = Mimo", o L67 levou 6 e o L02 5,5. Os deep dives estimam **L02 em 30–80% do Mimo em ES (US$ 150–400/dia, base 250)** e **L67 em 20–70% (US$ 100–350/dia, base 200)**, com público em compra de ~1,1% contra 0,2–0,4% do Facebook MX. Portanto, as três finalistas deveriam ter teto < 5, e o L02 acima do L67. **Nenhuma ideia avaliada tem evidência de teto maior que o do Mimo.**
 2. **O L29 não devia ter entrado no top 3.** O build "8 (poucos dias)" virou 11 dias no deep dive. A demanda revisada para 7 contava 22 anúncios longevos de uma página que vende Excel B2B para restaurante; para a confeiteira de casa, a prova é 1 anúncio com produto não identificado. Corrigido, o L29 cairia para perto de L66/L10.
 
-A ordem das duas primeiras (L02 > L67) se mantém, e a decisão final está em `00_decisao.md`.
+
+**Recalculo parcial com as correções dos juízes** (só os critérios contestados; os demais ficam como estavam; pesos iguais):
+
+| ID | Correção | Total antes | Total corrigido |
+|---|---|---|---|
+| L02 | teto 5,5 → 4,5 (deep dive: 30–80% do Mimo) | 67,0 | **65,0** |
+| L67 | teto 6 → 4 (deep dive: 20–70% do Mimo; público em compra 0,2–0,4%) | 66,5 | **62,5** |
+| L09 | teto 6,5 → ~4,5–5 (mesmo público do L67; **não** foi para deep dive, ajuste por analogia) | 63,5 | **~60–61** |
+| L29 | demanda 7 → 5 (a revisão contava Excel B2B de restaurante), teto 4 → 3, build 8 → 5 (11 dias) | 59,3 | **52,3** (cai para trás de L66, L10, L04 e L69) |
+
+A ordem do topo **não muda**: L02 continua em 1º e L67 em 2º. O L29 sai do top 3 corrigido, e a decisão já o arquiva. Nota de contagem: o scorecard cita 5 editores baratos em ES com ≤ 18 d; o deep dive do L02 achou um 6º ([Invita-Me.app](https://www.facebook.com/ads/library/?id=1598288708636661), 8,6 d), o que não muda a conclusão.
+
+A decisão final está em `00_decisao.md`.
