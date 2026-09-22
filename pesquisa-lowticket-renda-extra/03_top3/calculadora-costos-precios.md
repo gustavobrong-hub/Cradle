@@ -1,6 +1,6 @@
 # L29 · Calculadora de costos y precios: custo por unidade, preço sugerido e lista de preços para quem vende comida e doces em casa
 
-Data: 22/09/2026. Consolida pesquisa, build, oferta, criativo e red team (`_pesquisa_`, `_build_`, `_oferta_` e `_criativo_calculadora-costos-precios.md`, nesta pasta), já com as correções do red team. Onde os documentos divergiam (preço, bumps, ofícios, medidas, líquido, regras de corte), vale a versão unificada abaixo.
+Data: 22/09/2026. Consolida pesquisa, build, oferta, criativo e red team (notas de trabalho privadas, fora do repositório), já com as correções do red team. Onde os documentos divergiam (preço, bumps, ofícios, medidas, líquido, regras de corte), vale a versão unificada abaixo.
 
 **Convenções:**
 - **[medido]**: Biblioteca de Anúncios da Meta (só ACTIVE, 22/09/2026) ou página com link.
@@ -45,7 +45,7 @@ Contagem de anúncios e dias no ar são proxies: ACTIVE não prova gasto nem ven
 
 **Motor (função pura, num módulo único de cálculo):** `costo_unit = (costo_lote + indirectos) / rendimiento + empaque_unit + mano_obra_unit`; `precio_minimo = costo_unit / (1 − comisiones%)`; `precio_sugerido = costo_unit / (1 − margen% − comisiones%)`, arredondado para cima ao múltiplo da moeda. Tem 12 golden tests numa rota de admin.
 
-**Ofícios.** O MVP lança com **Repostería** e **Comida** (almuerzos, empanadas, pizzas, menú del día), que têm a evidência mais longa. *Velas y jabones* e *Tejido y crochet* são só arquivos de configuração (vocabulário e insumos sugeridos, sem preço), então podem entrar sem custo de build relevante. **Não têm sinal de demanda**, porém: a busca "cobrar tus manualidades calculadora" só trouxe ruído. No criativo recebem no máximo 2 vagas por semana, cortadas em 3 semanas sem vencedor.
+**Ofícios.** O MVP lança com **Repostería** e **Comida** (almuerzos, empanadas, pizzas, menú del día), que têm a evidência mais longa. *Velas y jabones* e *Tejido y crochet* são só arquivos de configuração (vocabulário e insumos sugeridos, sem preço), então podem entrar sem custo de build relevante. **Não têm sinal de demanda**, porém: a busca "cobrar tus manualidades calculadora" só trouxe ruído ([busca no MX](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=cobrar%20tus%20manualidades%20calculadora&search_type=keyword_unordered); o link reproduz um país, e a leitura dos 11 países ES + US foi feita via API em 22/09/2026). No criativo recebem no máximo 2 vagas por semana, cortadas em 3 semanas sem vencedor.
 
 **Onde é diferente e onde não é:**
 
@@ -106,7 +106,7 @@ Contagem de anúncios e dias no ar são proxies: ACTIVE não prova gasto nem ven
 - "En tu estado de cuenta el cargo aparece como HTM* / HOTMART."
 
 **Front: A/B de US$ 7,90 (controle) contra US$ 5,90.** Build e oferta concordam; o 7,90 × 9,90 da pesquisa fica para uma 2ª rodada.
-- A âncora dos anúncios em espanhol é US$ 3–6. Há também um teste interno de preço do Mimo; ver notas privadas.
+- A âncora dos anúncios em espanhol é US$ 3–6 (ver Concorrentes) e puxa o preço para baixo; a taxa fixa da Hotmart puxa para cima (ver Sensibilidade, na seção Contas). O 7,90 é decisão de preço a validar no teste.
 - **Não descer para 4,90:** a taxa fixa deixa só 59% do preço.
 - Para empatar com o 7,90 em líquido por lead, o 5,90 precisa converter **1,31×** mais. O 9,90 empata mesmo convertendo até 19% menos.
 
@@ -130,14 +130,14 @@ Câmbio de 22/09/2026: 1 USD = 17,22 MXN · 3.116 COP · 959,5 CLP · 3,366 PEN 
 - **Tutorial de 3 min dentro do app**, não no Player da Hotmart, por precaução com a taxa do Player [inferência].
 - **Decidir o A/B por líquido por lead**, com bumps. Lead = quem terminou o 1º produto grátis (evento `recipe_completed`). Com 8% de compra entre leads (hipótese), detectar 31% de diferença pede ~2.200 leads ou ~200 compras por braço. **Com o teto de teste de US$ 600, o A/B não fecha dentro do teste** [estimativa]: ele só vale se o produto passar dos cortes K4–K6 e for para a escala.
 
-**Order bumps.** Unificados a partir da oferta. O build tinha 3; o B4 é só texto e é o mais barato de construir. As regras: nome e preço claros, sem preço riscado, sem timer, cada bump como produto digital entregável (formato Imagem/Foto, como no Mimo). **As adesões são estimativas não verificadas.**
+**Order bumps.** Unificados a partir da oferta. O build tinha 3; o B4 é só texto e é o mais barato de construir. As regras: nome e preço claros, sem preço riscado, sem timer, cada bump como produto digital entregável (formato Imagem/Foto da Hotmart). **As adesões são estimativas não verificadas.**
 
 | # | Bump (ES, como aparece no checkout) | US$ | MX / CO / CL / PE | Entrega | Evidência | Adesão cons. / base / otim. |
 |---|---|---|---|---|---|---|
-| B1 | **"Acceso para siempre"**: "Tu calculadora no vence: tus productos y precios guardados sin fecha límite y sin pagos futuros." | 4,90 | MXN 79 · COP 14.900 · CLP 4.690 · S/ 15,90 | Remove o vencimento de 12 meses | Espelha o bump principal do Mimo (~1/3 lá). Concorrentes vendem "de por vida". Deve aderir menos: comprador de ferramenta é mais racional, e há 4 bumps [inferência] | 15 / 24 / 33% |
-| B2 | **"Catálogo web con pedidos por WhatsApp"**: "Una página con tu logo, tus fotos y tus precios. Tus clientes arman su pedido y te llega listo a tu WhatsApp. Incluye QR para imprimir." | 4,90 | igual ao B1 | Página pública do catálogo com "Arma tu pedido" → `wa.me` com itens e total; ativa enquanto a licença valer | [Intelia SB](https://www.facebook.com/ads/library/?id=1548914280065958), "Tu Catálogo Listo en Minutos", 9 ativos, 71,1 d. **Prova que alguém anuncia catálogo, não que alguém paga** (produto e preço não verificados). A busca "catálogo digital para tu negocio pedidos whatsapp" (144) é quase toda agência e SaaS | 8 / 12 / 16% |
-| B3 | **"Cotizador de encargos"**: "Presupuestos de tortas y pedidos especiales en PDF, con anticipo y fecha de entrega, listos para enviar por WhatsApp." | 3,90 | MXN 69 · COP 11.900 · CLP 3.790 · S/ 12,90 | Orçamento com cliente, data, itens, sinal % e validade → PDF + texto | "Hacé tus presupuestos en minutos", 11,0 d ([Dulces Herramientas](https://www.facebook.com/ads/library/?id=1624450332359038)). A busca "cotizar pasteles presupuesto anticipo" deu 0: só como complemento | 4 / 7 / 10% |
-| B4 | **"Mensajes listos para tus clientes"**: "25 mensajes para WhatsApp con tu nombre y tus precios: avisar un nuevo precio, responder '¿me haces descuento?', pedir anticipo, confirmar y recordar pedidos." | 3,90 | igual ao B3 | Modelos de texto no app, com botão "Copiar", preenchidos com os dados do negócio | "Deja de cobrar con miedo" ([Latinas Together](https://www.facebook.com/ads/library/?id=1396505975315099)); bônus de WhatsApp de concorrente na Hotmart. A busca "subir tus precios sin perder clientes" (19) só trouxe ruído | 4 / 6 / 9% |
+| B1 | **"Acceso para siempre"**: "Tu calculadora no vence: tus productos y precios guardados sin fecha límite y sin pagos futuros." | 4,90 | MXN 79 · COP 14.900 · CLP 4.690 · S/ 15,90 | Remove o vencimento de 12 meses | Referência: o bump principal de um low ticket de presente adere ~1/3. Concorrentes vendem "de por vida". Deve aderir menos: comprador de ferramenta é mais racional, e há 4 bumps [inferência] | 15 / 24 / 33% |
+| B2 | **"Catálogo web con pedidos por WhatsApp"**: "Una página con tu logo, tus fotos y tus precios. Tus clientes arman su pedido y te llega listo a tu WhatsApp. Incluye QR para imprimir." | 4,90 | igual ao B1 | Página pública do catálogo com "Arma tu pedido" → `wa.me` com itens e total; ativa enquanto a licença valer | [Intelia SB](https://www.facebook.com/ads/library/?id=1548914280065958), "Tu Catálogo Listo en Minutos", 9 ativos, 71,1 d. **Prova que alguém anuncia catálogo, não que alguém paga** (produto e preço não verificados). A busca "catálogo digital para tu negocio pedidos whatsapp" (144; [busca no MX](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=cat%C3%A1logo%20digital%20para%20tu%20negocio%20pedidos%20whatsapp&search_type=keyword_unordered); o link reproduz um país, e a soma de 11 países ES + US foi feita via API em 22/09/2026) é quase toda agência e SaaS | 8 / 12 / 16% |
+| B3 | **"Cotizador de encargos"**: "Presupuestos de tortas y pedidos especiales en PDF, con anticipo y fecha de entrega, listos para enviar por WhatsApp." | 3,90 | MXN 69 · COP 11.900 · CLP 3.790 · S/ 12,90 | Orçamento com cliente, data, itens, sinal % e validade → PDF + texto | "Hacé tus presupuestos en minutos", 11,0 d ([Dulces Herramientas](https://www.facebook.com/ads/library/?id=1624450332359038)). A busca "cotizar pasteles presupuesto anticipo" deu 0 em 11 países ES + US, somados via API em 22/09/2026 ([busca no MX](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=cotizar%20pasteles%20presupuesto%20anticipo&search_type=keyword_unordered)): só como complemento | 4 / 7 / 10% |
+| B4 | **"Mensajes listos para tus clientes"**: "25 mensajes para WhatsApp con tu nombre y tus precios: avisar un nuevo precio, responder '¿me haces descuento?', pedir anticipo, confirmar y recordar pedidos." | 3,90 | igual ao B3 | Modelos de texto no app, com botão "Copiar", preenchidos com os dados do negócio | "Deja de cobrar con miedo" ([Latinas Together](https://www.facebook.com/ads/library/?id=1396505975315099)); bônus de WhatsApp de concorrente na Hotmart. A busca "subir tus precios sin perder clientes" (19 em 11 países ES + US, somados via API em 22/09/2026; [busca no MX](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=subir%20tus%20precios%20sin%20perder%20clientes&search_type=keyword_unordered)) só trouxe ruído | 4 / 6 / 9% |
 
 - **Contingência de taxa:** se cada bump pagar taxa fixa de US$ 1,00 (regime R3, seção Contas), o bump de 3,90 fica com 64% do preço. Nesse caso, juntar B3 e B4 num "Pack Pedidos" a 5,90 (73%) ou subir os dois para 4,90.
 - **Corte:** se atrasar, lançar com B1, B2 e B4. Se o MVP não estiver vendável no D14, só front + B1 (gate K0).
@@ -168,14 +168,14 @@ Só testar 15–30 dias se o paywall converter mal **e** o motivo apontado for c
 
 | Camada | Escolha |
 |---|---|
-| App | Remix do Mimo no **Lovable** (stack padrão do Lovable, com geração de PDF e QR já disponível). Marca, domínio, página do Facebook, pixel/dataset, produtos Hotmart e dashboard UTMify **separados** do Mimo |
-| Banco e auth | Supabase via Lovable Cloud, **backend novo**, com RLS por `user_id` (receitas são dado de negócio). **No D1, conferir que a configuração de ambiente do remix não aponta para o backend do Mimo** e que nenhum dado veio junto |
-| Login | **Código OTP de 6 dígitos por e-mail**, sem magic link, porque o link abriria fora do navegador interno do Instagram. Limite de auth do Lovable Cloud **não verificado**: no Supabase com SMTP próprio, o padrão é 30 novos usuários/hora ([Supabase](https://supabase.com/docs/guides/auth/rate-limits)). Spike no D2; plano B: OTP próprio (código guardado com hash no banco) pela fila de e-mail do Mimo |
+| App | App novo no **Lovable** (stack padrão do Lovable), reaproveitando em nível funcional o fluxo do Mimo. Marca, domínio, página do Facebook, pixel/dataset, produtos Hotmart e dashboard UTMify **separados** do Mimo |
+| Banco e auth | Supabase via Lovable Cloud, **backend novo**, com RLS por `user_id` (receitas são dado de negócio). **No D1, conferir que o projeto não aponta para o banco de outro produto** e que nenhum dado veio junto |
+| Login | **Código OTP de 6 dígitos por e-mail**, sem magic link, porque o link abriria fora do navegador interno do Instagram. Limite de auth do Lovable Cloud **não verificado**: no Supabase com SMTP próprio, o padrão é 30 novos usuários/hora ([Supabase](https://supabase.com/docs/guides/auth/rate-limits)). Spike no D2; plano B: OTP próprio (código guardado com hash no banco), enviado pelo e-mail transacional do app |
 | Arquivos | PDF, PNG e QR **gerados no aparelho**. Storage só para logos e fotos do catálogo (≤ 150 KB, caminho não adivinhável) |
-| Pagamento | Hotmart: front + 4 bumps, checkout em lightbox. **Sem herdar a configuração de checkout do Mimo**: sem a oferta configurada, o botão fica bloqueado. Principal como "Curso Online" com 2 aulas; bumps como "Imagem/Foto" |
+| Pagamento | Hotmart: front + 4 bumps, checkout em lightbox. **Checkout próprio, com o botão bloqueado se a oferta não estiver configurada.** Principal como "Curso Online" com 2 aulas; bumps como "Imagem/Foto" |
 | Liberação | Webhook Hotmart v2 novo: responde 200 sempre, idempotente por `transaction`. **Direito por e-mail** na tabela `licenses` (front → `expires_at` = aprovação + 365 d; B1 → `null`; B2/B3/B4 → flags). **Allowlist de product IDs; produto fora dela só é registrado.** Reembolso do front revoga tudo; o de um bump, só a flag dele. OXXO fica pendente |
 | Atribuição | UTMify (dashboard novo); o parâmetro de rastreio do checkout leva um prefixo próprio da calculadora, o id do rascunho e a variante do A/B; Meta CAPI com dataset novo |
-| E-mail | Fila transacional do Mimo: acesso, código, pagamento pendente, carrinho abandonado, "tu resultado" e aviso de vencimento 30 e 7 d antes |
+| E-mail | E-mails transacionais: acesso, código, pagamento pendente, carrinho abandonado, "tu resultado" e aviso de vencimento 30 e 7 d antes |
 | IA e vídeo | **Nenhum no produto** (custo zero por uso) |
 
 **Telas:**
@@ -202,7 +202,7 @@ Só testar 15–30 dias se o paywall converter mal **e** o motivo apontado for c
 
 | Dia | Entrega | Pronto quando |
 |---|---|---|
-| D1 | **Criar front + 4 bumps na Hotmart** (entram em análise; é o caminho crítico). Remix, checagem da configuração de ambiente, Knowledge, remoções, marca e domínio, webhooks separados por produto | Projeto só em ES, sem backend nem dados do Mimo |
+| D1 | **Criar front + 4 bumps na Hotmart** (entram em análise; é o caminho crítico). Projeto novo, checagem da configuração de ambiente, Knowledge, remoções, marca e domínio, webhooks separados por produto | Projeto só em ES, sem backend nem dados do Mimo |
 | D2 | Motor + parse por país + unidades + 12 golden tests; spike de OTP (Gmail, Outlook/Hotmail, Yahoo, < 1 min) | Testes verdes; OTP entregue nos 3 provedores |
 | D3–D4 | Onboarding, editor, resultado ao vivo, modo grátis em `localStorage`, configs de ofício | 1º produto completo no celular, testado em ARS e MXN |
 | D5 | Schema + RLS + login + importação do rascunho + painel + livro de ingredientes | Trocar 1 insumo atualiza N produtos; a conta B não lê a conta A |
@@ -237,7 +237,7 @@ Só testar 15–30 dias se o paywall converter mal **e** o motivo apontado for c
 - RLS testada com 2 contas;
 - landing sem promessa de renda, timer ou preço riscado.
 
-**Conta Hotmart compartilhada com o Mimo (antes do D7).** As vendas da calculadora não podem cair no fluxo de liberação do Mimo, nem as do Mimo no da calculadora. Configurar webhooks por produto (se a Hotmart permitir filtro, **não verificado**) e usar um prefixo próprio no parâmetro de rastreio do checkout. A recuperação de acesso da calculadora sempre exige o código enviado ao e-mail, nunca só o e-mail digitado. Detalhes da integração com o Mimo: ver notas privadas.
+**Separação por produto (antes do D7).** Os produtos, os webhooks e o fluxo de liberação da calculadora são separados por produto: cada venda libera só o produto comprado. Configurar webhooks por produto (se a Hotmart permitir filtro, **não verificado**) e usar um prefixo próprio no parâmetro de rastreio do checkout. Boa prática de segurança: recuperar acesso sempre com código enviado ao e-mail.
 
 **Custo marginal por venda [estimativa]:** ~US$ 0,005–0,03 no 1º ano (banco ~0,001; banda do catálogo 0,005–0,016; e-mails 0–0,008); pior caso ~0,2–0,5 com catálogo muito visitado. O preço por GB do Lovable Cloud não é publicado. Diferente do Mimo, **o custo é recorrente**, porque o cliente usa o app por meses. Calibrar pela fatura do Cloud ÷ usuários ativos no mês.
 
@@ -246,8 +246,8 @@ Só testar 15–30 dias se o paywall converter mal **e** o motivo apontado for c
 - confusão entre margem e markup;
 - OTP no navegador interno e caindo no spam (Hotmail/Yahoo);
 - limite de auth no pico de lançamento;
-- vendas da calculadora caindo no fluxo de liberação do Mimo (conta Hotmart compartilhada);
-- remix herdando backend ou dados do Mimo;
+- venda liberando o produto errado (erro de configuração de webhook);
+- projeto novo herdando dados de outro produto;
 - RLS mal feita;
 - regressão no motor ou no webhook causada pelo agente do Lovable;
 - demora na aprovação da Hotmart.
@@ -266,7 +266,7 @@ O fecho é a lista de preços se montando com o nome do negócio, ou o aviso "Se
 - **O "ângulo mais provado" é 1 anúncio.** O "¿Estás cobrando bien por tus postres?" da Chef Anna tem 119,2 d, mas os outros 16 anúncios dela têm 76,2 d (1), 60,0 d (3), 32,2 d (1), 28,0 d (1), 14,7–18,0 d (8) e 1,1 d (2).
 - **O criativo dizia que nenhum título com ≥ 30 d usa "ganas" ou "ingresos". Isso não se sustenta:** "…y mejora tus ganancias 📊" tem 49,7 d ([Fer Rendon](https://www.facebook.com/ads/library/?id=1712957136670895)); "Calcula el costo real de tu menú y mejora tus ganancias", 38,5 d ([link](https://www.facebook.com/ads/library/?id=1389106856011395)); "Calcula y gana más", 216,7 d ([Pau Regalos](https://www.facebook.com/ads/library/?id=1232865344959275), Fase 3). A leitura correta é que a maior parte da longevidade está em clareza de produto e de custo. O ângulo de renda é proibido para nós de qualquer forma.
 
-**15 ganchos (0–3 s).** Regras: texto de tela com até 8 palavras; nunca quanto a pessoa vai ganhar; nada de "gana", "ganancias", "ingresos", "emprende" ou "desde casa"; nenhuma marca de terceiro (nem "Excel"); `{producto}` troca por ofício e país. O frame 0 de cada gancho está em `_criativo_calculadora-costos-precios.md` §2.
+**15 ganchos (0–3 s).** Regras: texto de tela com até 8 palavras; nunca quanto a pessoa vai ganhar; nada de "gana", "ganancias", "ingresos", "emprende" ou "desde casa"; nenhuma marca de terceiro (nem "Excel"); `{producto}` troca por ofício e país. O frame 0 de cada gancho está nas notas de trabalho privadas, fora do repositório.
 
 | # | Ângulo | Texto de tela (ES) | Voz 0–3 s (ES) | Evidência / condição |
 |---|---|---|---|---|
@@ -339,7 +339,7 @@ São ~28 pares úteis de gancho × ofício, ~130 com os corpos e ~330 com as rec
 
 **Ressalva do red team:** com os US$ 60–100/dia do teste, cada um dos 30 anúncios recebe ~US$ 2–3/dia, e a Meta concentra a entrega em poucos [inferência]. **"30 variações testadas por semana" é otimista**: na fase de teste, subir as 30 mas ler só as que receberem entrega.
 
-**Pipeline (detalhes e comandos em `_criativo_calculadora-costos-precios.md` §4.5):**
+**Pipeline (detalhes e comandos nas notas de trabalho privadas, fora do repositório):**
 - **Nível 1:** gravação nativa da tela de um celular real, 4 clipes por receita × locale numérico (MX e AR), ~72 clipes em ~4 h.
 - **Nível 2 (pedido ao build):** o Remotion desenha as telas com os componentes e o motor do próprio app, e trocar país ou moeda vira só re-render. Conferir lado a lado com um print real.
 - **Preços das receitas de exemplo:** anotados num site de supermercado do país, com fonte e data no JSON da fixture; margem padrão de 30–40%.
@@ -368,7 +368,7 @@ São ~28 pares úteis de gancho × ofício, ~130 com os corpos e ~330 com as rec
 - conjunto `CAL_{OF}_{PAIS}_{PUBLICO}`;
 - anúncio `CAL_{H}_{C}_{OF}_{FX}_{LOC}_{PRES}_W{AAWW}_v{n}` (ex.: `CAL_H04_C2_REP_PCH_MX_NA_W2641_v1`).
 
-Parâmetros de URL copiados do Mimo (que sejam idênticos não foi verificado). A variante de preço vai no parâmetro de rastreio do checkout, não no nome, e anúncio no ar não se renomeia.
+Parâmetros de URL padrão do UTMify. A variante de preço vai no parâmetro de rastreio do checkout, não no nome, e anúncio no ar não se renomeia.
 
 **Regras de pausa por anúncio, na régua BRL do cenário base.** As versões anteriores usavam o cenário conservador do build com 3 bumps.
 - **Pausar com gasto ≥ 2× o CPA-alvo sem venda: US$ 8,62 a 7,90 (2 × 4,31) ou US$ 6,58 a 5,90 (2 × 3,29).** Um anúncio exatamente no alvo tem 13,5% de chance de zero venda nesse gasto (Poisson, média 2): ~1 em 7 anúncios bons morre por azar.
@@ -385,7 +385,7 @@ Parâmetros de URL copiados do Mimo (que sejam idênticos não foi verificado). 
 | S43–S47 | 19/10–22/11 | H10 "Navidad" em todos os países |
 | S48 | 23–29/11 | Black Friday: não escalar nem subir teste |
 | S49–S52 | 30/11–27/12 | Só vencedores; Rosca (MX) a partir de 15/12 |
-| S53–S06 | 28/12/2026–14/02/2027 | Escalar vencedores (CPM mais barato); H04 e "Empieza el año con tus números claros"; San Valentín. **Nunca "cuesta de enero"** |
+| S53–S06 | 28/12/2026–14/02/2027 | Escalar vencedores (CPM mais barato: 40–60% menor até ~15/01, dados dos EUA, LATAM não verificado; [benly](https://benly.ai/learn/meta-ads/meta-ads-seasonal-campaigns), [Clouted](https://clouted.com/blog/meta-advertising-CPM-inflation-statistics)); H04 e "Empieza el año con tus números claros"; San Valentín. **Nunca "cuesta de enero"** |
 | S16–S18 (2027) | 15/04–05/05 | Maior pico: Día de la Madre MX, PE, CL, GT |
 
 ## Ângulos proibidos
@@ -530,7 +530,7 @@ O funil ilustrativo (todas as taxas são hipóteses) é: 50% dos cliques começa
 
 - Extrapolação para ES + US: ×1,95 [estimativa, mesma conta do L02 e do L67] → público ES de ~3,1 M no base.
 - Penetração anual via anúncio: 0,5 / 1 / 2% [chute] → 27 / 86 / 235 compradores/dia → **~US$ 115 / 410 / 1.280 por dia** (a CPA para ROI 1,5 sem imposto; com conta BRL, ~11% menos).
-- A oferta também fez uma checagem de cima para baixo pelo Mimo (público do Mimo ~45 M, "~28× maior"). O red team mostrou que é a razão entre dois números sem fonte; ela não entra aqui.
+- A oferta também fez uma checagem de cima para baixo, pela razão entre o público do Mimo e o da calculadora. O red team mostrou que é a razão entre dois números sem fonte; ela não entra aqui.
 
 **Por que o teto fica abaixo da conta de baixo para cima:**
 1. **1% de penetração ao ano faria do L29 o maior player em ES, de longe.** Para confeitaria de casa, o maior tem 17 anúncios (Chef Anna); o maior no geral (Fer Rendon, 36) é B2B de restaurante [proxy].
@@ -547,7 +547,7 @@ O funil ilustrativo (todas as taxas são hipóteses) é: 50% dos cliques começa
 | Topo | **US$ 250** | ~58 | ~0,7% | **Baixa** |
 | Nível do Mimo | ≥ US$ 506 | ≥ 117 | ≥ 1,4% | **Muito baixa**, mesmo com PT-BR |
 
-- **Margem sobre a mídia a ROI 1,5 com conta BRL:** 0,56 × o gasto [estimativa]. US$ 150/dia deixam ~US$ 84/dia antes de ferramentas e impostos sobre a renda. O Mimo, se rodasse a ROI 1,5, deixaria ~US$ 283/dia com US$ 506/dia.
+- **Margem sobre a mídia a ROI 1,5:** 0,50 × o gasto, sem imposto [estimativa]: ROI 1,5 devolve 1,5 de líquido por dólar gasto, então sobram 0,5. US$ 150/dia deixam ~US$ 75/dia antes de ferramentas e impostos sobre a renda. O Mimo, se rodasse a ROI 1,5, deixaria ~US$ 253/dia com US$ 506/dia. (Na régua BRL, a sobra é 1,68 − 1,12 = 0,56 por dólar de anúncio: ~US$ 84 e ~283/dia.)
 - **Laço viral:** fraco. O rodapé "Hecho con {marca}" do catálogo é visto por clientes da confeiteira, que em geral não vendem comida [inferência]. Medir com `utm_source=catalogo`, sem contar no teto.
 
 **Distribuição da base de US$ 150/dia [estimativa]:**
@@ -568,9 +568,9 @@ O funil ilustrativo (todas as taxas são hipóteses) é: 50% dos cliques começa
 |---|---|---|
 | 1–15/out | ~1,2× na AR | Día de la Madre AR (18/10), o único dentro de Q4 |
 | 15/out–20/nov | ~1,1× | Encomendas de Natal; Kit de Temporada no ar |
-| Semana da Black Friday | ~0,6× | CPM 2–3× maior (dados dos EUA) |
+| Semana da Black Friday | ~0,6× | CPM 2–3× maior (dados dos EUA; LATAM não verificado; [benly](https://benly.ai/learn/meta-ads/meta-ads-seasonal-campaigns), [Clouted](https://clouted.com/blog/meta-advertising-CPM-inflation-statistics)) |
 | Dezembro | ~0,6× | A confeiteira está produzindo, não configurando ferramenta [inferência] |
-| 26/dez–fev | ~1,3× | CPM 40–60% menor (digest; dados dos EUA); "subió el huevo", Rosca, começo de ano |
+| 26/dez–fev | ~1,3× | CPM 40–60% menor até ~15/01 (dados dos EUA; LATAM não verificado; [benly](https://benly.ai/learn/meta-ads/meta-ads-seasonal-campaigns), [Clouted](https://clouted.com/blog/meta-advertising-CPM-inflation-statistics)); "subió el huevo", Rosca, começo de ano |
 | 15/abr–5/mai | ~1,4× | Día de la Madre em 10/5 (MX, PE, CL, GT): maior dia de venda de bolo do ano no MX ([Milenio](https://www.milenio.com/negocios/pastelerias-en-torreon-incrementan-ventas-el-dia-de-las-madres)) |
 | Resto | ~1,0× | Base perene |
 
@@ -578,7 +578,7 @@ O funil ilustrativo (todas as taxas são hipóteses) é: 50% dos cliques começa
 
 | Idioma | Evidência | Acréscimo | Confiança |
 |---|---|---|---|
-| PT-BR | [Débora Vasconcelos](https://www.facebook.com/ads/library/?id=2018345395489206): 119 anúncios ativos hoje, mas **45 dos 50 mais novos subiram em ~65 s com o mesmo título**. É volume alto por duplicação em lote; o nº de criativos distintos e a longevidade não foram verificados. O produto é **curso + planilha** ([site](https://www.deboravasconcelos.com.br/curso-precificacao-confeitaria-cpd)). "Aplicativo de precificação" tem 217 ativos no BR, com vários apps (seção Concorrentes). A oferta chamava isso de "espelho mais forte de todos os finalistas"; o correto é **mercado pago existente e já disputado** | +US$ 50–200/dia | Baixa |
+| PT-BR | [Débora Vasconcelos](https://www.facebook.com/ads/library/?id=2018345395489206): 119 anúncios ativos hoje, mas **45 dos 50 mais novos subiram em ~65 s com o mesmo título**. É volume alto por duplicação em lote; o nº de criativos distintos e a longevidade não foram verificados. O produto é **curso + planilha** ([site](https://www.deboravasconcelos.com.br/curso-precificacao-confeitaria-cpd)). "Aplicativo de precificação" tem 217 ativos no BR ([busca](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&q=aplicativo%20de%20precifica%C3%A7%C3%A3o&search_type=keyword_unordered)), com vários apps (seção Concorrentes). A oferta chamava isso de "espelho mais forte de todos os finalistas"; o correto é **mercado pago existente e já disputado** | +US$ 50–200/dia | Baixa |
 | EN | Não medido | +0–80 | Baixa |
 | FR | Não verificado | +0–30 | Muito baixa |
 
@@ -628,7 +628,7 @@ Medição por `page_ids`, só ACTIVE, 22/09/2026. Dias = idade do anúncio ativo
 | [CostoChef](https://www.facebook.com/ads/library/?id=1553910179395667) | SaaS B2B | — | — | — | assinatura | Outro público |
 | Fase 3, não re-medidos | [Juli Rosemberg](https://www.facebook.com/ads/library/?id=3102872796589183) · [Andrea Crochetea](https://www.facebook.com/ads/library/?id=1529067728905420) · [Pau Regalos Valentino](https://www.facebook.com/ads/library/?id=1232865344959275) | — | 6 / 3 / 1 | 5,0 / 3,0 / 216,7 | — | Pau Regalos: "Calcula y gana más" (proibido para nós) |
 
-**Hotmart ES.** Os preços vêm do resumo do WebSearch, **não verificados na página**. A busca "calculadora de costos repostería" deu só **31 ativos** em ES + US, quase todos receituários e cursos, e nenhum identificável como estas listagens. **Não há prova de que vendam.**
+**Hotmart ES.** Os preços vêm do resumo do WebSearch, **não verificados na página**. A busca "calculadora de costos repostería" deu só **31 ativos** em ES + US ([busca no MX](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=calculadora%20de%20costos%20reposter%C3%ADa&search_type=keyword_unordered); o link reproduz um país, e a soma de 11 países ES + US foi feita via API em 22/09/2026), quase todos receituários e cursos, e nenhum identificável como estas listagens. **Não há prova de que vendam.**
 - US$ 5 em promoção, de 9,90 ([N99160088C](https://pay.hotmart.com/N99160088C)) · US$ 7 ([J104799257A](https://pay.hotmart.com/J104799257A)) · US$ 10 ([J104782701Y](https://pay.hotmart.com/J104782701Y)) · US$ 12 ([P83579553T](https://pay.hotmart.com/P83579553T)) · US$ 19,99, com orçamentos ([N96918657O](https://pay.hotmart.com/N96918657O)).
 - Sem preço: [U105164875U](https://hotmart.com/es/marketplace/productos/calculadora-de-costos-para-reposteria-guia-paso-a-paso-recetario-de-regalo/U105164875U), [H103235284N](https://hotmart.com/es/marketplace/productos/calculadora-automatica-de-costos-y-precios-para-reposteria/H103235284N), [D103000487M](https://hotmart.com/es/marketplace/productos/calculadoras-de-costos-hoja-de-calculo-excel/D103000487M), [X105453537A](https://hotmart.com/es/marketplace/productos/sistema-de-precios-rentables-para-reposteria-calculadora-guia-bonus-whatsapp/X105453537A) (bônus WhatsApp), [K95490413E](https://hotmart.com/es/marketplace/productos/calculadora-de-precios-pasteleria-y-reposteria/K95490413E), [V104956697U](https://hotmart.com/es/marketplace/productos/plantilla-de-costos-y-precios-para-reposteria-excel/V104956697U), [N93778262F](https://hotmart.com/es/marketplace/productos/plantilla-de-excel-calculadora-de-costo-para-reposteria/N93778262F), [U94626349S](https://pay.hotmart.com/U94626349S).
 
@@ -642,7 +642,7 @@ Medição por `page_ids`, só ACTIVE, 22/09/2026. Dias = idade do anúncio ativo
 **Espelho BR:**
 - [Débora Vasconcelos](https://www.facebook.com/ads/library/?id=2018345395489206): 119 ativos, "Planilha de Precificação para Confeitaria - Perpétuo"; lote duplicado (45 em ~65 s); curso + planilha ([site](https://www.deboravasconcelos.com.br/curso-precificacao-confeitaria-cpd)); preço não verificado.
 - [PrecificaPRO](https://www.facebook.com/ads/library/?id=1373994478235963): 14 ativos, 13,8 d, "Pare de vender no achismo"; a página mistura renegociação de dívida.
-- "Aplicativo de precificação" = **217 ativos** [medido]: [PreciArte](https://www.facebook.com/ads/library/?id=39216762071241245), [Doce Preço Fácil](https://www.facebook.com/ads/library/?id=2367026897466899), [Isabela Dandaro](https://www.facebook.com/ads/library/?id=1442718327784403) ("Pare de cobrar no chute", 12+ num lote) e o padrão "Todo mecânico/detailer deveria usar" ([Oficina Lucrativa](https://www.facebook.com/ads/library/?id=1374666888082672), [Ajuda Estética Automotiva](https://www.facebook.com/ads/library/?id=2236425793802856), [Ajuda Técnico](https://www.facebook.com/ads/library/?id=1068872962601746)). Parece um app de preço multiplicado por ofício; produto e operador não verificados. **Operadores do BR podem "tropicalizar" para ES** [inferência].
+- "Aplicativo de precificação" = **217 ativos** [medido, [busca no BR](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&q=aplicativo%20de%20precifica%C3%A7%C3%A3o&search_type=keyword_unordered)]: [PreciArte](https://www.facebook.com/ads/library/?id=39216762071241245), [Doce Preço Fácil](https://www.facebook.com/ads/library/?id=2367026897466899), [Isabela Dandaro](https://www.facebook.com/ads/library/?id=1442718327784403) ("Pare de cobrar no chute", 12+ num lote) e o padrão "Todo mecânico/detailer deveria usar" ([Oficina Lucrativa](https://www.facebook.com/ads/library/?id=1374666888082672), [Ajuda Estética Automotiva](https://www.facebook.com/ads/library/?id=2236425793802856), [Ajuda Técnico](https://www.facebook.com/ads/library/?id=1068872962601746)). Parece um app de preço multiplicado por ofício; produto e operador não verificados. **Operadores do BR podem "tropicalizar" para ES** [inferência].
 - Hotmart BR: [X75547877U](https://hotmart.com/pt-br/marketplace/produtos/planilha-de-precificacao-rlnbs/X75547877U), [N52697618E](https://hotmart.com/pt-br/marketplace/produtos/planilha-de-precificacao-para-confeitaria-donos-de-bares-e-restaurantes/N52697618E), [N90508214V](https://hotmart.com/pt-br/marketplace/produtos/precificacao-correta-na-confeitaria/N90508214V), [N65213315V](https://hotmart.com/pt-br/marketplace/produtos/planilha-de-precificacao-para-confeitaria-2-2/N65213315V) (preços não verificados).
 
 ## O melhor argumento de por que vai falhar (e o que mataria a ideia)
@@ -651,7 +651,7 @@ Medição por `page_ids`, só ACTIVE, 22/09/2026. Dias = idade do anúncio ativo
 - **O "aha" já é o entregável.** No Mimo, a prévia cria desejo por algo que só existe depois do pagamento (a página publicada). Aqui, um print da tela de resultado resolve. O que se paga (guardar, exportar, recalcular) é conveniência, e concorre com o caderno, o print, 8+ calculadoras grátis e o catálogo do WhatsApp Business.
 - **A conta do próprio dossiê não fecha.** No funil ilustrativo (2,1% de compra por clique), CPC de US$ 0,20 dá CPA de 9,52, acima do break-even BRL (6,46). ROI 1,5 só com CPC ≤ US$ 0,09.
 - **A evidência de demanda é fina.** 22 dos 37 anúncios longevos são de uma página B2B de Excel para restaurante. A "prova" do gancho de confeitaria é 1 anúncio de uma página com produto desconhecido. A âncora paga é S/ 10–19. O espelho BR é duplicação em lote de um funil de curso.
-- **Mesmo dando certo, o ganho é pequeno.** Base de US$ 150/dia ≈ US$ 84/dia de margem, ao custo de 11–14 dias de build, 30 criativos por semana e suporte recorrente por 12 meses, tirados do tempo de quem opera sozinho um Mimo que, a ROI 1,5, deixaria ~US$ 283/dia.
+- **Mesmo dando certo, o ganho é pequeno.** Base de US$ 150/dia ≈ US$ 75/dia de margem (0,50 × o gasto, sem imposto; 84 na régua BRL), ao custo de 11–14 dias de build, 30 criativos por semana e suporte recorrente por 12 meses, tirados do tempo de quem opera sozinho um Mimo que, a ROI 1,5, deixaria ~US$ 253/dia (283 na régua BRL).
 - **Desfecho mais provável:** CPA acima de 4,31. O teste custa pouco, mas o custo de oportunidade do operador é alto.
 
 **Os 5 maiores riscos e o sinal precoce de cada um:**
@@ -660,15 +660,15 @@ Medição por `page_ids`, só ACTIVE, 22/09/2026. Dias = idade do anúncio ativo
 |---|---|---|---|
 | 1 | **Economia do funil:** o grátis entrega o valor e o paywall cobra por conveniência | O break-even depende da compra por clique. Os 7,24 dependem do B1 a 24% (não verificado); com o B1 a 15% e sem outros bumps, o líquido cai para 5,82 e o alvo BRL para 3,46. O reembolso base (4%) já é > 4× o do Mimo | Portão: cliques em "Guardar" ÷ cliques de link < CPC ÷ 1,72. "Enviarme este resultado" mais clicado que "Guardar". Primeiras 30 vendas: > 40% sem um 2º produto salvo em 48 h; ≥ 1/3 dos reembolsos por "gratis" ou "no lo necesito" |
 | 2 | **Teto baixo × custo de oportunidade** | Só compra quem já vende comida ou doces; qualquer semana em que o Mimo deixe de escalar ou abrir idioma custa mais que o melhor cenário do L29 [inferência] | MX de US$ 60 para 100/dia: frequência de 7 d > 2,5 ou CPM +30% semana a semana com CPA +25%. Mimo com ROI caindo 2 semanas seguidas ou fila de tarefas parada |
-| 3 | **Criativo e CPM:** "aha" numérico e ganchos importados de B2B | A igual CPM, bater 4,31 contra 5,60 exige CTR × compra por clique ≥ 1,3× o do Mimo. 60% da evidência de ângulo é de restaurante. Os líderes giram estoque de anúncio em dias | Semana 1: CTR de link mediano abaixo do Mimo em MX/Reels; CPC > US$ 0,15; hook rate abaixo do Mimo; nenhum anúncio com ≥ 3 vendas e CPA ≤ 4,31 depois de US$ 150 |
-| 4 | **Build maior que o prometido, suporte recorrente, reembolso técnico** | 11 dias até o vendável, não 4–6. Uso por 12 meses gera dúvidas de cálculo, formato numérico e login, um suporte que o Mimo não tem e que não entrou em nenhuma conta | Não vendável até 06/10; OTP > 1 min em > 5% dos testes; > 10% dos compradores sem login em 24 h; > 1 ticket a cada 10 vendas; reembolso > 5% nas primeiras 60 vendas ou qualquer preço calculado errado em AR/CO/CL |
+| 3 | **Criativo e CPM:** "aha" numérico e ganchos importados de B2B | A igual CPM, bater 4,31 contra 5,60 exige CTR × compra por clique ≥ 1,3× o do Mimo. 60% da evidência de ângulo é de restaurante. Os líderes giram estoque de anúncio em dias | Semana 1: CTR de link mediano abaixo do Mimo no mesmo país e posicionamento; CPC > US$ 0,15; hook rate abaixo do Mimo; nenhum anúncio com ≥ 3 vendas e CPA ≤ 4,31 depois de US$ 150 |
+| 4 | **Build maior que o prometido, suporte recorrente, reembolso técnico** | 11 dias até o vendável, não 4–6. Uso por 12 meses gera dúvidas de cálculo, formato numérico e login, um suporte recorrente que não entrou em nenhuma conta | Não vendável até 06/10; OTP > 1 min em > 5% dos testes; > 10% dos compradores sem login em 24 h; > 1 ticket a cada 10 vendas; reembolso > 5% nas primeiras 60 vendas ou qualquer preço calculado errado em AR/CO/CL |
 | 5 | **Cópia e âncora de US$ 3–5** | A lógica se clona num dia. Dolchere já tem app e volume de anúncios; Fer Rendon opera de forma contínua; 217 anúncios de apps de precificação no BR | Concorrentes com "lista de precios", "se actualizan todos" ou "catálogo" 2–4 semanas depois dos nossos vencedores; conversão do paywall caindo com CTR estável; concorrente oferecendo app por ≤ US$ 5 |
 
 Fora do top 5: **conta e política**, com risco baixo (digest: ferramenta de preço, Meta BAIXO / Hotmart BAIXO). Pontos de atenção: o nicho escorrega para "gana" e "ingresos", e a tela 5 do build dizia "Para ganar". Sinal: 2 ou mais reprovações por "oportunidad económica" ou "atributos personales" na semana 1 → revisar a landing antes de gastar mais.
 
 **O que mataria a ideia.** Regras gerais:
 - Recalcular a régua com o líquido medido: alvo = líquido ÷ 1,68; break-even = líquido ÷ 1,12. Os números abaixo são do base (7,24).
-- **Teto do teste: US$ 600 gastos com checkout no ar** (≈ R$ 3.100, cerca de um dia de gasto do Mimo). Não existe "mais US$ 150 iterando" depois disso.
+- **Teto do teste: US$ 600 gastos com checkout no ar** (≈ R$ 3.100, da ordem de um dia de gasto do Mimo, que passa de R$ 2.600/dia). Não existe "mais US$ 150 iterando" depois disso.
 - Estes cortes substituem as regras anteriores, que ignoravam os 12% da conta BRL. O "continuar com CPA ≤ 6,0" da oferta dá ROI 1,08; o break-even era 6,46, não 7,24 (oferta) nem 5,59/7,32 (build). Entre 6,46 e 7,24, o teste perdia dinheiro sem acionar corte nenhum. Os cortes do portão do build (25% terminam / 8% clicam em "Guardar") aprovavam um produto que perde dinheiro: com 25% × 8% × 40% pagando, a compra por clique é 0,8% e o CPA fica em 125 × CPC.
 
 | # | Quando | Métrica | Mata se… | De onde vem o limiar |
@@ -683,7 +683,7 @@ Fora do top 5: **conta e política**, com risco baixo (digest: ferramenta de pre
 | K7 | US$ 600 acumulados | CPA dos últimos US$ 300 | **> 4,31** → arquivar | Régua do usuário para subir verba |
 | K8 | Após 50 compras | Líquido medido por comprador | **< 6,40** → recalcular o alvo; se o CPA atual > líquido ÷ 1,68, arquivar | O B1 a 24% não foi verificado |
 | K9 | Primeiras 100 vendas | Reembolso / chargeback | Reembolso > 7% ou chargeback > 0,5% → pausar. Reembolso > 10% → arquivar | Limite da Hotmart: 0,9% de chargeback |
-| K10 | Semanas 3–4 | Gasto/dia sustentável com CPA ≤ 4,31 | **< US$ 100/dia** → arquivar | Margem < ~US$ 56/dia, que não paga 30 criativos por semana + suporte [estimativa] |
+| K10 | Semanas 3–4 | Gasto/dia sustentável com CPA ≤ 4,31 | **< US$ 100/dia** → arquivar | Margem < ~US$ 50/dia (0,50 × o gasto, sem imposto; 56 na régua BRL), que não paga 30 criativos por semana + suporte [estimativa] |
 
 **Regras de pausa por anúncio** (não matam a ideia): gasto ≥ US$ 8,62 sem venda (US$ 6,58 no braço de 5,90); CTR de link < 0,7× a mediana da semana depois de 3.000 impressões. **Escalar** +20–30% a cada 48–72 h só com CPA ≤ 4,31.
 

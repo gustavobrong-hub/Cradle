@@ -42,9 +42,9 @@ def economics(front, bumps, refund=0.03, roi_target=1.5, meta_tax=0.0):
 
 if __name__ == "__main__":
     print(f"taxa variável implícita no front: {VAR*100:.2f}% + US$ {FIXED}")
-    # Referência ilustrativa de um low ticket com 2 bumps baratos (as adesões reais do Mimo ficam fora do repositório)
-    ref = economics(9.90, [("bump A", 4.90, 0.33), ("bump B", 4.90, 0.15)], refund=0.01)
-    print("Referência ilustrativa (~perfil Mimo, líquido ~US$ 9,4):", ref)
+    # Referência ilustrativa: front 9,90 + 1 bump barato com ~1/3 de adesão
+    ref = economics(9.90, [("bump", 4.90, 0.33)], refund=0.01)
+    print("Referência ilustrativa:", ref)
     for front in (5.90, 6.90, 7.90, 8.90, 9.90, 11.90, 14.90):
         e = economics(front, [("bump1", 4.90, 0.30), ("bump2", 4.90, 0.15), ("bump3", 6.90, 0.08)], refund=0.04)
         print(front, e)

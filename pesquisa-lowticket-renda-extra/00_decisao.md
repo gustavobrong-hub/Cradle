@@ -13,7 +13,7 @@
   - Dezenas de microempresas vendem o convite por WhatsApp a MXN 89–499 ([exemplo](https://www.facebook.com/ads/library/?id=1073107372315166)).
   - Kits "para vender" também duram: [Kit Digital](https://www.facebook.com/ads/library/?id=1376630554316244), 118,8 d.
   - No BR, a [Convitia](https://www.facebook.com/ads/library/?id=1042494484973953) roda os dois ângulos, uso próprio e "fature com convites", há 76,9 d.
-- **É o formato que ninguém provou em ticket baixo.** Os 6 editores baratos ou grátis em ES têm ≤ 18 d no ar. Isso é oportunidade e risco ao mesmo tempo.
+- **É o formato que ninguém provou em ticket baixo.** Os 6 editores baratos ou grátis em ES têm ≤ 18 d no ar (ex.: [Invitoo](https://www.facebook.com/ads/library/?id=1723104108989856), 1,8 d; [Compartiremos](https://www.facebook.com/ads/library/?id=2468620510329134), 17,9 d; lista completa no dossiê). Isso é oportunidade e risco ao mesmo tempo.
 - **Reusa o Mimo quase direto.** O fluxo é o mesmo (editor → página → Hotmart → liberação), a demo é só tela ("el sobre" abrindo no celular) e o multiplicador de ângulos é o mesmo (evento × tema × país). MVP vendável em **~11 dias**.
 - **Tem a melhor conta das 3 finalistas** [estimativa; ROI = faturamento líquido ÷ gasto]:
   - líquido base de **US$ 8,79/comprador** a 9,90 (Mimo ~9,4);
@@ -26,7 +26,7 @@
 **Nenhuma ideia avaliada tem evidência de teto maior que o do Mimo.**
 - **Teto do L02** [estimativa, confiança baixa]: **US$ 150–400/dia em ES** (base 250, ≈ 50% do Mimo), ou 200–750 com PT/EN/FR.
 - **O limite é estrutural:** só compra quem tem evento nas próximas 2–12 semanas, ~1% do Facebook MX a cada momento ([93,5 M de usuários](https://datareportal.com/reports/digital-2026-mexico); a fração é estimativa). O Mimo fala com qualquer casal, em qualquer dia.
-- **O que tem demanda forte no nicho renda extra** são packs clonáveis (kits Canva, "+10.000 diseños"), cursos (E1) ou promessa de ganho (E2). Tudo isso caiu nas suas eliminatórias.
+- **O que tem demanda forte no nicho renda extra** são packs clonáveis (kits Canva, "+10.000 diseños": [DecoKit](https://www.facebook.com/ads/library/?id=2197772724365280)), cursos (E1: ["Emprende con invitaciones digitales"](https://www.facebook.com/ads/library/?id=2004948203720677)) ou promessa de ganho (E2). As provas estão em `01_longlist.csv` e `02_scorecard.md`. Tudo isso caiu nas suas eliminatórias.
 - **O que sobra é produto de ângulo duplo:** renda extra como segundo ângulo, sem liderar.
 - **Se "teto > Mimo" é inegociável, a resposta honesta é: nenhuma.** Nesse caso, outubro rende mais abrindo idiomas e mercados do próprio Mimo, cujo motor já está provado em ES, EN e FR.
 
@@ -37,7 +37,7 @@
 1. **L67 · Gerador de kit de festa personalizado** (2º no scorecard, 66,5): [`03_top3/kit-fiesta-personalizado.md`](03_top3/kit-fiesta-personalizado.md).
    - **A favor:** a categoria-pai tem a demanda mais forte medida ([DecoKit](https://www.facebook.com/ads/library/?id=2197772724365280), 160 anúncios, o mais antigo com 191 d).
    - **Contra:**
-     - o gerador em si tem zero anunciantes em ES;
+     - o gerador em si tem zero anunciantes em ES (15+ buscas; termos e links no dossiê);
      - o líder já roda a mesma demo ([“Solo cambió un nombre”](https://www.facebook.com/ads/library/?id=2009114323127277));
      - os ganchos que duram vendem personagem licenciado, que não podemos usar;
      - o público em compra é de ~0,2–0,4% do Facebook MX;
@@ -45,22 +45,23 @@
    - **Veredito:** não construir sozinho. Entra como bump **B3 "Kit de fiesta a juego"** no L02 e só vira 2º front no mesmo motor se o L02 passar no K2 e o B3 tiver adesão ≥ 8% nos eventos infantis.
 2. **L29 · Calculadora de costos y precios**: [`03_top3/calculadora-costos-precios.md`](03_top3/calculadora-costos-precios.md).
    - **Contra:**
-     - a demanda "longeva" é, na maior parte, Excel B2B para restaurante;
+     - a demanda "longeva" é, na maior parte, Excel B2B para restaurante (links no dossiê);
      - âncora de US$ 3–6 e 8+ calculadoras grátis;
      - CPA-alvo de US$ 4,31 (23% abaixo do Mimo);
      - teto de US$ 80–250/dia.
    - **Veredito: arquivar.**
 
 **Suas hipóteses:**
-- **Mimo Gift Revenda (H1) está morta.** Caiu por E2: não há mercado de revenda visível em ES nem no BR, e ela canibaliza o Mimo (mesmo comprador final, mesma demo, e o revendedor derruba o preço). Ficou com 35,8 fora de concurso, em 23º de 24.
-- **Invitaciones web (H2) é a escolhida**, mas liderada por uso próprio: a célula de revenda fica em teste.
+- **Mimo Gift Revenda (H1) está morta.** Caiu por E2: não há mercado de revenda visível em ES nem no BR (0 anunciantes em 28 buscas; ver `02_scorecard.md`), e ela canibaliza o Mimo (mesmo comprador final, mesma demo, e o revendedor derruba o preço). Ficou com 35,8 fora de concurso, em 23º de 24.
+- **Invitaciones web (H2) é a escolhida**, mas liderada por uso próprio. A célula de revenda fica fechada até o K2; na Etapa 1, o ângulo "haz invitaciones para tus clientes" é medido só como teste de gancho/lead, sem venda.
 
 ## O que mataria a ideia (réguas em conta BRL, front a US$ 9,90)
 
 - **K0 · build:** adiar se a música não tocar no iPhone dentro do WhatsApp/Instagram, se a compra ou o reembolso real falhar, ou se o MVP não estiver vendável até **20/10**. Nesse caso, não lançar no Q4 e subir em 26/12.
 - **K2 · formato:** com ≥ US$ 400 e ≥ 20 anúncios com ≥ 1.000 impressões, **CPA de front > US$ 7,85 ou < 25 compras** mata o formato.
 - **K3 · aos 100 compradores:** parar com líquido < US$ 7,60, reembolso > 6% ou chargeback > 0,5%.
-- **K4/K5:** estacionar se, até US$ 1.500 ou 15/11, nenhum conjunto sustentar 7 dias a ≥ US$ 50/dia com CPA ≤ 5,23. Depois disso, só um reteste até 20/01.
+- **K4 · escala:** se até US$ 1.500 gastos ou 15/11 nenhum conjunto sustentar 7 dias a ≥ US$ 50/dia com CPA ≤ 5,23, estacionar. Só segue pequeno com CPA ≤ 6,28 (ROI 1,25).
+- **K5 · zona cinzenta:** se não passou no K2 até 15/11, pausar até 26/12 e fazer um único reteste de US$ 400 até 20/01. Se falhar, a ideia morre. Teto total de aprendizado: US$ 2.000.
 - **Teste de teto:** se até **28/02/2027** o L02 não sustentar **≥ US$ 250/dia por 7 dias com CPA ≤ 5,23**, ele não é segundo motor. Não construir L67 nem PT-BR; deixar no piloto automático (ROI ≥ 1,25) ou desligar.
 
 ## Timing

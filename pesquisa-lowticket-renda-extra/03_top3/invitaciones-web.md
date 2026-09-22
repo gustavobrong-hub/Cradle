@@ -1,6 +1,6 @@
 # L02 · Invitaciones web: editor de convite web com RSVP (uso próprio + licença para clientes)
 
-Data: 22/09/2026. Consolida pesquisa, build, oferta, criativo e red team (`_pesquisa_`, `_build_`, `_oferta_` e `_criativo_invitaciones-web.md`, nesta pasta), já com as correções do red team.
+Data: 22/09/2026. Consolida pesquisa, build, oferta, criativo e red team (notas de trabalho privadas, fora do repositório), já com as correções do red team.
 
 **Convenções:**
 - **[medido]**: Biblioteca de Anúncios da Meta (só ACTIVE, 22/09/2026) ou página com link.
@@ -18,10 +18,16 @@ Contagem de anúncios e dias no ar são proxies, não faturamento. Do Mimo Gift 
 4. **O teto [estimativa, confiança baixa].** Em espanhol, US$ 150–400/dia (base de 250), ou 30–80% do Mimo (> R$ 2.600/dia ≈ US$ 506). O limite é o CPA, não o tamanho do mercado: só compra quem tem evento marcado para as próximas 2–12 semanas, cerca de 1% dos usuários do Facebook no MX em cada momento.
 5. **O veredito.** Vale um teste barato com critérios de corte: MVP vendável no D11 e no máximo US$ 2.000 gastos para aprender. O desfecho mais provável é um CPA estável de US$ 6–8, que paga a mídia mas não chega ao ROI 1,5. O L02 complementa o calendário do Mimo, mas não o substitui como motor de escala.
 
+
+> **Nota de reconciliação com a decisão final** (`00_decisao.md`, `04_validacao.md`), que vale onde este dossiê disser o contrário:
+> - no lançamento de outubro, só XV años, cumpleaños infantil e baby shower; boda ganha peso a partir de 28/12;
+> - o front fica travado em US$ 9,90, sem A/B de preço até o K2; depois do K2, o teste é para cima (12,90), não para 7,90. Nessa fase, as réguas duplas 9,90/7,90 dos cortes K1–K4 valem só para a coluna de 9,90;
+> - a célula de revenda fica fechada até o K2. Na Etapa 1, o ângulo de revenda é medido só como teste de gancho/lead, sem venda.
+
 ## O que o comprador recebe e o mecanismo (por que é diferente do que já existe)
 
 **Como funciona:**
-1. **Editor web sem login**, feito como remix do Mimo no Lovable. O MVP tem boda, XV años, cumpleaños infantil e baby shower, com 3 temas por evento no lançamento e até 6 depois.
+1. **Editor web sem login**, feito no Lovable reaproveitando o fluxo editor → página → Hotmart do Mimo. O MVP tem boda, XV años, cumpleaños infantil e baby shower (na decisão final, boda só ganha peso a partir de 28/12), com 3 temas por evento no lançamento e até 6 depois.
 2. **Campos:** nomes, data e hora (geram a contagem regressiva), até 2 locais, até 8 fotos, música, itinerário, código de vestimenta, presentes e o WhatsApp do anfitrião.
 3. **Prévia completa grátis**, com a marca d'água "VISTA PREVIA", sem link público e com `noindex`.
 4. **Checkout Hotmart:** o pagamento publica o convite sem marca d'água. O comprador recebe o link próprio, o QR em PNG e uma imagem de capa para o WhatsApp.
@@ -62,7 +68,7 @@ As travas contra usar um crédito para vários clientes:
 | Noiva | 24–35 | "¿Te casas en noviembre o diciembre?" ([Miboda](https://www.facebook.com/ads/library/?id=1624182579230484)); no BR, "É barato mas tem cara de CARO!" ([Canva Para Noivas](https://www.facebook.com/ads/library/?id=1419000880084087)) |
 | Quem organiza baby shower | 22–45 | [Makai](https://www.facebook.com/ads/library/?id=1053673747551264) (idade não medida) |
 
-Países, pela densidade de anúncios de "invitaciones digitales" [medido]: MX 849, AR 298, US 288, CL 275, PE 216, CO 194.
+Países, pela densidade de anúncios de "invitaciones digitales" [medido]: MX 849, AR 298, US 288, CL 275, PE 216, CO 194 ([busca no MX](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=invitaciones%20digitales&search_type=keyword_unordered); para os outros países, troque `country=` por AR, US, CL, PE ou CO).
 
 **Dores:**
 - **Não saber quem vem.** É o benefício mais longevo nos anúncios: "Control total de tus invitados", 108,9 d ([Miboda](https://www.facebook.com/ads/library/?id=847134201787134)); "Controla a tus invitados sin estrés", 91,8 d ([Miboda](https://www.facebook.com/ads/library/?id=1182022227473852)); "confirmación de asistencia automática", 116,1 d ([My Invite](https://www.facebook.com/ads/library/?id=1652832892617377)).
@@ -86,7 +92,7 @@ Países, pela densidade de anúncios de "invitaciones digitales" [medido]: MX 84
 | "Me cobraron varias veces" | [Trustpilot Hotmart](https://www.trustpilot.com/review/hotmart.com?page=4) | Bumps com nome e preço claros; um único upsell, sem downsell |
 | "¿Y si cambia la fecha?" | [inferência] | Edição livre depois de publicar (data ±90 d) |
 
-**Público secundário (licença).** Mulher de 25–50 anos que faz convites para outras pessoas ([Web Online](https://www.facebook.com/ads/library/?id=2313998366006369), [Someri](https://www.facebook.com/ads/library/?id=1950759622550013)). As objeções são "el único que gana es el que vende el curso" e "¿de dónde saco clientes?". É o público que mais reembolsa: a Fase 3 usou 5–8%.
+**Público secundário (licença).** Mulher de 25–50 anos que faz convites para outras pessoas ([Web Online](https://www.facebook.com/ads/library/?id=2313998366006369), [Someri](https://www.facebook.com/ads/library/?id=1950759622550013)). As objeções são "el único que gana es el que vende el curso" e "¿de dónde saco clientes?". Premissa [estimativa], herdada da Fase 3, que usou 5–8% de reembolso para este público: é o que mais reembolsa.
 
 **Espelho BR [medido, page_ids, 22/09/2026]:**
 - [Convitia](https://www.facebook.com/ads/library/?id=1042494484973953): 33 ativos, o mais antigo com 76,9 d, 16 deles com 30 d ou mais. As três medições dividiram os anúncios por ângulo de formas diferentes (16/16/1 e 11/13/9), então a divisão não sustenta conclusão. Os 4 anúncios mais novos são todos de uso próprio, com "grátis" e "antes de pagar".
@@ -102,7 +108,7 @@ Países, pela densidade de anúncios de "invitaciones digitales" [medido]: MX 84
 - "En tu estado de cuenta el cargo aparece como HTM* / HOTMART."
 
 **Front: A/B de US$ 9,90 (controle) contra US$ 7,90.** O preço de 9,90 é **hipótese a testar**, não conclusão:
-- Há um teste interno de preço do Mimo que pesa nessa decisão; ver notas privadas.
+- A justificativa pública é o mercado: MXN 169 fica entre o designer por WhatsApp (MXN 89–399) e a Invitio (599 MXN), e a taxa fixa deixa 74% do preço com o vendedor a 9,90 (ver Contas). O resto é decisão de preço a validar no teste. **A decisão final (`00_decisao.md`, `04_validacao.md`) trava o front em 9,90, sem A/B, até o K2**; depois dele, o A/B é só para cima (9,90 × 12,90).
 - **Não lançar a 5,90**, como o build propôs. A taxa fixa deixa só 64% do preço com o vendedor, e o 5,90 precisaria converter 1,65× mais que o 9,90 para empatar em líquido.
 
 | País | Moeda | A (controle) | ≈ US$ | B (teste) | ≈ US$ | Líquido por comprador no base, A / B [estimativa] |
@@ -128,16 +134,16 @@ Câmbio de 22/09/2026: 1 USD = 17,22 MXN · 3.116 COP · 959,5 CLP · 3,366 PEN 
 - **US:** oferta separada, com ≤ 6% da verba no começo. O ticket é maior porque o CPM é mais alto [inferência].
 - **Como decidir o A/B:** por **líquido por lead**, já contando os bumps (o lead é o e-mail capturado no editor).
   - O 7,90 só vence se converter ≥ 1,25× o 9,90.
-  - Para medir uma diferença de 25% são precisas ~250 compras por braço. Não decidir antes de ~150 por braço, salvo diferença grande.
+  - Para medir uma diferença de 25% são precisas ~250 compras por braço [estimativa]. Não decidir antes de ~150 por braço, salvo diferença grande.
   - Se o 9,90 vencer, testar 12,90 (MXN 219), que ainda empata perdendo até 23% da conversão.
 
 **Order bumps.** Regras: nome e preço claros, sem preço riscado, sem timer, cada bump como produto digital próprio. As adesões são **estimativas não verificadas**.
 
 | # | Bump (ES) | US$ | MX / CO / CL / PE | Entrega | Adesão cons. / base / otim. |
 |---|---|---|---|---|---|
-| B1 | "Tu invitación para siempre": no se desactiva después del evento | 3,90 | MXN 69 · COP 11.900 · CLP 3.790 · S/ 12,90 | Remove a data de expiração. É o espelho do "Acceso Para Siempre" do Mimo (~1/3 de adesão lá), mas vale menos aqui: o convite perde a função depois da festa | 15 / 22 / 30% |
+| B1 | "Tu invitación para siempre": no se desactiva después del evento | 3,90 | MXN 69 · COP 11.900 · CLP 3.790 · S/ 12,90 | Remove a data de expiração. É o espelho do bump principal do Mimo (~1/3 de adesão lá), mas vale menos aqui: o convite perde a função depois da festa | 15 / 22 / 30% |
 | B2 | "Versión para imprimir + QR" | 4,90 | MXN 79 · COP 14.900 · CLP 4.690 · S/ 15,90 | PDF A5/carta com QR que abre o convite. Responde à objeção dos avós | 8 / 12 / 16% |
-| B3 | "Kit de fiesta a juego" (só infantil e baby shower) | 4,90 | igual ao B2 | PDF de 4 peças: cartaz, toppers, etiquetas e cartão de agradecimento. É o L67 lite, sem personagens licenciados | 3 / 5 / 8% do total. Os 8–15% entre os eventos infantis são **chute**: o DecoKit (160 ativos) é proxy de outro produto |
+| B3 | "Kit de fiesta a juego" (só infantil e baby shower) | 4,90 | igual ao B2 | PDF de 4 peças: cartaz, toppers, etiquetas e cartão de agradecimento. É o L67 lite, sem personagens licenciados | 3 / 5 / 8% do total. Os 8–15% entre os eventos infantis são **chute**: o [DecoKit](https://www.facebook.com/ads/library/?id=2197772724365280) (160 ativos) é proxy de outro produto |
 | B4 | "+5 invitaciones": para tus próximos eventos o para hacerlas para otras personas | 6,90 | MXN 119 · COP 21.900 · CLP 6.590 · S/ 22,90 | 5 créditos por 12 meses, sem rodapé; licença de uso para clientes | 2 / 4 / 6% |
 
 - **B3:** só entra se a Hotmart permitir bumps diferentes por oferta (não verificado). Se não permitir, vira oferta na página de obrigado. É o primeiro corte do build.
@@ -151,7 +157,7 @@ Câmbio de 22/09/2026: 1 USD = 17,22 MXN · 3.116 COP · 959,5 CLP · 3,366 PEN 
 - **Build:** +1–2 dias (estimativa).
 - **Com OXXO ou pagamento em dinheiro:** não verificado se o upsell funciona.
 
-**Garantia de 7 dias**, o mínimo da Hotmart; vendas para a Europa têm mínimo de 15 dias. Por que 7:
+**Garantia de 7 dias**, o mínimo da Hotmart; vendas para a Europa têm mínimo de 15 dias (não verificado). Por que 7:
 - a prévia grátis já cumpre o papel de uma garantia longa;
 - com 7 dias, quase todo pedido de reembolso acontece **antes** do evento, e o reembolso tira o convite do ar;
 - o Mimo usa 7 dias e tem reembolso < 1%.
@@ -170,13 +176,13 @@ Texto para o FAQ (ES): "Tienes 7 días de garantía. Si pides el reembolso, tu i
 
 | Camada | Escolha |
 |---|---|
-| App | Remix do projeto do Mimo no **Lovable** (TanStack Start + React + Tailwind + shadcn). Marca, domínio, pixel, produtos Hotmart e dashboard UTMify separados do Mimo |
-| Banco, arquivos e funções | **Supabase com backend separado, obrigatório.** A pesquisa sugeriu "o mesmo Supabase", o que foi corrigido: isso acoplaria o banco da fonte de caixa a um experimento com ~300 visualizações por convite. No D1, conferir que nenhum dado do Mimo veio no remix (não verificado se o remix leva schema e dados) |
+| App | App novo no **Lovable** (stack padrão do Lovable): reaproveita, em nível funcional, o fluxo editor → página → Hotmart. Marca, domínio, pixel, produtos Hotmart e dashboard UTMify separados do Mimo |
+| Banco, arquivos e funções | **Banco, arquivos e funções próprios, obrigatório** (não compartilhar com o produto que é fonte de caixa: o experimento tem ~300 visualizações por convite). No D1, conferir que o projeto novo não herda dados de outro produto |
 | Fotos | Comprimidas no navegador (~1280 px, ≤ 250 KB), até 8 por convite. Rascunhos não pagos apagados em 30 d |
 | Pagamento | Hotmart: principal + bumps, checkout em lightbox, slug no parâmetro de rastreio do checkout |
-| Liberação | Webhook da Hotmart, partindo do fluxo de liberação do Mimo, idempotente por transação. "Pago" publica; reembolso ou chargeback tiram do ar; OXXO fica pendente; os bumps são associados à compra principal |
+| Liberação | Webhook da Hotmart próprio, idempotente por transação. "Pago" publica; reembolso ou chargeback tiram do ar; OXXO fica pendente; os bumps são associados à compra principal |
 | Atribuição | UTMify (parâmetro de rastreio padrão) + Meta CAPI com dataset novo |
-| Música | Embed do YouTube, com lista curada de ~30 músicas por evento e a busca como fallback. Chave Google separada do Mimo. **Não é "música livre de royalties"**, como a pesquisa dizia. O mini-player fica visível: esconder pode ferir os termos do YouTube (não verificado) |
+| Música | Embed do YouTube, com lista curada de ~30 músicas por evento e a busca como fallback. Chave Google própria. **Não é "música livre de royalties"**, como a pesquisa dizia. O mini-player fica visível: esconder pode ferir os termos do YouTube (não verificado) |
 | Mapa | Cartão com endereço e botões "Cómo llegar" (Google Maps/Waze), sem mapa embutido |
 | Vídeo e IA | Nenhum no MVP (custo zero por uso) |
 
@@ -201,7 +207,7 @@ Texto para o FAQ (ES): "Tienes 7 días de garantía. Si pides el reembolso, tu i
 
 | Dia | Entrega |
 |---|---|
-| D1 | Remix, Knowledge com restrições, limpeza do que não vai. **Criar os produtos e bumps na Hotmart**, que entram em análise: é o caminho crítico |
+| D1 | Projeto novo, Knowledge com restrições, limpeza do que não vai. **Criar os produtos e bumps na Hotmart**, que entram em análise: é o caminho crítico |
 | D2 | Schema: tabelas de confirmações e de créditos e campos de evento, com RLS. 4 eventos × 3 temas; domínio, pixel, UTMify, chave do YouTube |
 | D3–D4 | Onboarding, editor, contagem com fuso, datas em ES. Pronto quando um convite completo sai em < 5 min no celular |
 | D5 | Convite público com OG tags (prévia com foto no WhatsApp) |
@@ -225,14 +231,14 @@ A pesquisa estimou 6–9 dias; o plano detalhado do build pede 11 até o MVP ven
 
 **Nunca cortar:**
 - webhook idempotente;
-- checkout sem fallback silencioso;
+- botão de checkout bloqueado se a oferta não estiver configurada;
 - reembolso → offline;
 - rate limit na confirmação;
 - teste no navegador interno do WhatsApp;
 - limpeza de rascunhos;
 - página de licença.
 
-**Custo marginal por venda [estimativa]:** ~US$ 0,01–0,04, com pior caso de ~0,20 (300 visualizações × ~1 MB, a US$ 0,03–0,09 por GB). Isso só vale com fotos comprimidas e rascunhos apagados. O Lovable Cloud não publica preço por GB. Para calibrar, divida a fatura do Cloud do Mimo pelas vendas do mês.
+**Custo marginal por venda [estimativa]:** ~US$ 0,01–0,04, com pior caso de ~0,20 (300 visualizações × ~1 MB, a US$ 0,03–0,09 por GB). Isso só vale com fotos comprimidas e rascunhos apagados. O Lovable Cloud não publica preço por GB. Para calibrar, divida a fatura do Cloud pelas vendas do mês, depois do primeiro mês no ar.
 
 **Riscos técnicos que barram o lançamento:**
 - a música não tocar no iPhone dentro do WhatsApp ou do Instagram (autoplay bloqueado);
@@ -271,7 +277,7 @@ Nenhum título de uso próprio longevo em ES fala em renda. "Mais que um convite
 | H04 | Evento (XV) | La invitación de sus XV, lista hoy | "Para sus XV: fotos, música y cuenta regresiva." | 97,4 d ([Miboda](https://www.facebook.com/ads/library/?id=2025356271678520)); 116,3 d ([My Invite](https://www.facebook.com/ads/library/?id=1894344334607556)). Sempre "sus", nunca "tus XV" |
 | H05 | Infantil | Su nombre, su foto, su cuenta regresiva | "Su nombre, su foto y los días que faltan." | "Sorprende a todos con una invitación digital animada", 49,6 d ([Mayra Romero](https://www.facebook.com/ads/library/?id=4558598844386502)). Sem rosto de criança |
 | H06 | Baby shower | ¿Organizas un baby shower? | "¿Organizas un baby shower? Mira esta invitación." | [Makai](https://www.facebook.com/ads/library/?id=1053673747551264). Nunca "¿Estás embarazada?" |
-| H07 | Prazo | Faltan {n} días. ¿Y la invitación? | "Faltan {n} días… ¿y la invitación?" | XV: envio 4–6 semanas antes. A contagem é do evento, nunca de oferta, e nunca aparece perto de preço |
+| H07 | Prazo | Faltan {n} días. ¿Y la invitación? | "Faltan {n} días… ¿y la invitación?" | XV: envio 4–6 semanas antes [inferência]. A contagem é do evento, nunca de oferta, e nunca aparece perto de preço |
 | H08 | Dor (RSVP) | Deja de preguntar quién va a venir | "Deja de preguntar uno por uno quién viene." | "Controla a tus invitados sin estrés", 91,8 d ([Miboda](https://www.facebook.com/ads/library/?id=1182022227473852)); "Control total de tus invitados", 108,9 d ([Miboda](https://www.facebook.com/ads/library/?id=847134201787134)) |
 | H09 | Demo (painel) | Así se llena la lista de confirmados | "Así se llena la lista de confirmados." | 116,1 d ([My Invite](https://www.facebook.com/ads/library/?id=1652832892617377)); "herramientas de organización", 40,9 d ([Invitio](https://www.facebook.com/ads/library/?id=2641207056335277)) |
 | H10 | Objeção de risco | Créala gratis. Paga solo para publicarla. | "Créala gratis. Pagas solo si la publicas." | "Pruébala Gratis", 112,5 d ([Invitio](https://www.facebook.com/ads/library/?id=1296962249316221)). Variante H10b: "Pago único. Sin suscripción." ([Invitio](https://www.facebook.com/ads/library/?id=1701673927750048), 101,8 d) |
@@ -330,7 +336,7 @@ São ~198 combinações de gancho × corpo × evento antes de tema e país; cada
   - voz por TTS (es-MX e es-AR) e legenda queimada;
   - apresentadora gerada uma vez, checada por busca reversa, sem remover os metadados C2PA;
   - trilha da Meta Sound Collection (termos oficiais não lidos, não verificado), com o ID de cada faixa no CSV;
-  - render no Remotion a partir de `matrix/W{AAWW}.csv`, com ffmpeg para concatenar, fazer ducking e loudness. Os comandos estão em `_criativo_invitaciones-web.md` §4.3.
+  - render no Remotion a partir de `matrix/W{AAWW}.csv` (arquivo a criar), com ffmpeg para concatenar, fazer ducking e loudness. Os comandos estão nas notas de trabalho privadas, fora do repositório.
 - **QA de 10 perguntas antes de subir.** Qualquer "sim" barra o anúncio:
   1. Algum valor de ganho?
   2. Escassez falsa?
@@ -346,7 +352,7 @@ São ~198 combinações de gancho × corpo × evento antes de tema e país; cada
   - campanha `INV_{CELULA}_{OBJ}_{AAWW}`;
   - conjunto `INV_{CELULA}_{PAISES}_{PUBLICO}`;
   - anúncio `INV_{H}_{C}_{EVT}_{TEMA}_{LOC}_{PRES}_W{AAWW}_v{n}`, ex.: `INV_H08_C1_XV_T3_MX_NA_W2641_v1`;
-  - parâmetros de URL iguais aos do Mimo (copiar de lá);
+  - parâmetros de URL padrão do UTMify;
   - não renomear anúncio no ar;
   - a variante de preço vai no parâmetro de rastreio do checkout, não no nome.
 - **Regras de decisão (corrigidas para a conta BRL):**
@@ -359,10 +365,10 @@ São ~198 combinações de gancho × corpo × evento antes de tema e país; cada
 
 | Período | O que fazer |
 |---|---|
-| S41–S47 (05/10–22/11) | O H03 se ajusta sozinho ("noviembre o diciembre" → "enero o febrero"). O peso fica em **XV (envio 4–6 semanas antes) e infantil, que são perenes**. Os convites das bodas de novembro já saíram em ago–set |
-| S48 (Black Friday, 27/11) | Não escalar nem subir teste: CPM 2–3× maior (dados dos EUA) |
-| S49–S52 | Rotina. Sem ângulo de posada (domina o grátis). Deixar os renders prontos antes de 24/12 |
-| 28/12–28/02/2027 | Escalar: CPM mais barato e compra de convites para bodas de fev–mai (MX) e mar–abr (AR). **Nunca usar "cuesta de enero"** |
+| S41–S47 (05/10–22/11) | O H03 se ajusta sozinho ("noviembre o diciembre" → "enero o febrero"). O peso fica em **XV (envio 4–6 semanas antes [inferência]) e infantil, que são perenes**. Os convites das bodas de novembro já saíram em ago–set [inferência] |
+| S48 (Black Friday, 27/11) | Não escalar nem subir teste: CPM 2–3× maior (dados dos EUA; LATAM não verificado; [benly](https://benly.ai/learn/meta-ads/meta-ads-seasonal-campaigns), [Clouted](https://clouted.com/blog/meta-advertising-CPM-inflation-statistics)) |
+| S49–S52 | Rotina. Sem ângulo de posada (domina o grátis [inferência]). Deixar os renders prontos antes de 24/12 |
+| 28/12–28/02/2027 | Escalar: CPM mais barato (40–60% menor até ~15/01, dados dos EUA; LATAM não verificado; [benly](https://benly.ai/learn/meta-ads/meta-ads-seasonal-campaigns), [Clouted](https://clouted.com/blog/meta-advertising-CPM-inflation-statistics)) e compra de convites para bodas de fev–mai (MX) e mar–abr (AR). **Nunca usar "cuesta de enero"** |
 
 ## Ângulos proibidos
 
@@ -461,7 +467,7 @@ Conta do cenário base:
 | R3: taxa fixa de US$ 1,00 em toda transação, inclusive em cada bump | 9,9% + 1,00 / 9,9% + 1,00 | 8,98 | 5,99 / 5,35 |
 | R4 (red team): os ~26% vêm de imposto e conversão, **e** a taxa fixa sobe para 1,00 | front cai ~US$ 0,80 | ~8,0 | ~5,3 / ~4,77 |
 
-**Não afirmar que a mudança é neutra ou favorável** antes de abrir o detalhe da primeira venda real (front + bump). No Mimo, os bumps chegam como transações separadas, então o R3 ou o R4 são plausíveis.
+**Não afirmar que a mudança é neutra ou favorável** antes de abrir o detalhe da primeira venda real (front + bump). Confirmar na primeira venda de teste se cada bump vem como transação separada; se vier, o R3 ou o R4 são plausíveis.
 
 **Comparação com o Mimo:** ~9,4 de líquido; CPA para ROI 1,5 de ~6,27 sem imposto e ~5,60 em BRL. O L02 base, a 9,90, fica em 94% disso (conservador 85%, otimista 102%). **Não há folga para pagar CPA maior que o do Mimo.**
 
@@ -481,8 +487,8 @@ Para passar do MX para toda a LATAM em espanhol + US, multipliquei por ~1,95 [es
 
 **Por que o teto fica bem abaixo da conta:**
 1. **O cenário base supõe liderança de mercado.** Hoje os maiores em ES têm 12–27 anúncios ativos (Invitio 12, My Invite 16, Miboda 16, Cartita 27) [proxy].
-2. **Público estreito.** 16.400 eventos/dia × ~42 dias de antecedência × ~1,5 organizador por evento dá ~1,0 M de pessoas, ~1,1% dos 93,5 M de usuários do Facebook no MX [estimativa]. O Mimo fala com qualquer pessoa num relacionamento, em qualquer dia [inferência].
-3. **Concorrência com o grátis e com serviços baratos:** 849 anúncios de "invitaciones digitales" só no MX [medido].
+2. **Público estreito.** 16.400 eventos/dia × ~42 dias de antecedência × ~1,5 organizador por evento dá ~1,0 M de pessoas, ~1,1% dos 93,5 M de usuários do Facebook no MX ([DataReportal](https://datareportal.com/reports/digital-2026-mexico); a fração é [estimativa]). O Mimo fala com qualquer pessoa num relacionamento, em qualquer dia [inferência].
+3. **Concorrência com o grátis e com serviços baratos:** 849 anúncios de "invitaciones digitales" só no MX [medido, [busca](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=invitaciones%20digitales&search_type=keyword_unordered)].
 4. **Sem vantagem de lance:** o líquido base (8,79) é menor que o do Mimo (~9,4).
 
 **Estimativa final, só espanhol, com a régua BRL (CPA 5,23 a 9,90).** O mercado pago base é de ~1.480 convites/dia (759 × 1,95).
@@ -495,7 +501,7 @@ Para passar do MX para toda a LATAM em espanhol + US, multipliquei por ~1,95 [es
 | Nível do Mimo | ≥ US$ 506 | ≥ 97 | ≥ 6,5% | **Muito baixa** sem PT-BR e sem laço viral comprovado |
 
 - **A 7,90** (CPA-alvo 4,20), os mesmos US$ 250/dia exigem ~60 compradores/dia.
-- **Margem sobre a mídia a ROI 1,5:** US$ 0,50 por dólar gasto. US$ 250/dia deixam ~US$ 125/dia; o Mimo, a US$ 506/dia, deixaria ~US$ 253/dia [estimativa, antes de impostos e ferramentas].
+- **Margem sobre a mídia a ROI 1,5:** US$ 0,50 por dólar gasto, sem imposto (ROI 1,5 devolve 1,5 de líquido por dólar, então sobram 0,5; na régua BRL, 1,68 − 1,12 = 0,56 por dólar de anúncio). US$ 250/dia deixam ~US$ 125/dia; o Mimo, a US$ 506/dia, deixaria ~US$ 253/dia [estimativa, antes de impostos e ferramentas].
 - **Laço viral** (rodapé "Crea la tuya"): 150 visualizações × 1% de clique × 3–5% de compra dão ~0,05–0,08 venda extra por venda. Isso reduz o CPA efetivo em ~5–7% [estimativa]. Medir com `utm_source=viral`.
 
 **Distribuição da base de US$ 250/dia [estimativa]:**
@@ -565,7 +571,7 @@ Medição por page_ids na Biblioteca de Anúncios, só ACTIVE, em 22/09/2026. Di
 | [Mega Plantillas](https://www.facebook.com/ads/library/?id=1708910720392963) | Template + demo | USD | 10 | 49,5 | não verificado | Só 1 anúncio com mais de 30 d |
 | [Web Online](https://www.facebook.com/ads/library/?id=2313998366006369) | Revenda | PEN | 8 | 21,4 | não verificado | "listas para VENDER" (E2) |
 | [Someri](https://www.facebook.com/ads/library/?id=1950759622550013) | Revenda | MXN | 3 | 8,5 | MXN 99–119 ≈ US$ 5,75–6,92 | Preço "ANTES/HOY" ([link](https://www.facebook.com/ads/library/?id=1392068805735135)) |
-| Serviços MX | Designer por WhatsApp | MXN | — | — | [89](https://www.facebook.com/ads/library/?id=1802415467419849) · [119](https://www.facebook.com/ads/library/?id=1073107372315166) · [250](https://www.facebook.com/ads/library/?id=1406208784815107) · [349](https://www.facebook.com/ads/library/?id=1634274361447618) · [399](https://www.facebook.com/ads/library/?id=4601506146759840) | "invitación digital para XV", MX: 180 ativos, quase todos serviços locais; [Convite.events, pase QR](https://www.facebook.com/ads/library/?id=1731668288385176) |
+| Serviços MX | Designer por WhatsApp | MXN | — | — | [89](https://www.facebook.com/ads/library/?id=1802415467419849) · [119](https://www.facebook.com/ads/library/?id=1073107372315166) · [250](https://www.facebook.com/ads/library/?id=1406208784815107) · [349](https://www.facebook.com/ads/library/?id=1634274361447618) · [399](https://www.facebook.com/ads/library/?id=4601506146759840) | "invitación digital para XV", MX: 180 ativos ([busca](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=invitaci%C3%B3n%20digital%20para%20XV&search_type=keyword_unordered)), quase todos serviços locais; [Convite.events, pase QR](https://www.facebook.com/ads/library/?id=1731668288385176) |
 | [Allegra](https://www.facebook.com/ads/library/?id=938228905499063) · [Luxe Invite](https://www.facebook.com/ads/library/?id=1567459587847561) | Serviço com pases, álbum QR e impresso | — | — | — | não verificado | Validam os bumps B2 e o upsell |
 | Hotmart ES | Kits | USD | — | — | US$ 5 ([T102280557H](https://pay.hotmart.com/T102280557H)) a 14,99 ([K102179105D](https://pay.hotmart.com/K102179105D)) | Há kits na Hotmart que anunciam "RSVP online" (Fase 3) |
 | BR [Convitia](https://www.facebook.com/ads/library/?id=1042494484973953) | Editor freemium, dois ângulos | BRL | 33 | 76,9 | freemium | Revenda com "Fature até R$250" (proibido para nós) |
@@ -576,11 +582,11 @@ Medição por page_ids na Biblioteca de Anúncios, só ACTIVE, em 22/09/2026. Di
 
 **O argumento.** O L02 só fecha a conta se comprar cada cliente a um CPA igual ou menor que o do Mimo. Mas o público é muito mais estreito, os substitutos são grátis ou mais baratos, e nenhum editor self-service de ticket baixo se sustentou em espanhol.
 
-- **Margem.** A US$ 9,90, o CPA-alvo em BRL é 5,23, contra ~5,60 do Mimo. Há um teste interno de preço do Mimo que pesa aqui (ver notas privadas). A 7,90, o alvo cai para **4,20**, 25% abaixo do que o Mimo tolera. Com adesão cética aos bumps (o "Para siempre" perde a função depois da festa), o 9,90 cai para **4,53**.
+- **Margem.** A US$ 9,90, o CPA-alvo em BRL é 5,23, contra ~5,60 do Mimo. O 9,90 é decisão de preço a validar no teste (a decisão final trava o front em 9,90, sem A/B, até o K2). A 7,90, o alvo cai para **4,20**, 25% abaixo do que o Mimo tolera. Com adesão cética aos bumps (o "Para siempre" perde a função depois da festa), o 9,90 cai para **4,53**.
 - **Público.** Só ~1,1% do Facebook MX está comprando convite em cada momento. O CPA de teste esperado é de US$ 5–9 [inferência]. O ponto médio, 7,0, dá ROI de 1,12 em BRL.
 - **Quem dura não vende o nosso formato.** A Invitio cobra 599 MXN e empacota álbum. A Miboda vende por chat. Os 6 editores baratos ou grátis têm 18 dias ou menos no ar.
 - **Preço espremido dos dois lados.** O designer a MXN 89–119 é mais barato que os nossos MXN 169 e entrega pronto. O grátis cobre quem não quer pagar nada.
-- **Calendário.** O lançamento (05–11/10) pega o CPM subindo para o pico de novembro (+41% nos EUA; LATAM não verificado; [benly](https://benly.ai/learn/meta-ads/meta-ads-seasonal-campaigns)). E já é tarde para as bodas de nov–dez.
+- **Calendário.** O lançamento (05–11/10) pega o CPM subindo para o pico de novembro (+41% nos EUA; LATAM não verificado; [benly](https://benly.ai/learn/meta-ads/meta-ads-seasonal-campaigns), [Clouted](https://clouted.com/blog/meta-advertising-CPM-inflation-statistics)). E já é tarde para as bodas de nov–dez.
 - **Desfecho mais provável:** não é zero venda. É um CPA estável de US$ 6–8, que paga a mídia mas não passa na régua de 1,5. Mesmo com sucesso, são semanas de build e operação para, no máximo, 30–80% de um Mimo.
 
 **Os 5 maiores riscos e o sinal precoce de cada um:**
@@ -589,7 +595,7 @@ Medição por page_ids na Biblioteca de Anúncios, só ACTIVE, em 22/09/2026. Di
 |---|---|---|
 | 1 | Mercado: compra planejada, público estreito, substitutos grátis ou baratos | Taxa de prévia → pagamento < 50% da do Mimo depois de 500 prévias; mediana entre lead e compra > 72 h; > 30% dos comentários são "¿es gratis?" ou "¿cuánto cuesta?" |
 | 2 | Economia: líquido real abaixo do estimado (preço, adesão ao B1, taxa pós-21/09, reembolso) | Taxa fixa por bump na primeira venda (R3/R4); B1 < 15% depois de 100 compradores; líquido medido < 7,60 (a 9,90) ou < 6,00 (a 7,90); reembolso > 4% |
-| 3 | Criativo e CPM: demo saturada (849 anúncios só no MX), pixel novo, Q4 caro | CPM > 1,3× o do Mimo nos mesmos países; CTR de link mediano < 70% do Mimo depois de 30 anúncios |
+| 3 | Criativo e CPM: demo saturada (849 anúncios só no MX, [busca](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=invitaciones%20digitales&search_type=keyword_unordered)), pixel novo, Q4 caro | CPM > 1,3× o do Mimo nos mesmos países; CTR de link mediano < 70% do Mimo depois de 30 anúncios |
 | 4 | Produto: música e RSVP falham dentro do WhatsApp/Instagram; prazo de 14 d no limite; campo "presentes/datos bancarios" vira isca de golpe | Música que não toca no QA do D11; MVP não vendável até o D14 (06/10); < 50% dos convites com ≥ 1 confirmação em 7 d; qualquer denúncia de golpe |
 | 5 | Conta e política, com contágio para o Mimo: a célula de revenda encosta em "oportunidade econômica" | Qualquer reprovação por resultados irreais; pedido de verificação de anunciante; Hotmart sem aprovar produto e bumps até o D7. **BM, conta de anúncio e cartão separados do Mimo.** Abrir conta nova depois de um bloqueio é burla de sistemas |
 
@@ -621,6 +627,6 @@ As regras da oferta ("continuar ≤ 7,0 / parar > 8,8") ignoravam os 12% da cont
 - A **célula de anúncios de revenda e a landing para negócios ficam fora do lançamento.** Três motivos:
   - a longevidade na revenda é só de template barato;
   - o único editor para revendedor em ES tem 2,2 d no ar;
-  - é o público que mais reembolsa, e é o único ponto que arrisca a conta ligada ao Mimo.
+  - é o público que mais reembolsa (premissa [estimativa]), e é o único ponto que arrisca a conta ligada ao Mimo.
 - Ela só abre se o B2C passar no K2, com ≤ 20% da verba, só com demonstração e sujeita ao K9.
 - O build, a oferta e o criativo previam essa célula desde o início. Esta é a correção do red team.

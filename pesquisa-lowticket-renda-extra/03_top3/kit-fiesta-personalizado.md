@@ -1,6 +1,6 @@
 # L67 · Kit de fiesta personalizado: gerador de kit de cumpleaños com nome e idade, em PDF pronto para imprimir (a mãe faz a própria festa ou monta kits para vender)
 
-Data: 22/09/2026. Consolida pesquisa, build, oferta, criativo e red team (`_pesquisa_`, `_build_`, `_oferta_` e `_criativo_kit-fiesta-personalizado.md`, nesta pasta), já com as correções do red team.
+Data: 22/09/2026. Consolida pesquisa, build, oferta, criativo e red team (notas de trabalho privadas, fora do repositório), já com as correções do red team.
 
 **Convenções:**
 - **[medido]**: Biblioteca de Anúncios da Meta (só ACTIVE, 22/09/2026) ou página com link.
@@ -15,10 +15,10 @@ Contagem de anúncios e dias no ar são proxies, não faturamento. Não há fatu
 ## Resumo em 5 linhas
 
 1. **O produto.** É um editor web sem login. A mãe escolhe um de 8 temas originais, digita nome e idade e vê de graça, com marca d'água, as 7 peças do kit já com o nome: convite, topo de bolo, toppers, etiquetas, banderín e cartaz. Paga para baixar o PDF pronto para imprimir (Carta e A4, com linhas de corte) e o convite em imagem para WhatsApp. O front custa US$ 9,90 em moeda local, em A/B contra US$ 7,90. Quem monta kits para vender entra por um bump de licença (US$ 6,90), não pelo gancho principal.
-2. **A evidência.** A categoria-pai, o pack de kit de festa para editar no Canva, tem demanda longeva em ES. O DecoKit tem 160 anúncios ativos (102 com entrega no MX), e os dois mais antigos, ambos de temática, estão no ar há 136,6 e 127,1 d [medido; proxy]. **O gerador não tem prova.** Nenhum anunciante de gerador apareceu em ES em mais de 15 buscas por palavra-chave, e o líder já roda a mesma demo dentro do pack: "Solo cambió un nombre", há 39,2 d.
+2. **A evidência.** A categoria-pai, o pack de kit de festa para editar no Canva, tem demanda longeva em ES. O DecoKit tem 160 anúncios ativos (102 com entrega no MX; [página no MX](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&view_all_page_id=737352542803130&search_type=page)), e os dois mais antigos, ambos de temática, estão no ar há 136,6 e 127,1 d [medido; proxy]. **O gerador não tem prova.** Nenhum anunciante de gerador apareceu em ES em mais de 15 buscas por palavra-chave, e o líder já roda a mesma demo dentro do pack: "Solo cambió un nombre", há 39,2 d.
 3. **A economia [estimativa].** A US$ 9,90, o líquido por comprador fica em 7,93 / 8,70 / 9,61 (conservador / base / otimista), contra ~9,4 do Mimo. O CPA máximo para ROI 1,5 com conta de anúncio em BRL fica em 4,72 / 5,18 / 5,72. A US$ 7,90, o cenário base cai para 6,99 de líquido e 4,16 de CPA, 26% abaixo dos ~5,60 que o Mimo tolera.
 4. **O teto [estimativa, confiança baixa].** Em espanhol, US$ 100–350/dia (base de 200), ou ~20–70% do Mimo (> R$ 2.600/dia ≈ US$ 506). O limite é o público em compra: só quem tem aniversário de filho marcado para as próximas semanas, cerca de 0,2–0,4% dos usuários do Facebook no MX em cada momento.
-5. **O veredito.** Vale só como teste barato com portões de corte: MVP vendável entre o D11 e o D14 e, no máximo, ~US$ 600 no braço gerador para decidir. O desfecho mais provável é um CPA de US$ 5–8 com resultado inconclusivo. A ideia faz mais sentido no mesmo motor do L02 do que sozinha. Complementa o Mimo, mas não o substitui como motor de escala.
+5. **O veredito.** Vale só como teste barato com portões de corte: MVP vendável entre o D11 e o D14 e, no máximo, ~US$ 600 no braço gerador para decidir. O desfecho mais provável é um CPA de US$ 5–8 com resultado inconclusivo [estimativa]. A ideia faz mais sentido no mesmo motor do L02 do que sozinha. Complementa o Mimo, mas não o substitui como motor de escala.
 
 ## O que o comprador recebe e o mecanismo (por que é diferente do que já existe)
 
@@ -92,9 +92,9 @@ Além do PDF, o comprador recebe o **convite em imagem vertical (PNG 1080×1920)
 | **2. Emprendedora de papelería ou decoradora (secundário)** | Mulher que vende kits ou decoração por encomenda [inferência] | DecoKit: ["Más pedidos. Menos trabajo."](https://www.facebook.com/ads/library/?id=1066028365762431) (92,0 d, MX), ["Tu negocio puede empezar con esto"](https://www.facebook.com/ads/library/?id=1477793531027394) (90,2 d), ["Tu negocio necesita un sistema"](https://www.facebook.com/ads/library/?id=2338278257322076) (95,2 d); Magic Deco, ["Say YES to More Client Orders"](https://www.facebook.com/ads/library/?id=1397155619172622); [Papel Fiesta](https://www.facebook.com/ads/library/?id=1536737214484050) (serviço, 127,9 d) |
 | **3. Confeitera (toppers)** | Quem faz bolos e precisa de topper com nome [inferência] | [Emilia Creativa](https://www.facebook.com/ads/library/?id=27881754751467164), "+1.200 Cake Toppers Profesionales" (32 ativos; o mais antigo com 26,6 d); [Veronica Colombia](https://www.facebook.com/ads/library/?id=2576430022803606), "+2.500 toppers" (COP); [July Love Kits](https://www.facebook.com/ads/library/?id=1040848878786434), "750 Diseños de cake toppers" |
 
-**Países:** MX, AR, CO, PE, CL, EC e hispanos nos EUA, pelas moedas dos anúncios (USD, MXN, ARS, CLP, COP, PEN) [inferência]. **Ressalva:** o DecoKit tem **0 anúncios ativos com entrega na AR**, e 0 no filtro AR + CO [medido hoje]. Por isso AR e CO entram como exploratórios.
+**Países:** MX, AR, CO, PE, CL, EC e hispanos nos EUA, pelas moedas dos anúncios (USD, MXN, ARS, CLP, COP, PEN) [inferência]. **Ressalva:** o DecoKit tem **0 anúncios ativos com entrega na AR** ([página filtrada na AR](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AR&view_all_page_id=737352542803130&search_type=page)), e 0 no filtro AR + CO [medido hoje; o link reproduz um país, e o filtro de dois países foi feito via API em 22/09/2026]. Por isso AR e CO entram como exploratórios.
 
-**Quanto pesa o ângulo de negócio no líder [medido; proxy]:**
+**Quanto pesa o ângulo de negócio no líder [medido; proxy]** ([DecoKit no MX](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&view_all_page_id=737352542803130&search_type=page); o filtro UY/BO/GT/DO junta quatro países e foi feito via API em 22/09/2026):
 - **Filtro UY/BO/GT/DO:** 5 de 39 títulos com ≥ 30 d (13%); entre os com ≥ 90 d, 4 de ~23.
 - **Filtro MX:** 13 dos 50 anúncios mais novos (26%) e 12 de 41 com ≥ 30 d (29%). Os dois mais antigos dessa janela (92,0 e 90,2 d) são de negócio.
 - **Leitura corrigida:** a longevidade máxima está na **temática** (136,6 e 127,1 d). O negócio pesa de ~1/8 a ~1/3 dos títulos, conforme o país. Proporção de títulos não é proporção de compradores.
@@ -122,7 +122,7 @@ Além do PDF, o comprador recebe o **convite em imagem vertical (PNG 1080×1920)
 
 | Objeção (ES) | Evidência | Resposta no produto ou no criativo |
 |---|---|---|
-| "¿Tienen la temática que quiere mi hijo?" | DecoKit: 127,1 d e [136,6 d](https://www.facebook.com/ads/library/?id=2779896019055999); [Magic Deco](https://www.facebook.com/ads/library/?id=1575882503471281); [template de Bluey na Hotmart](https://pay.hotmart.com/B103082603B). É **temática, e provavelmente personagem (não verificado):** "kit cumpleaños Stitch" trouxe 7 anúncios, nenhum com o personagem no título, e o corpo do anúncio não é visível | Não usar personagem. Oferecer temas originais, 2 paletas e a foto opcional na invitación e no cartel. Na página, dizer "temas originales". **O risco residual é alto:** são 8 temas contra centenas, e a foto não pode aparecer no anúncio (é rosto de criança) |
+| "¿Tienen la temática que quiere mi hijo?" | DecoKit: 127,1 d e [136,6 d](https://www.facebook.com/ads/library/?id=2779896019055999); [Magic Deco](https://www.facebook.com/ads/library/?id=1575882503471281); [template de Bluey na Hotmart](https://pay.hotmart.com/B103082603B). É **temática, e provavelmente personagem (não verificado):** ["kit cumpleaños Bluey"](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=kit%20cumplea%C3%B1os%20Bluey&search_type=keyword_unordered) trouxe 7 anúncios, nenhum com o personagem no título, e o corpo do anúncio não é visível (o link reproduz um país; a contagem somou vários países de ES + US via API em 22/09/2026) | Não usar personagem. Oferecer temas originais, 2 paletas e a foto opcional na invitación e no cartel. Na página, dizer "temas originales". **O risco residual é alto:** são 8 temas contra centenas, e a foto não pode aparecer no anúncio (é rosto de criança) |
 | "¿Necesito Canva / saber diseño / computadora?" | DecoKit, "¿Necesito Canva Pro?" (120,2 d); digest de demanda ("¿se puede desde el celular?") | Demo 100% no celular, sem programa de design |
 | "No tengo impresora" | Não verificado [inferência] | PDF para papelaria ou ciber; convite em PNG para WhatsApp |
 | "Por ese precio me dan 10.000 diseños" | DecoKit, "¿De verdad vienen más de 10.000 diseños?"; refutação 4 da Fase 3 | "No son miles de archivos: es su fiesta". Comparar pelo esforço, não pela quantidade |
@@ -143,7 +143,7 @@ Além do PDF, o comprador recebe o **convite em imagem vertical (PNG 1080×1920)
   - [Elo7](https://www.elo7.com.br/lista/kit-festa-para-imprimir/): ~7.566 produtos.
 
   A presença desses sites em anúncios não foi medida.
-- **Leitura:** o BR também se divide entre pack barato e personalização feita por gente. Não achei gerador automático anunciado (a busca BR na Biblioteca não foi feita). Há ~11 operadores em BRL vendendo pack em espanhol. Se o gerador funcionar, eles copiam: a defesa é execução, não barreira técnica [inferência].
+- **Leitura:** o BR também se divide entre pack barato e personalização feita por gente. Não achei gerador automático anunciado (a busca BR na Biblioteca não foi feita). Há ~11 operadores em BRL vendendo pack em espanhol, contados entre os 50 anúncios mais novos da busca ["papelería para fiestas"](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=papeler%C3%ADa%20para%20fiestas&search_type=keyword_unordered) (o link reproduz um país; a busca original somou 11 países via API em 22/09/2026). Se o gerador funcionar, eles copiam: a defesa é execução, não barreira técnica [inferência].
 
 ## Oferta: front por país (moeda local), bumps, upsell, garantia
 
@@ -151,7 +151,7 @@ Além do PDF, o comprador recebe o **convite em imagem vertical (PNG 1080×1920)
 - "Créalo gratis y míralo completo, con su nombre, antes de pagar."
 - "Descargar mi kit · pago único · sin suscripción."
 - "Incluye: PDF listo para imprimir (Carta y A4) con invitación, topper de pastel, toppers, etiquetas, banderín con su nombre y cartel de bienvenida + invitación en imagen para WhatsApp."
-- "Temas originales (sin personajes de marca)." É honesto e evita o reembolso de quem esperava personagem.
+- "Temas originales (sin personajes de marca)." É honesto e evita o reembolso de quem esperava personagem [inferência].
 - "Imprímelo en casa o en cualquier papelería."
 - "En tu estado de cuenta el cargo aparece como HTM* / HOTMART."
 
@@ -166,7 +166,7 @@ Além do PDF, o comprador recebe o **convite em imagem vertical (PNG 1080×1920)
 
 **Front: A/B de US$ 9,90 (A) contra US$ 7,90 (B).** Nenhum braço é favorito:
 - a matemática favorece o 9,90, porque o 7,90 só empata em líquido por lead se converter **≥ 1,24×**;
-- há um teste interno de preço do Mimo; ver notas privadas;
+- o 7,90 pode converter mais, mas não há evidência pública de quanto: decisão de preço a validar no teste;
 - **não lançar abaixo de 7,90:** a 6,90, seria preciso converter 1,42× mais.
 
 | País | Moeda | A | ≈ US$ | B | ≈ US$ | Líquido por comprador no base, A / B [estimativa] |
@@ -192,11 +192,11 @@ Câmbio de 22/09/2026: 1 USD = 17,22 MXN · 3.116 COP · 959,5 CLP · 3,366 PEN 
   - Não decidir com menos de ~150 compras por braço, salvo diferença grande.
 - **Decisão pendente (usuário): travar o preço durante o teste de mecanismo?** O criativo propõe travar nas S41–S42 para isolar a variável gerador × pack.
   - Travar em **9,90** deixa o CPA-alvo em 5,18 (conta BRL).
-  - Travar em **7,90** baixa o alvo para 4,16 (há um teste interno de preço do Mimo que pesa nessa escolha; ver notas privadas).
+  - Travar em **7,90** baixa o alvo para 4,16 (sem evidência pública de que o 7,90 converta ≥ 1,24× mais: decisão de preço a validar no teste).
   - O controle (pack) roda no mesmo preço do braço gerador.
 
 **Order bumps.** Regras, iguais às do L02:
-- bump barato vende mais que bump caro (há um teste interno de preço de bump do Mimo; ver notas privadas);
+- bump barato tende a vender mais que bump caro: no briefing, o usuário relata que baixar o bump principal do Mimo de 7,90 para 4,90 aumentou a adesão;
 - nome e preço claros;
 - sem preço riscado e sem timer;
 - cada bump é um produto digital entregável.
@@ -205,8 +205,8 @@ As adesões são **estimativas, não verificadas**.
 
 | # | Bump (ES, como aparece no checkout) | US$ | MX / CO / CL / PE | O que entrega | Adesão cons. / base / otim. |
 |---|---|---|---|---|---|
-| B1 | **"Invitación digital animada a juego":** "Un link para WhatsApp con cuenta regresiva, ubicación con 'Cómo llegar' y botón para confirmar asistencia. Mismo diseño y nombre de tu kit." | 4,90 | MXN 79 · COP 14.900 · CLP 4.690 · S/ 15,90 | Página pública do convite, ativa até 30 d depois da festa, com o QR impresso na invitación. É o L02 "lite" no mesmo motor. O PNG do front canibaliza parte do valor, por isso a adesão base fica abaixo do ~1/3 do Mimo | 15 / **22** / 30% |
-| B2 | **"Kits para siempre: todos los cumples de tus peques":** "Cada año, su kit nuevo con su nueva edad (y otro tema si quiere). Hasta 3 peques. Pago único." | 3,90 | MXN 69 · COP 11.900 · CLP 3.790 · S/ 12,90 | Até 3 nomes presos à conta; 1 kit por nome a cada 12 meses, com a idade atualizada. "Para siempre" = enquanto o serviço existir (dizer isso em `/es/terminos`). O DecoKit usa ["♾️ Un kit. Fiesta tras fiesta."](https://www.facebook.com/ads/library/?id=1097383766200420). **Ressalva:** o espelho do "Acceso Para Siempre" do Mimo é fraco, porque o pack concorrente já dá reuso sem custo extra | 10 / **16** / 24% |
+| B1 | **"Invitación digital animada a juego":** "Un link para WhatsApp con cuenta regresiva, ubicación con 'Cómo llegar' y botón para confirmar asistencia. Mismo diseño y nombre de tu kit." | 4,90 | MXN 79 · COP 14.900 · CLP 4.690 · S/ 15,90 | Página pública do convite, ativa até 30 d depois da festa, com o QR impresso na invitación. É o L02 "lite" no mesmo motor. O PNG do front canibaliza parte do valor [inferência], por isso a adesão base fica abaixo do ~1/3 do Mimo | 15 / **22** / 30% |
+| B2 | **"Kits para siempre: todos los cumples de tus peques":** "Cada año, su kit nuevo con su nueva edad (y otro tema si quiere). Hasta 3 peques. Pago único." | 3,90 | MXN 69 · COP 11.900 · CLP 3.790 · S/ 12,90 | Até 3 nomes presos à conta; 1 kit por nome a cada 12 meses, com a idade atualizada. "Para siempre" = enquanto o serviço existir (dizer isso em `/es/terminos`). O DecoKit usa ["♾️ Un kit. Fiesta tras fiesta."](https://www.facebook.com/ads/library/?id=1097383766200420). **Ressalva:** a adesão é incerta, porque o pack concorrente já dá reuso sem custo extra [inferência] | 10 / **16** / 24% |
 | B3 | **"Licencia Emprendedora":** "Crea hasta 10 kits en 12 meses para tus clientas y vende el kit impreso o tu servicio de personalización. Sin pie de página de la marca." | 6,90 | MXN 119 · COP 21.900 · CLP 6.590 · S/ 22,90 | 10 créditos, no máximo 3 kits novos por dia, uso comercial do **impresso**. **Não inclui revenda de arquivos, temas ou versões em branco** (evita PLR/MRR) | 2 / **4** / 6% |
 
 - **Reconciliação dos arquivos anteriores:**
@@ -227,13 +227,13 @@ As adesões são **estimativas, não verificadas**.
 - **Com OXXO, PSE ou PagoEfectivo:** não verificado se o upsell funciona ([Hotmart, upsell](https://help.hotmart.com/pt-br/article/43101499107597/como-configurar-um-upsell-usando-o-funil-de-vendas-e-o-hotmart-pages)).
 - Sem downsell encadeado.
 
-**Garantia de 7 dias**, o mínimo da Hotmart ([garantia](https://help.hotmart.com/es/article/360034552751/-como-ajustar-el-plazo-de-garantia-del-producto-que-he-creado-)). Vendas para a UE têm mínimo de 15 dias. Por que 7:
+**Garantia de 7 dias**, o mínimo da Hotmart ([garantia](https://help.hotmart.com/es/article/360034552751/-como-ajustar-el-plazo-de-garantia-del-producto-que-he-creado-)). Vendas para a UE têm mínimo de 15 dias. Por que 7 [inferência]:
 - a prévia completa grátis faz o papel da garantia longa;
 - o PDF impresso não é revogável, e com 30 dias quase toda compradora poderia fazer a festa e pedir o dinheiro de volta;
 - o Mimo usa 7 dias e tem reembolso < 1%.
 
 **Ressalvas:**
-- **Nem todo comprador fica protegido pelos 7 dias.** Para quem compra 1 a 3 semanas antes, a janela de "usa e reembolsa" diminui. Mas os ganchos H07/H08 ("¿El cumple es este sábado?") atraem quem faz a festa **dentro** da garantia. Medir o reembolso por gancho e cortar H07/H08 se ficarem acima da média.
+- **Nem todo comprador fica protegido pelos 7 dias.** Para quem compra 1 a 3 semanas antes, a janela de "usa e reembolsa" diminui. Mas os ganchos H07/H08 ("¿El cumple es este sábado?") atraem quem faz a festa **dentro** da garantia [inferência]. Medir o reembolso por gancho e cortar H07/H08 se ficarem acima da média.
 - **"Si algo no se imprime bien, escríbenos y lo ajustamos" tem custo.** Regenerar o PDF custa ~0, mas o atendimento é tempo humano de um operador solo.
 - **FAQ (ES):** "Tienes 7 días de garantía. Si pides el reembolso, tu enlace de descarga, tu invitación digital y tus créditos se desactivan."
 - **Limite a vigiar:** chargeback de ~0,9% por região, acima do qual a Hotmart pode reter saldo (digest de políticas; confiança média).
@@ -255,23 +255,23 @@ As adesões são **estimativas, não verificadas**.
 
 ## Build: stack, telas, dias até o MVP
 
-Uma pessoa só, no Lovable, a partir de um remix do Mimo Gift. O código do Mimo foi só lido.
+Uma pessoa só, no Lovable. Reaproveita o fluxo editor → página → Hotmart do Mimo Gift, em nível funcional.
 
-**Correção do red team:** o motor do PDF **não** "já existe no Mimo". Existe no Mimo um fluxo de PDF simples (servidor → Storage → link assinado → e-mail), mas ele gera 1 página vetorial. **O motor multipágina com imagens, TTF próprio e dois renderizadores é novo** e é o que decide o prazo.
+**Correção do red team:** o motor do PDF **não** vem pronto. **O motor multipágina com imagens, TTF próprio e dois renderizadores é novo** e é o que decide o prazo.
 
 **Stack:**
 
 | Camada | Escolha | Observação |
 |---|---|---|
-| App | Remix do Mimo no **Lovable** (stack padrão do Lovable; bibliotecas de PDF e de QR já no projeto) | Marca, domínio, pixel, produtos e dashboard separados do Mimo. **Não verificado:** se o remix leva schema e dados; conferir no D1 que nada do Mimo veio junto |
-| Banco e arquivos | **Supabase** (Lovable Cloud), backend separado | Buckets: `kit-assets-preview` (público, WebP leve), `kit-assets-hires` (**privado**, PNG 300 dpi), `kit-pdfs` (privado), `party-photos` (caminho não adivinhável). Preço de teto do Supabase Pro: US$ 25/mês, 100 GB de storage e 250 GB de egress ([Supabase](https://supabase.com/pricing), via snippet). O Lovable Cloud não publica preço por GB |
+| App | **Lovable** (stack padrão do Lovable) | Marca, domínio, pixel, produtos, dados e dashboard separados do Mimo; conferir no D1 que nenhum dado do Mimo veio junto |
+| Banco e arquivos | **Supabase** (Lovable Cloud), backend próprio | Buckets: `kit-assets-preview` (público, WebP leve), `kit-assets-hires` (**privado**, PNG 300 dpi), `kit-pdfs` (privado), `party-photos` (caminho não adivinhável). Preço de teto do Supabase Pro: US$ 25/mês, 100 GB de storage e 250 GB de egress ([Supabase](https://supabase.com/pricing), via snippet). O Lovable Cloud não publica preço por GB |
 | PDF | **jsPDF no servidor:** gera → Storage → `createSignedUrl` | PNG em alta, embutido uma vez por alias; fonte TTF própria (o jsPDF só aceita TTF, e as 14 fontes padrão não cobrem UTF-8: [npm](https://www.npmjs.com/package/jspdf), [Medium](https://medium.com/@berkayyyulguel/jspdf-utf-8-support-b7df7a76e593)); link assinado **curto (10 min) gerado no clique**, para o reembolso conseguir revogar. Limites de CPU e memória do Lovable para ~15 páginas com imagens: **não verificados** (spike do D2) |
 | Prévia | **SVG em React**, a partir da mesma especificação do PDF, em baixa resolução e com marca d'água | Custo zero; é também o que se grava para os criativos |
-| PNG do convite | Canvas 2D no navegador → utilitário de salvar arquivo no aparelho, reaproveitado do Mimo | Custo zero |
-| Pagamento | Hotmart: front + 3 bumps, lightbox, **sem fallback silencioso** | Os produtos entram em análise: caminho crítico no D1 |
-| Liberação | Notificação de pagamento da Hotmart, reaproveitando a lógica de liberação do Mimo: resposta de sucesso sempre, idempotência por transação, kit identificado pelo parâmetro de rastreio do checkout, bumps identificados pelo produto, fallback por e-mail | Aprovado → libera o kit; B1 → libera o convite; B2/B3 → concede créditos; reembolso ou chargeback → apaga o PDF, tira o convite público do ar, zera créditos; OXXO → pendente |
+| PNG do convite | Canvas 2D no navegador → salvar a imagem no aparelho | Custo zero |
+| Pagamento | Hotmart: front + 3 bumps, em lightbox | Os produtos entram em análise: caminho crítico no D1 |
+| Liberação | Notificação de pagamento da Hotmart (webhook): resposta de sucesso sempre, idempotência por transação, kit identificado pelo parâmetro de rastreio do checkout, bumps identificados pelo produto, fallback por e-mail | Aprovado → libera o kit; B1 → libera o convite; B2/B3 → concede créditos; reembolso ou chargeback → apaga o PDF, tira o convite público do ar, zera créditos; OXXO → pendente |
 | Atribuição | UTMify (parâmetro de origem do checkout) + Meta CAPI com dataset novo | A configuração da UTMify fica com o usuário |
-| E-mail | Fila transacional do Mimo | "Tu kit está listo" (link para o painel, não para o PDF), pago pendente, carrinho abandonado 1 h/24 h, recuperação de acesso |
+| E-mail | E-mail transacional | "Tu kit está listo" (link para o painel, não para o PDF), pago pendente, carrinho abandonado 1 h/24 h, recuperação de acesso |
 | IA e vídeo no produto | **Nenhum no MVP** | A IA entra uma vez, para produzir as ilustrações |
 
 **Motor de peças (a parte nova).**
@@ -284,12 +284,12 @@ Uma pessoa só, no Lovable, a partir de um remix do Mimo Gift. O código do Mimo
 **Telas:**
 1. Landing `/es`: vídeo do nome aparecendo nas 7 peças, fotos de um kit impresso "Ejemplo", chips dos 8 temas, CTA "Crea tu kit gratis y míralo antes de pagar", FAQ (impressão, Carta/A4, meios de pagamento, cargo "HTM*", entrega).
 2. Onboarding 1, tema: grade de 8 × 2 paletas, com miniatura ao vivo.
-3. Onboarding 2, dados + e-mail (reusa a captura de e-mail do Mimo).
+3. Onboarding 2, dados + e-mail.
 4. Editor: formulário + prévia SVG por peça em carrossel, foto opcional, seletor Carta/A4.
 5. Prévia do kit com marca d'água e a barra "Descargar mi kit", sem timer e sem preço riscado.
 6. Checkout Hotmart com B1, B2 e B3 (kit e variante do A/B no parâmetro de rastreio do checkout).
 7. Obrigado / descarga: link HTTPS direto, PNG, instruções e aviso para o navegador interno.
-8. Painel "Mis kits" (reusa o fluxo de acesso do Mimo).
+8. Painel "Mis kits".
 9. Edição pós-compra dentro da trava; regenera o PDF.
 10. Editor do convite web (B1).
 11. Convite público (B1): envelope → nome e idade → contagem → foto → local com Google Maps/Waze → "Confirmar por WhatsApp" → rodapé "Crea el kit de tu peque". Com `noindex` e link "Reportar".
@@ -298,9 +298,9 @@ Uma pessoa só, no Lovable, a partir de um remix do Mimo Gift. O código do Mimo
 14. Recuperar acesso, Termos, Privacidade e `/es/licencia`.
 15. Admin: painel, A/B, órfãos, carrinhos abandonados, "tirar do ar", contador de gerações por e-mail.
 
-**Reaproveitado do Mimo (em nível funcional):** o fluxo editor → prévia → paga → libera, os utilitários de PDF imprimível, de QR e de salvar mídia no aparelho, a abertura animada, a contagem regressiva, a liberação pós-pagamento, a integração com o checkout, o sorteio do A/B, o rastreio de UTM, a API de Conversões da Meta, os e-mails, os fluxos de acesso e de recuperação, as páginas legais e o painel de admin. O registro de página do Mimo é reaproveitado com campos de festa.
+**Reaproveitado do Mimo (em nível funcional):** o fluxo editor → página → Hotmart (cria grátis, vê a prévia, paga, recebe). O motor de peças, o PDF multipágina, a trava de kit e os créditos são novos.
 
-**Não levar:** os idiomas, os meios de pagamento e as ofertas específicos do Mimo, o mapa e os temas de casal. Nenhum elemento de urgência ou de preço riscado entra no L67.
+**Não levar:** marca, ofertas e dados do Mimo.
 
 **Privacidade:**
 - a foto é opcional e é apagada 30 d depois da festa;
@@ -311,7 +311,7 @@ Uma pessoa só, no Lovable, a partir de um remix do Mimo Gift. O código do Mimo
 
 | Dia | Entrega | Pronto quando |
 |---|---|---|
-| D1 | Remix, Knowledge com as restrições, remoções, marca e domínio. **Criar front + B1 + B2 + B3 na Hotmart** (entram em análise). Guia de estilo dos 2 primeiros temas | Projeto só em ES, sem dado do Mimo; produtos enviados |
+| D1 | Projeto base, Knowledge com as restrições, marca e domínio. **Criar front + B1 + B2 + B3 na Hotmart** (entram em análise). Guia de estilo dos 2 primeiros temas | Projeto só em ES, sem dado do Mimo; produtos enviados |
 | D2 | **Spike técnico (decide o resto):** 1 tema e 3 peças (invitación, toppers, banderín com nome longo), TTF com ñ/á/¡/¿, PNG em alta, Carta e A4, gerado no servidor do Lovable. Impressão real a 100% | PDF de 15 páginas em < 10 s e < 8 MB, com a medida certa na régua. Se falhar, plano B no navegador |
 | D3 | Arte: 8 temas × 4–5 ilustrações (IA + curadoria + remoção de fundo + checklist de PI) | 32–40 arquivos aprovados. **Otimista:** o próprio build estima ~1,5 dia de curadoria |
 | D4 | Onboarding + editor + renderizador SVG ao vivo + `fitText()` | Digitar o nome atualiza as peças do spike no celular em < 100 ms |
@@ -363,7 +363,7 @@ Uma pessoa só, no Lovable, a partir de um remix do Mimo Gift. O código do Mimo
 **Custo marginal por venda [estimativa]: ~US$ 0,01–0,02 de infraestrutura, com pior caso de ~0,05.**
 - **Premissas:** 10–20 visitantes do editor por venda (conversão editor → compra não verificada), ~1 MB de prévia por visitante, PDF de ~5 MB, até 3 gerações e 3 downloads, e o B1 com ~100 visualizações a 20% de adesão.
 - **Condições:** só vale com prévia em WebP leve, limite de gerações e limpeza de rascunhos e fotos.
-- **O que fica fora:** o CPU da geração no servidor não foi verificado (calibrar com a fatura do Lovable Cloud do Mimo ÷ vendas do mês). **O suporte de impressão também não entra:** é tempo humano.
+- **O que fica fora:** o CPU da geração no servidor não foi verificado (calibrar com a fatura do Lovable Cloud ÷ vendas do mês, depois do lançamento). **O suporte de impressão também não entra:** é tempo humano.
 - **Custo fixo:** ilustrações. São ~320 imagens geradas × US$ 0,02–0,08 (preço não verificado) ≈ US$ 6–26, mais ~1,5 dia de curadoria. Cada tema novo custa ~US$ 1–3 e ~2 h.
 
 ## Criativo: 15 ganchos em espanhol, 5 formatos, 30 variações/semana
@@ -375,7 +375,7 @@ Uma pessoa só, no Lovable, a partir de um remix do Mimo Gift. O código do Mimo
 - **O vídeo não mostra preço.** Com o A/B sorteado na landing, metade do tráfego veria um preço diferente.
 - **A mesa só mostra o que o kit inclui.** Onde ainda não houver impressão, a cena leva o selo "Montaje ilustrativo" (peças reais sobre um fundo de mesa sem pessoas).
 
-**Ângulos com evidência [medido; proxy].** Nos 50 anúncios mais novos do DecoKit no filtro UY/BO/GT/DO, 39 têm ≥ 30 d:
+**Ângulos com evidência [medido; proxy].** Nos 50 anúncios mais novos do DecoKit no filtro UY/BO/GT/DO, 39 têm ≥ 30 d ([DecoKit no UY](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=UY&view_all_page_id=737352542803130&search_type=page); o link reproduz um país, e o filtro de quatro países foi feito via API em 22/09/2026):
 
 | Ângulo | Anúncios com ≥ 30 d | Exemplo |
 |---|---|---|
@@ -386,7 +386,7 @@ Uma pessoa só, no Lovable, a partir de um remix do Mimo Gift. O código do Mimo
 | Tema | 3 | ["Tenemos la temática favorita de tu peque"](https://www.facebook.com/ads/library/?id=2779896019055999) (136,6 d) |
 | Outros | 8 | ["No es un kit cualquiera"](https://www.facebook.com/ads/library/?id=1039503565182532) (88,0 d) |
 
-No MX, o ângulo de negócio pesa ~2× isso (26–29%, na seção Comprador). **13 dos 15 ganchos são de uso próprio.** Os 2 de revenda vendem só a ferramenta, numa célula com ≤ 15% da verba e só com o B3 no ar. O motivo não é a longevidade, e sim o risco de política (E2) e de reembolso desse público.
+No MX, o ângulo de negócio pesa ~2× isso (26–29%, na seção Comprador). **13 dos 15 ganchos são de uso próprio.** Os 2 de revenda vendem só a ferramenta, numa célula com ≤ 15% da verba e só com o B3 no ar. O motivo não é a longevidade, e sim o risco de política (E2) e de reembolso desse público [inferência].
 
 **15 ganchos (0–3 s).** Regras:
 - texto de tela com ≤ 8 palavras; voz com ≤ 9;
@@ -399,7 +399,7 @@ No MX, o ângulo de negócio pesa ~2× isso (26–29%, na seção Comprador). **
 | H01 | Demo | próprio | Escribe su nombre y mira toda la fiesta | "Escribe su nombre… y mira lo que pasa." | Hipótese central; não há gerador anunciando em ES. Fora de ES, Magic Deco ["It's an APP!"](https://www.facebook.com/ads/library/?id=4475514232660841) (1,2 d) |
 | H02 | Curiosidade | próprio | Nombre, edad y tema. Mira lo que sale. | "Tres datos: nombre, edad y tema. Mira." | Curiosidade é o ângulo com mais anúncios ≥ 30 d ([118,1 d](https://www.facebook.com/ads/library/?id=962067306718766)) |
 | H03 | Tema favorito | próprio | ¿Le encantan los {tema}? | "¿Le encantan los dinosaurios? Mira su fiesta." | [136,6 d](https://www.facebook.com/ads/library/?id=2779896019055999). `{tema}` só entre os temas do produto, nunca personagem |
-| H04 | 1º ano | próprio | Su primer añito, con su nombre en todo | "Su primer añito, con su nombre en todo." | **Sem evidência:** "primer añito kit imprimible" = 0 anúncios. É exploração |
+| H04 | 1º ano | próprio | Su primer añito, con su nombre en todo | "Su primer añito, con su nombre en todo." | **Sem evidência:** ["primer añito kit imprimible"](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=primer%20a%C3%B1ito%20kit%20imprimible&search_type=keyword_unordered) = 0 anúncios (o link reproduz um país; a busca original somou vários países de ES + US via API em 22/09/2026). É exploração |
 | H05 | Em casa | próprio | Cumple en casa: así queda la mesa | "Cumple en casa: así queda su mesa." | ["Así armé esta fiesta desde casa"](https://www.facebook.com/ads/library/?id=1574986933976057) (97,1 d), aqui em voz de marca, não em 1ª pessoa |
 | H06 | Emoção | próprio | Imagina su carita al ver su nombre | "Imagina su carita cuando vea su nombre en todo." | [136,0 d](https://www.facebook.com/ads/library/?id=2020782765482199); [97,1 d](https://www.facebook.com/ads/library/?id=4309605869368925). Banderín na parede, sem criança |
 | H07 | Data (mês) | próprio | ¿Cumple en {mes}? Tenlo listo hoy. | "¿Cumple en octubre? Tu kit, listo hoy." | Compra 1–3 semanas antes [inferência]. `{mes}` = mês de hoje + 10 d. **Medir o reembolso** |
@@ -541,9 +541,9 @@ Os ganchos do teste de mecanismo não dependem do mecanismo nos primeiros 3 s. O
 | S41–S42 (05–18/10) | Lançamento + teste de mecanismo. O H07 se ajusta sozinho ("octubre" → "noviembre") |
 | S43–S44 (19/10–01/11) | Tema "Monstruitos" (genérico). Nada parecido com Monsters Inc., Coco ou Hotel Transylvania. Demanda não verificada |
 | S45–S47 | Rotina, com checklist de PI em cada tema novo |
-| S48 (Black Friday, 27/11) | Não escalar nem subir teste: CPM 2–3× maior (dados dos EUA) |
+| S48 (Black Friday, 27/11) | Não escalar nem subir teste: CPM 2–3× maior (dados dos EUA: [benly](https://benly.ai/learn/meta-ads/meta-ads-seasonal-campaigns), [clouted](https://clouted.com/blog/meta-advertising-CPM-inflation-statistics); LATAM não verificado) |
 | S49–S52 | Rotina; tema de inverno para aniversários de dezembro (hipótese) |
-| 28/12–10/01 | CPM barato, mas o MX tem menos aniversários em janeiro: não escalar só pelo CPM. **Nunca "cuesta de enero"** |
+| 28/12–10/01 | CPM barato (dados dos EUA: [benly](https://benly.ai/learn/meta-ads/meta-ads-seasonal-campaigns), [clouted](https://clouted.com/blog/meta-advertising-CPM-inflation-statistics); LATAM não verificado), mas o MX tem menos aniversários em janeiro: não escalar só pelo CPM. **Nunca "cuesta de enero"** |
 | Fev–mar/2027 | Reforçar a CO, onde março foi o 1º mês em nascimentos em 2023 e 2024 ([DANE](https://www.dane.gov.co/files/operaciones/EEVV/2024/19-dic-2024/bol-EEVV-Nacimientos-2024pr.pdf)) |
 
 ## Ângulos proibidos
@@ -584,19 +584,21 @@ Qualquer reprovação por resultados irreais desliga a célula de revenda.
 - **CPA para ROI 1,5** = líquido ÷ 1,5.
 - **Com conta de anúncio em BRL** (o UTMify soma 12% de imposto ao gasto; é a régua provável): break-even = líquido ÷ 1,12; ROI 1,5 = líquido ÷ 1,68.
 
-**Taxas (modelo do usuário, `calc_economia.py`):**
+**Taxas (modelo do usuário, `_raw/calc_economia.py`):**
 - **Front:** 10,95% + US$ 1,49, o que deixa ~74% a US$ 9,90 (9,90 × 0,8905 − 1,49 = 7,33).
 - **Bumps:** 88% líquido.
 - **Upsell:** calculado com a taxa do front; a 7,90 deixa US$ 5,55.
 - **Reembolso:** aplicado sobre o líquido total. Não foi verificado se a Hotmart devolve as taxas no reembolso.
 
 **Reembolso estimado para o nicho.**
-- **Por que acima do Mimo (< 1%):**
+- **Por que acima do Mimo (< 1%) [inferência]:**
   - o PDF impresso não é revogável;
   - há o risco de impressão e o "mi hijo quería X";
   - o público emprendedor reembolsa mais;
   - são três bumps.
-- **Por que abaixo de um produto de renda extra:** a prévia grátis mostra exatamente o que se compra, o ticket é baixo e não há promessa de ganho.
+- **Por que abaixo de um produto de renda extra [inferência]:** a prévia grátis mostra exatamente o que se compra, o ticket é baixo e não há promessa de ganho.
+
+Premissas por segmento [estimativa]:
 
 | Cenário | Mãe, uso próprio (~83%) | Emprendedora (~17%) | Ponderado | Usado |
 |---|---|---|---|---|
@@ -651,7 +653,7 @@ Qualquer reprovação por resultados irreais desliga a célula de revenda.
 
 A taxa fixa pune o ticket baixo: de 9,90 para 7,90, o preço cai 20% e o líquido do front cai 24%.
 
-**Sensibilidade ao B1 [estimativa, recalculada na `calc_economia.py`].** Com o B1 a 10% e as demais adesões no base, o líquido cai para 6,50 a 7,90 (CPA ROI 1,5 em BRL de 3,87) e para 8,21 a 9,90 (4,89). O red team citou 6,12 a 7,90, número que não fecha com os bumps da oferta.
+**Sensibilidade ao B1 [estimativa, recalculada na `_raw/calc_economia.py`].** Com o B1 a 10% e as demais adesões no base, o líquido cai para 6,50 a 7,90 (CPA ROI 1,5 em BRL de 3,87) e para 8,21 a 9,90 (4,89). O red team citou 6,12 a 7,90, número que não fecha com os bumps da oferta.
 
 **A taxa da Hotmart pode ter mudado em 21/09/2026 (não verificado).** Pelo digest de políticas, a taxa do Player (US$ 1,49) teria sido absorvida numa taxa fixa de US$ 1,00 ([Hotmart](https://help.hotmart.com/es/article/208298448/-cuales-son-las-tarifas-cobradas-por-hotmart-)). Não se sabe se a microtransação mudou nem se cada bump paga taxa fixa própria.
 
@@ -691,9 +693,9 @@ A taxa fixa pune o ticket baixo: de 9,90 para 7,90, o preço cai 20% e o líquid
 | × participação nossa de 3 / 6 / 12% × CPA de ROI 1,5 (5,29 / 5,80 / 6,41) | **~US$ 86 / 378 / 1.464 por dia** | Faixa de 17×: mostra só que o tamanho bruto não é o limite |
 
 **Por que o teto fica abaixo da conta:**
-1. **O público em compra é estreito.** São 11.900 festas/dia × ~14 dias de antecedência × ~1,2 decisor ≈ 200 mil pessoas, ~0,2% dos 93,5 M de usuários do Facebook no MX; com janela de 4 semanas, ~0,4% [estimativa]. O L02 fica em ~1,1%, e o Mimo fala com qualquer pessoa num relacionamento, em qualquer dia [inferência]. O pack "10.000 diseños" vende "por si acaso" a um público mais largo; o gerador pede um filho, um nome e uma festa.
+1. **O público em compra é estreito.** São 11.900 festas/dia × ~14 dias de antecedência × ~1,2 decisor ≈ 200 mil pessoas, ~0,2% dos 93,5 M de usuários do Facebook no MX ([DataReportal](https://datareportal.com/reports/digital-2026-mexico)); com janela de 4 semanas, ~0,4% [estimativa]. O L02 fica em ~1,1% [estimativa], e o Mimo fala com qualquer pessoa num relacionamento, em qualquer dia [inferência]. O pack "10.000 diseños" vende "por si acaso" a um público mais largo; o gerador pede um filho, um nome e uma festa [inferência].
 2. **Abre mão da alavanca mais longeva do nicho, a temática:** 8 temas contra centenas e nenhum personagem. A perda de conversão não foi medida.
-3. **O leilão está denso.** O DecoKit tem 102 anúncios ativos no MX, em lotes de 9 a 12, e há ~11 operadores em BRL em "papelería para fiestas" [medido].
+3. **O leilão está denso.** O DecoKit tem 102 anúncios ativos no MX ([página no MX](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&view_all_page_id=737352542803130&search_type=page)), em lotes de 9 a 12, e há ~11 operadores em BRL em ["papelería para fiestas"](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=papeler%C3%ADa%20para%20fiestas&search_type=keyword_unordered) [medido; o link reproduz um país, e a busca original somou 11 países via API em 22/09/2026].
 4. **O gerador não tem validação em ES.** É o maior desconto de confiança.
 5. **Não há vantagem de lance:** o líquido base (8,70) é menor que o do Mimo (~9,4).
 
@@ -708,7 +710,7 @@ A taxa fixa pune o ticket baixo: de 9,90 para 7,90, o preço cai 20% e o líquid
 
 - **A 7,90** (CPA-alvo de 4,16), os mesmos US$ 200/dia exigem ~48 compradores/dia.
 - **Margem sobre a mídia a ROI 1,5:** US$ 200/dia deixam ~US$ 100/dia, antes de ferramentas e impostos. O Mimo, a US$ 506/dia, deixaria ~US$ 253/dia [estimativa].
-- **Laço viral** (rodapé do convite B1): 22% × ~100 visualizações × 1% de clique × 3–5% de compra ≈ 0,007–0,011 venda extra por venda. É desprezível; não contar com ele.
+- **Laço viral** (rodapé do convite B1) [estimativa]: 22% × ~100 visualizações × 1% de clique × 3–5% de compra ≈ 0,007–0,011 venda extra por venda. É desprezível; não contar com ele.
 
 **Distribuição da base de US$ 200/dia [estimativa]:**
 
@@ -724,14 +726,14 @@ A taxa fixa pune o ticket baixo: de 9,90 para 7,90, o preço cai 20% e o líquid
 
 AR e CO começam com um conjunto de teste (US$ 20–40/dia) e só recebem a fatia da base se passarem na régua. Até lá, essa verba fica no MX.
 
-**Sazonalidade: demanda basicamente perene** [medido + estimativa]. No MX, o mês com mais nascimentos é setembro (9,4%) e o com menos, fevereiro (7,3%), contra média de 8,33%: amplitude de +13% / −12%. O CPM sobe no Q4 (novembro +41% e Black Friday 2–3× nos EUA; [benly](https://benly.ai/learn/meta-ads/meta-ads-seasonal-campaigns)). **O efeito líquido não foi medido.** A pesquisa dizia que a sazonalidade "favorece o Q4"; está corrigido. Os anúncios de mãe e tema do DecoKit atravessam mai–set ([136,6 d](https://www.facebook.com/ads/library/?id=1964080760865418)).
+**Sazonalidade: demanda basicamente perene** [medido + estimativa]. No MX, o mês com mais nascimentos é setembro (9,4%) e o com menos, fevereiro (7,3%) ([El Informador, com dados do INEGI](https://www.informador.mx/mexico/Este-es-el-mes-en-el-que-nacen-mas-bebes-en-Mexico-cada-ano-20250926-0076.html); [Notigram](https://notigram.com/mexico/nacional/septiembre-el-mes-de-los-nacimientos-en-mexico-segun-el-inegi-20250926-1563636)), contra média de 8,33%: amplitude de +13% / −12%. O CPM sobe no Q4 (novembro +41% e Black Friday 2–3× nos EUA; [benly](https://benly.ai/learn/meta-ads/meta-ads-seasonal-campaigns), [clouted](https://clouted.com/blog/meta-advertising-CPM-inflation-statistics); LATAM não verificado). **O efeito líquido não foi medido.** A pesquisa dizia que a sazonalidade "favorece o Q4"; está corrigido. Os anúncios de mãe e tema do DecoKit atravessam mai–set ([136,6 d](https://www.facebook.com/ads/library/?id=1964080760865418)).
 
 | Período | Fator sobre a base [estimativa] | Motivo |
 |---|---|---|
 | Out até 20/nov | ~1,1× | Aniversários de set–out; lançar e validar aqui |
-| Semana da Black Friday | ~0,6× | CPM 2–3× maior |
+| Semana da Black Friday | ~0,6× | CPM 2–3× maior (dados dos EUA: [benly](https://benly.ai/learn/meta-ads/meta-ads-seasonal-campaigns), [clouted](https://clouted.com/blog/meta-advertising-CPM-inflation-statistics); LATAM não verificado) |
 | Dezembro | ~0,8× | Nascimentos acima da média, mas o Natal compete e o CPM fica alto |
-| 26/dez a jan | ~1,0× | CPM 40–60% menor, mas janeiro tem menos nascimentos |
+| 26/dez a jan | ~1,0× | CPM 40–60% menor até ~15/01 (dados dos EUA: [benly](https://benly.ai/learn/meta-ads/meta-ads-seasonal-campaigns), [clouted](https://clouted.com/blog/meta-advertising-CPM-inflation-statistics); LATAM não verificado), mas janeiro tem menos nascimentos |
 | Fevereiro | ~0,9× | Mês com menos nascimentos no MX |
 | Mar–jul | ~1,0× | Base perene; Día del Niño no MX em 30/abr (não verificado para kit) |
 | Ago–set | ~1,1× | Nascimentos acima da média |
@@ -740,9 +742,9 @@ AR e CO começam com um conjunto de teste (US$ 20–40/dia) e só recebem a fati
 
 | Idioma | Evidência (ACTIVE) | Acréscimo [estimativa] | Confiança |
 |---|---|---|---|
-| PT-BR | "kit festa personalizado" = 859, quase tudo físico ou local; "kit festa digital editável" = 22, com [Canva para Negócios](https://www.facebook.com/ads/library/?id=2093728848165766) (82,1 d) e [Letícia](https://www.facebook.com/ads/library/?id=849007734605966) (93,4 d); "mesversário" = 1.167, quase tudo físico ([Dolce](https://www.facebook.com/ads/library/?id=1397846729169307)). O mesversário repete todo mês e combina com o B2 [inferência; demanda digital não verificada]. Contra: âncora de R$ 3,99–9,90 | +US$ 50–150/dia | Baixa |
-| EN | "birthday party printable" = 26; só [Magic Deco](https://www.facebook.com/ads/library/?id=2467686010427034) e [DECO MAGIC](https://www.facebook.com/ads/library/?id=952159290624190), com ~5 d; o resto é Etsy orgânico | +US$ 0–75/dia | Baixa |
-| FR | "kit anniversaire à imprimer" = 4; [Idées de Fêtes, "Kit anniversaire pirate à son prénom"](https://www.facebook.com/ads/library/?id=985996551191139) (~0,9 d); [DECO MAGIC KIT](https://www.facebook.com/ads/library/?id=1377762184340736) (4,6 d). Garantia mínima de 15 dias na UE | +US$ 0–50/dia | Muito baixa |
+| PT-BR | ["kit festa personalizado"](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&q=kit%20festa%20personalizado&search_type=keyword_unordered) = 859, quase tudo físico ou local; ["kit festa digital editável"](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&q=kit%20festa%20digital%20edit%C3%A1vel&search_type=keyword_unordered) = 22, com [Canva para Negócios](https://www.facebook.com/ads/library/?id=2093728848165766) (82,1 d) e [Letícia](https://www.facebook.com/ads/library/?id=849007734605966) (93,4 d); ["mesversário"](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=BR&q=mesvers%C3%A1rio&search_type=keyword_unordered) = 1.167, quase tudo físico ([Dolce](https://www.facebook.com/ads/library/?id=1397846729169307)). O mesversário repete todo mês e combina com o B2 [inferência; demanda digital não verificada]. Contra: âncora de R$ 3,99–9,90 | +US$ 50–150/dia | Baixa |
+| EN | ["birthday party printable"](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=birthday%20party%20printable&search_type=keyword_unordered) = 26 (US, GB, CA e AU; o link reproduz os US, e a soma foi feita via API em 22/09/2026); só [Magic Deco](https://www.facebook.com/ads/library/?id=2467686010427034) e [DECO MAGIC](https://www.facebook.com/ads/library/?id=952159290624190), com ~5 d; o resto é Etsy orgânico | +US$ 0–75/dia | Baixa |
+| FR | ["kit anniversaire à imprimer"](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=FR&q=kit%20anniversaire%20%C3%A0%20imprimer&search_type=keyword_unordered) = 4 (FR, BE, CA e CH; o link reproduz a FR, e a soma foi feita via API em 22/09/2026); [Idées de Fêtes, "Kit anniversaire pirate à son prénom"](https://www.facebook.com/ads/library/?id=985996551191139) (~0,9 d); [DECO MAGIC KIT](https://www.facebook.com/ads/library/?id=1377762184340736) (4,6 d). Garantia mínima de 15 dias na UE | +US$ 0–50/dia | Muito baixa |
 
 **Total com todos os idiomas: US$ 150–600/dia, confiança baixa.**
 
@@ -769,21 +771,21 @@ AR e CO começam com um conjunto de teste (US$ 20–40/dia) e só recebem a fati
 
 ## Concorrentes diretos (links)
 
-Medição na Biblioteca de Anúncios, só ACTIVE, em 22/09/2026. "Mais antigo" é o anúncio ativo mais antigo visível. Em páginas com mais de 50 ativos, é limite inferior. A moeda é a da conta de anúncio, não a do país de entrega.
+Medição na Biblioteca de Anúncios, só ACTIVE, em 22/09/2026. O ID de cada página leva à Biblioteca sem filtro de país; os filtros de um país se reproduzem trocando `country` no link, e os de vários países (UY/BO/GT/DO, AR + CO) foram feitos via API em 22/09/2026. "Mais antigo" é o anúncio ativo mais antigo visível. Em páginas com mais de 50 ativos, é limite inferior. A moeda é a da conta de anúncio, não a do país de entrega.
 
 | Página / produto | Moeda | Ativos | Mais antigo (d) | Preço | Ângulo / nota |
 |---|---|---|---|---|---|
-| **DecoKit Shop** (737352542803130), +10.000 designs Canva | USD | **160**; **102 no MX**; 55 em UY/BO/GT/DO; **0 na AR** | **136,6** (limite inferior) | Não verificado | Os 2 mais antigos são de temática ([136,6 d](https://www.facebook.com/ads/library/?id=1964080760865418), [127,1 d](https://www.facebook.com/ads/library/?id=1285905063665166)). Negócio: 13% (UY/BO/GT/DO) a 26–29% (MX). **Já roda a demo do gerador e o reuso:** ["Solo cambió un nombre"](https://www.facebook.com/ads/library/?id=2009114323127277) (39,2 d), ["No es para una sola fiesta"](https://www.facebook.com/ads/library/?id=918283787405166) (38,7 d). Criativos em lotes de 9 a 12 a cada poucos dias |
-| **Mundo Creativo Digital** (1068130303039496) | USD | 66 | 37,4 (limite inferior) | ARS 17.990 na [loja](https://mundocreativo.blog/products/kit-de-papeleria) (câmbio não verificado) | Título único "+10,000 recursos listos para editar en Canva" ([link](https://www.facebook.com/ads/library/?id=1054639970312774)) |
-| **Magic Deco** (967135516493190), EN | USD | 61 | 6,3 (limite inferior) | Não verificado | [It's an APP!](https://www.facebook.com/ads/library/?id=4475514232660841) (1,2 d, abre no Canva), ["Stop Searching"](https://www.facebook.com/ads/library/?id=2490781461398016), ["Do You Have This Theme? = YES"](https://www.facebook.com/ads/library/?id=1575882503471281), ["More Client Orders"](https://www.facebook.com/ads/library/?id=1397155619172622) |
-| **Pequeños Con Amor** (699624056575259) | USD | 41 | 7,2 | Não identificado | Só escassez ([link](https://www.facebook.com/ads/library/?id=1590631305803085)) |
-| **Emilia Creativa** (104514041971206), toppers | USD | 32 | 26,6 | Não verificado | "+1.200 Cake Toppers" em ES e EN ([link](https://www.facebook.com/ads/library/?id=27881754751467164)). A comparação com os "2" da Fase 1 misturava métodos (busca × página): **"em crescimento" não está provado** |
-| **Deco Mundo** (746385791884775) | USD | 21 | 12,9 | Não verificado ([loja](https://mundodeco.shop/en/products/kit-fiesta)) | "Tu fiesta WOW en menos de 60 minutos" (15 de 21, [link](https://www.facebook.com/ads/library/?id=1432932032020466)); ["Encuentra. Personaliza. Crea."](https://www.facebook.com/ads/library/?id=1025291930534954) |
-| **Kit Fiesta Mágica** (1291271347405076) | BRL | 12 | 0,5 | Não verificado | "¡ÚLTIMAS UNIDADES!" num produto digital ([link](https://www.facebook.com/ads/library/?id=1590800242454223)) |
-| **Party Magic Studio** (1288364524353091) | USD | 12 | 1,2 | Não verificado | "LO QUIERO", "⭐4,5/5" não verificável ([link](https://www.facebook.com/ads/library/?id=1074398312015285)) |
-| **Activa Academy** (881747588346031) | MXN | 7 | 77,6 | Não verificado | "Mega Kit de Fiesta: +10,000 Diseños" ([link](https://www.facebook.com/ads/library/?id=1561011532248354)) |
-| **Mega pack para la Fiesta de tus Sueños** (1317853361405992) | USD | 4 | 1,5 | Não verificado | "Tu fiesta con efecto WOW, sin diseñadora" ([link](https://www.facebook.com/ads/library/?id=1798090501643105)) |
-| **cienacres.imprimibles** (461588617027210) | USD | 4 | 469,5 | Não verificado | Loja de imprimíveis, sem título; produto exato não verificado ([link](https://www.facebook.com/ads/library/?id=1620243371983362)) |
+| **DecoKit Shop** ([737352542803130](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&view_all_page_id=737352542803130&search_type=page)), +10.000 designs Canva | USD | **160**; **102 no MX**; 55 em UY/BO/GT/DO; **0 na AR** | **136,6** (limite inferior) | Não verificado | Os 2 mais antigos são de temática ([136,6 d](https://www.facebook.com/ads/library/?id=1964080760865418), [127,1 d](https://www.facebook.com/ads/library/?id=1285905063665166)). Negócio: 13% (UY/BO/GT/DO) a 26–29% (MX). **Já roda a demo do gerador e o reuso:** ["Solo cambió un nombre"](https://www.facebook.com/ads/library/?id=2009114323127277) (39,2 d), ["No es para una sola fiesta"](https://www.facebook.com/ads/library/?id=918283787405166) (38,7 d). Criativos em lotes de 9 a 12 a cada poucos dias |
+| **Mundo Creativo Digital** ([1068130303039496](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&view_all_page_id=1068130303039496&search_type=page)) | USD | 66 | 37,4 (limite inferior) | ARS 17.990 na [loja](https://mundocreativo.blog/products/kit-de-papeleria) (câmbio não verificado) | Título único "+10,000 recursos listos para editar en Canva" ([link](https://www.facebook.com/ads/library/?id=1054639970312774)) |
+| **Magic Deco** ([967135516493190](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&view_all_page_id=967135516493190&search_type=page)), EN | USD | 61 | 6,3 (limite inferior) | Não verificado | [It's an APP!](https://www.facebook.com/ads/library/?id=4475514232660841) (1,2 d, abre no Canva), ["Stop Searching"](https://www.facebook.com/ads/library/?id=2490781461398016), ["Do You Have This Theme? = YES"](https://www.facebook.com/ads/library/?id=1575882503471281), ["More Client Orders"](https://www.facebook.com/ads/library/?id=1397155619172622) |
+| **Pequeños Con Amor** ([699624056575259](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&view_all_page_id=699624056575259&search_type=page)) | USD | 41 | 7,2 | Não identificado | Só escassez ([link](https://www.facebook.com/ads/library/?id=1590631305803085)) |
+| **Emilia Creativa** ([104514041971206](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&view_all_page_id=104514041971206&search_type=page)), toppers | USD | 32 | 26,6 | Não verificado | "+1.200 Cake Toppers" em ES e EN ([link](https://www.facebook.com/ads/library/?id=27881754751467164)). A comparação com os "2" da Fase 1 misturava métodos (busca × página): **"em crescimento" não está provado** |
+| **Deco Mundo** ([746385791884775](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&view_all_page_id=746385791884775&search_type=page)) | USD | 21 | 12,9 | Não verificado ([loja](https://mundodeco.shop/en/products/kit-fiesta)) | "Tu fiesta WOW en menos de 60 minutos" (15 de 21, [link](https://www.facebook.com/ads/library/?id=1432932032020466)); ["Encuentra. Personaliza. Crea."](https://www.facebook.com/ads/library/?id=1025291930534954) |
+| **Kit Fiesta Mágica** ([1291271347405076](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&view_all_page_id=1291271347405076&search_type=page)) | BRL | 12 | 0,5 | Não verificado | "¡ÚLTIMAS UNIDADES!" num produto digital ([link](https://www.facebook.com/ads/library/?id=1590800242454223)) |
+| **Party Magic Studio** ([1288364524353091](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&view_all_page_id=1288364524353091&search_type=page)) | USD | 12 | 1,2 | Não verificado | "LO QUIERO", "⭐4,5/5" não verificável ([link](https://www.facebook.com/ads/library/?id=1074398312015285)) |
+| **Activa Academy** ([881747588346031](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&view_all_page_id=881747588346031&search_type=page)) | MXN | 7 | 77,6 | Não verificado | "Mega Kit de Fiesta: +10,000 Diseños" ([link](https://www.facebook.com/ads/library/?id=1561011532248354)) |
+| **Mega pack para la Fiesta de tus Sueños** ([1317853361405992](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&view_all_page_id=1317853361405992&search_type=page)) | USD | 4 | 1,5 | Não verificado | "Tu fiesta con efecto WOW, sin diseñadora" ([link](https://www.facebook.com/ads/library/?id=1798090501643105)) |
+| **cienacres.imprimibles** ([461588617027210](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&view_all_page_id=461588617027210&search_type=page)) | USD | 4 | 469,5 | Não verificado | Loja de imprimíveis, sem título; produto exato não verificado ([link](https://www.facebook.com/ads/library/?id=1620243371983362)) |
 | **Papel Fiesta** | ARS | — | 127,9 | Não verificado | Serviço sob encomenda, "Temáticas a pedido", venda por WhatsApp ([link](https://www.facebook.com/ads/library/?id=1536737214484050)) |
 | **Fabulandia** | ARS | — | 165,6 | Não identificado | "+5000 VENDIDOS"; produto não identificado ([link](https://www.facebook.com/ads/library/?id=3377779535705085)) |
 | Toppers | COP / USD / PEN | — | — | Não verificado | [Veronica Colombia](https://www.facebook.com/ads/library/?id=2576430022803606) (COP); [July Love Kits](https://www.facebook.com/ads/library/?id=1040848878786434) (11,8 d); [Diseños premiun](https://www.facebook.com/ads/library/?id=2845888295783849) (candy bar, PEN, 23,1 d) |
@@ -796,7 +798,7 @@ Medição na Biblioteca de Anúncios, só ACTIVE, em 22/09/2026. "Mais antigo" �
 
 **Possível rede de um só operador [inferência, não verificado].** A Deco Mundo e a Magic Deco usam títulos idênticos, e as lojas se chamam "DIGITAL STORE 1" ([mundodeco.shop](https://mundodeco.shop/en/products/kit-fiesta)), "DIGITAL STORE 2" ([mundoinfantildigital.shop](https://mundoinfantildigital.shop/products/magic-party-kit)) e "Online Store DK" ([magicpartykit.com](https://magicpartykit.com/products/magic-party-kit-8-bonuses)). "DK" pode ser DecoKit. Se for uma rede só, "vários vendedores" é, em parte, um operador com várias páginas. A mesma rede já testa o posicionamento "app" em EN e FR.
 
-**Buscas em ES sem gerador:** "kit de fiesta" (1.014), "papelería para fiestas" (234), "kit de cumpleaños digital" (87), "toppers imprimibles" (21), "candy bar imprimible" (12), "kit de cumpleaños personalizado" (106), "kit de fiesta personalizado imprimible" (4), "escribe el nombre invitación cumpleaños" (1), "invitación cumpleaños inteligencia artificial" (2). As buscas por frase ("con el nombre de tu hijo", "personalizado con nombre y edad", "cambia el nombre y la edad") só trazem ruído. **A ausência de gerador vale para essas palavras, não para o mercado inteiro.**
+**Buscas em ES sem gerador:** ["kit de fiesta"](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=kit%20de%20fiesta&search_type=keyword_unordered) (1.014), ["papelería para fiestas"](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=papeler%C3%ADa%20para%20fiestas&search_type=keyword_unordered) (234), ["kit de cumpleaños digital"](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=kit%20de%20cumplea%C3%B1os%20digital&search_type=keyword_unordered) (87), ["toppers imprimibles"](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=toppers%20imprimibles&search_type=keyword_unordered) (21), ["candy bar imprimible"](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=candy%20bar%20imprimible&search_type=keyword_unordered) (12), ["kit de cumpleaños personalizado"](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=kit%20de%20cumplea%C3%B1os%20personalizado&search_type=keyword_unordered) (106), ["kit de fiesta personalizado imprimible"](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=kit%20de%20fiesta%20personalizado%20imprimible&search_type=keyword_unordered) (4), ["escribe el nombre invitación cumpleaños"](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=escribe%20el%20nombre%20invitaci%C3%B3n%20cumplea%C3%B1os&search_type=keyword_unordered) (1), ["invitación cumpleaños inteligencia artificial"](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&q=invitaci%C3%B3n%20cumplea%C3%B1os%20inteligencia%20artificial&search_type=keyword_unordered) (2). Os totais somam vários países de ES (até 11) e foram feitos via API em 22/09/2026; cada link reproduz só o MX. As buscas por frase ("con el nombre de tu hijo", "personalizado con nombre y edad", "cambia el nombre y la edad") só trazem ruído. **A ausência de gerador vale para essas palavras, não para o mercado inteiro.**
 
 ## O melhor argumento de por que vai falhar (e o que mataria a ideia)
 
@@ -805,11 +807,11 @@ Medição na Biblioteca de Anúncios, só ACTIVE, em 22/09/2026. "Mais antigo" �
 - **O L67 faz o contrário e cobra mais.** Para proteger a arte, trava 1 kit = 1 criança + 1 festa. E cobra US$ 7,90–9,90, no topo da faixa dos packs (US$ 3,65–10, com centenas ou milhares de designs).
 - **Tira as duas alavancas mais longevas do nicho:**
   - **a temática:** os dois anúncios mais antigos do líder são de tema, e o L67 tem 8 temas e nenhum personagem;
-  - **a compradora de volume:** no MX, ~1/4 dos anúncios do líder e os dois mais antigos da janela são de negócio. Esse público compra volume, não um kit com um único nome.
+  - **a compradora de volume:** no MX, ~1/4 dos anúncios do líder e os dois mais antigos da janela são de negócio. Esse público compra volume, não um kit com um único nome [inferência].
 - **Sobra um público estreito, sem segmentação possível.** É a mãe com festa nas próximas semanas: ~0,2–0,4% do Facebook no MX, disputada num leilão em que o líder solta lotes de 9 a 12 anúncios. E o sinal do líder nem chega à AR (0 ativos), que receberia 12% da verba.
 - **A conta não perdoa.** A 7,90, o CPA para ROI 1,5 em BRL é de US$ 4,16, 26% abaixo do que o Mimo tolera, com pixel novo e sem nenhum anunciante provando que um gerador vende em ES. Com o B1 a 10%, cai para 3,87.
 - **O teste não consegue decidir.** Com 40–50 compras por braço, só aparece diferença de CPA ≥ 1,48–1,55×. Enxergar 20% exige ~230 compras por braço (2 × (1,96 ÷ ln 1,2)²).
-- **O desfecho mais provável não é fracasso claro, é um meio-termo caro:** CPA entre US$ 5 e 8, resultado inconclusivo, e semanas de um operador solo que poderiam ir para a escala do Mimo.
+- **O desfecho mais provável não é fracasso claro, é um meio-termo caro:** CPA entre US$ 5 e 8 [estimativa], resultado inconclusivo, e semanas de um operador solo que poderiam ir para a escala do Mimo.
 
 **Os 5 maiores riscos e o sinal precoce de cada um:**
 
@@ -817,11 +819,11 @@ Medição na Biblioteca de Anúncios, só ACTIVE, em 22/09/2026. "Mais antigo" �
 |---|---|---|---|
 | 1 | **Mercado:** o gerador não tem demanda própria, só a herdada do pack | Zero gerador em ES em 15+ buscas; o líder já vende "Solo cambió un nombre" e reuso; os ganchos mais longevos são de temática; a Magic Deco "APP" tem 1,2 d e abre no Canva | Visitante → compra abaixo do mínimo do Portão 1 depois de 1.000 visitantes; ≥ 25% das respostas de "¿Qué tema buscabas?" (campo no editor) pedindo personagem, nas primeiras 500 sessões; controle com CPA ≤ 1/1,5 do CPA do gerador (≥ 40 compras por braço) |
 | 2 | **Economia e reembolso:** a margem depende de bumps não medidos | A 7,90 sem bumps, 5,32 de líquido; o PDF impresso não é revogável; H07/H08 puxam compras dentro da garantia; o regime de taxa pós-21/09 não foi verificado | Líquido real e adesão ao B1 nas primeiras 100 vendas; linha de taxa fixa na 1ª venda com bump; motivo de cada reembolso; reembolso > 7% ou chargeback > 0,5% |
-| 3 | **Criativo e CPM:** a demo é mais fraca que a do Mimo e disputa um leilão denso | Sem rosto de criança nem personagem; a mesa exige kits impressos de verdade; rótulo "AI info" nos formatos com rosto; o líder já tem a mesma demo | Hook rate, CTR de link e CPM contra os do Mimo nas mesmas praças, depois de ~10.000 impressões por criativo. Se o CPM sair mais alto, o multiplicador exigido sobe na mesma proporção |
-| 4 | **Produto e build:** PDF no servidor, impressão e suporte de um operador solo | O Mimo só gera 1 página vetorial; o banderín sozinho soma ~10 páginas; o D3 é otimista; o suporte de impressão é tempo humano | Spike do D2 com PDF > 10 s ou > 8 MB, ou erro de memória; quadrado ≠ 5,0 cm no D6; tickets de impressão por 100 compradores; MVP depois do D14 |
+| 3 | **Criativo e CPM:** a demo é mais fraca que a do Mimo [inferência] e disputa um leilão denso | Sem rosto de criança nem personagem; a mesa exige kits impressos de verdade; rótulo "AI info" nos formatos com rosto; o líder já tem a mesma demo | Hook rate, CTR de link e CPM contra os do Mimo nas mesmas praças, depois de ~10.000 impressões por criativo. Se o CPM sair mais alto, o multiplicador exigido sobe na mesma proporção |
+| 4 | **Produto e build:** PDF no servidor, impressão e suporte de um operador solo | O motor de PDF multipágina com imagens é novo; o banderín sozinho soma ~10 páginas; o D3 é otimista; o suporte de impressão é tempo humano | Spike do D2 com PDF > 10 s ou > 8 MB, ou erro de memória; quadrado ≠ 5,0 cm no D6; tickets de impressão por 100 compradores; MVP depois do D14 |
 | 5 | **Cópia** | A rede DecoKit/Deco Mundo/Magic Deco (inferência) já testa "app" em EN e FR; ~11 operadores BRL; tudo o que funcionar fica visível na mesma Biblioteca | Anúncios em ES dessas páginas com "app", "escribe su nombre" ou "con su nombre"; o "It's an APP!" passando de 30 d; nosso CPA subindo > 20% por semana, 2 semanas seguidas, sem fadiga de frequência |
 
-Fora do top 5, com risco baixo: conta e política. O DecoKit roda "Emprende con decoración" há ~81 d no MX sem sinal de bloqueio [proxy]. Os riscos residuais são o rótulo de IA, a foto de criança na página pública do convite (lei de dados por país não verificada) e a célula de revenda escorregar para "gana".
+Fora do top 5, com risco baixo: conta e política. O DecoKit roda "Emprende con decoración" há ~81 d no MX sem sinal de bloqueio [proxy; [página no MX](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MX&view_all_page_id=737352542803130&search_type=page)]. Os riscos residuais são o rótulo de IA, a foto de criança na página pública do convite (lei de dados por país não verificada) e a célula de revenda escorregar para "gana".
 
 **O que mataria a ideia.** Réguas [estimativa, cenário base, conta BRL]:
 
@@ -847,7 +849,7 @@ Fora do top 5, com risco baixo: conta e política. O DecoKit roda "Emprende con 
 
   Se o Mimo roda acima de ROI 1,5, o CPA dele é menor e o multiplicador exigido sobe.
 - **Corte:** eficiência abaixo do multiplicador de break-even, corrigida pela diferença de CPM.
-- **Editor:** a taxa mínima visitante → compra é o CPC real ÷ o CPA de break-even. Com CPC de US$ 0,20, isso dá 3,2% a 7,90 e 2,6% a 9,90. Ficar abaixo depois de ≥ 1.000 visitantes é corte.
+- **Editor:** a taxa mínima visitante → compra é o CPC real ÷ o CPA de break-even. Com CPC de US$ 0,20 [estimativa], isso dá 3,2% a 7,90 e 2,6% a 9,90. Ficar abaixo depois de ≥ 1.000 visitantes é corte.
 
 **Portão 2: produto, pelo CPA combinado do braço gerador, com bumps** (95% de confiança de que o CPA está acima do break-even, Poisson):
 
@@ -864,7 +866,7 @@ Fora do top 5, com risco baixo: conta e política. O DecoKit roda "Emprende con 
 **Portão 3: economia real, nas primeiras 100 vendas de front.**
 - **Líquido real por comprador:** matar ou reprecificar se ficar abaixo do cenário ruim, < US$ 5,86 a 7,90 ou < 7,52 a 9,90. Nesse ponto, o CPA exigido cai para ≤ 3,49 ou ≤ 4,48 (BRL), abaixo do plausível.
 - **B1 com adesão < 10%:** o "diferencial" não pega. Levar o convite para o front a preço maior, ou matar.
-- **Reembolso > 7% ou chargeback > 0,5%:** parar e revisar. O limite da Hotmart é ~0,9%.
+- **Reembolso > 7% ou chargeback > 0,5%:** parar e revisar. O limite da Hotmart é ~0,9% (digest de políticas; confiança média).
 - **Tickets de impressão > 10 por 100 compradores** depois de corrigir a página 0: o custo marginal deixa de ser zero para um operador solo.
 
 **Portão 4: mecanismo, gerador × controle L09** (substitui as regras de 20–25% da oferta e do criativo, que a amostra não consegue ver).
@@ -875,4 +877,4 @@ Fora do top 5, com risco baixo: conta e política. O DecoKit roda "Emprende con 
 **Posição final sobre o ângulo duplo:**
 - **Uso próprio (a mãe que faz a festa) é o produto e o anúncio.**
 - **Quem monta kits para vender entra pelo bump B3** e por uma célula de revenda pequena: ≤ 15% da verba, só com demonstração, sem valor cobrado e só com o B3 no ar. A célula é desligada na primeira reprovação por resultados irreais.
-- **A evidência não sustenta subir a revenda para o gancho principal.** O público pesa 1/8 a 1/3 dos títulos do líder, mas compra volume (o que a trava não dá), reembolsa mais e é o único ponto que arrisca a conta.
+- **A evidência não sustenta subir a revenda para o gancho principal.** O público pesa 1/8 a 1/3 dos títulos do líder, mas compra volume (o que a trava não dá), reembolsa mais [inferência] e é o único ponto que arrisca a conta.

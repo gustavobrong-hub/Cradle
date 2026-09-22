@@ -8,11 +8,11 @@ Data de início: 2026-09-22 (UTC)
 - WebFetch / curl / navegador: BLOQUEADOS pela política de rede da sessão (hotmart.com, pay.hotmart.com, facebook.com, transparency.meta.com, etsy.com, trends.google.com, google.com, wikipedia). Consequência: preços e bumps da Hotmart só via snippet de busca; Google Trends e TikTok Creative Center não verificáveis diretamente → links prontos gerados pra o usuário abrir.
 
 ## Fases
-- [ ] Fase 1 — Long list
-- [ ] Fase 2 — Eliminatórias
-- [ ] Fase 3 — Scorecard
-- [ ] Fase 4 — Deep dive top 3
-- [ ] Fase 5 — Decisão + validação
+- [x] Fase 1 — Long list
+- [x] Fase 2 — Eliminatórias
+- [x] Fase 3 — Scorecard
+- [x] Fase 4 — Deep dive top 3
+- [x] Fase 5 — Decisão + validação
 
 ## Log
 - 2026-09-22 16:55 UTC — Fase 1 lançada (workflow wf_cc6e8dd8-e30): 7 agentes de fonte + políticas + demanda/objeções → consolidação → lacunas. Anotações brutas em _raw/fase1_*.md.
@@ -23,5 +23,6 @@ Data de início: 2026-09-22 (UTC)
 - Fase 3 lançada: 23 sobreviventes + L01 fora de concurso.
 - 2026-09-22 ~19:45 UTC — Fase 3 concluída: 02_scorecard.md. Ranking final: L02 Invitaciones web 67,0; L67 Gerador de kit de festa 66,5; L09 Kit festa Canva 63,5; L29 Calculadora de custos 59,3; L66 Video-invitación 56,8. L01 (Mimo Revenda) fora de concurso 35,8. Top 3 p/ deep dive: L02, L67, L29 (L09 coberto como controle do L67). Nenhuma ideia verificada supera o Mimo em teto nem em líquido/comprador no modelo. Resultado: _raw/fase3_result.json.
 - Fase 4 lançada (deep dive top 3).
-- 2026-09-22 ~21:15 UTC — Fase 4 concluída: 03_top3/{invitaciones-web,kit-fiesta-personalizado,calculadora-costos-precios}.md. Versões completas (com detalhes internos do código do Mimo lidos no Lovable, só leitura) em _privado/03_top3_completo/; intermediários em _privado/03_top3_intermediarios/. Versões públicas sanitizadas. 2 sugestões de tarefa sobre o Mimo (fora do escopo desta pesquisa) foram enfileiradas para o usuário; detalhes só nas notas privadas.
+- 2026-09-22 ~21:15 UTC — Fase 4 concluída: 03_top3/{invitaciones-web,kit-fiesta-personalizado,calculadora-costos-precios}.md. Versões completas em _privado/03_top3_completo/ (fora do git); intermediários em _privado/03_top3_intermediarios/. Versões públicas sanitizadas.
 - 2026-09-22 ~21:45 UTC — Fase 5 (decisão): painel 3/3 no L02 como aposta limitada; 00_decisao.md escrito. Adendo no 02_scorecard.md (teto inflado; L29 não devia ser top 3). Plano de validação + crítico rodando.
+- 2026-09-22 ~22:45 UTC — Fase 5 concluída: 04_validacao.md; crítico de completude + correções (vazamentos de dado privado/interno removidos dos arquivos públicos; JSONs brutos das Fases 2, 3 e 5 movidos para _privado/; links de busca da Biblioteca de Anúncios adicionados à long list; nota de reconciliação no dossiê do L02). ATENÇÃO: commits anteriores deste branch (já publicados) ainda contêm parte desses dados; o force-push para limpar o histórico foi bloqueado pela permissão da sessão; ver resumo final.
