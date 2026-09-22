@@ -21,3 +21,5 @@ Data de início: 2026-09-22 (UTC)
 - Fase 2 lançada (eliminatórias E0 escopo + E1–E5, juiz + cético por lote de 12).
 - 2026-09-22 ~19:00 UTC — Fase 2 concluída: 19 sobreviventes de 60 (41 eliminadas: 27 por E0 escopo "fora do nicho renda extra", 5 E5, 4 E2, 3 E1, 2 E4). O cético não derrubou nenhuma adicional. H1 (Mimo Gift Revenda, L01) eliminada por E2; H2 (Invitaciones web, L02) sobreviveu e absorveu o L03 (ângulo B2C). 4 reformulações "versão ferramenta" adicionadas (L66–L69). Resultado: _raw/fase2_result.json; 01_longlist.csv atualizado.
 - Fase 3 lançada: 23 sobreviventes + L01 fora de concurso.
+- 2026-09-22 ~19:45 UTC — Fase 3 concluída: 02_scorecard.md. Ranking final: L02 Invitaciones web 67,0; L67 Gerador de kit de festa 66,5; L09 Kit festa Canva 63,5; L29 Calculadora de custos 59,3; L66 Video-invitación 56,8. L01 (Mimo Revenda) fora de concurso 35,8. Top 3 p/ deep dive: L02, L67, L29 (L09 coberto como controle do L67). Nenhuma ideia verificada supera o Mimo em teto nem em líquido/comprador no modelo. Resultado: _raw/fase3_result.json.
+- Fase 4 lançada (deep dive top 3).
